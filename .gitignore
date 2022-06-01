@@ -5,10 +5,10 @@
 **/game/tl/None
 
 # renpy file formats
-.rpymc
-.rpym
-.rpyb
-.rpyc
+*.rpymc
+*.rpym
+*.rpyb
+*.rpyc
 
 # files
 **/log.txt
