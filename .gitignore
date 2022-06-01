@@ -8,6 +8,7 @@
 .rpymc
 .rpym
 .rpyb
+.rpyc
 
 # files
 **/log.txt
