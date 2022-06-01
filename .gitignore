@@ -1,0 +1,13 @@
+# folders
+**/.vscode
+**/game/saves
+**/game/cache
+**/game/tl/None
+
+# renpy file formats
+.rpymc
+.rpym
+.rpyb
+
+# files
+**/log.txt
