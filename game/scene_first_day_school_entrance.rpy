@@ -1,10 +1,9 @@
 label firstDaySchoolEntrance:
-    sans "Its a beautiful day outside."
-
-    sans "Birds are singing, flowers are blooming..."
-
-    sans "On days like this..."
-
-    sans "Kids like you..."
-
-    sans "Should be burning in hell."
+    scene Bg Home1
+    show Aki Sign Sad
+    aki "Erwartest du dass ich Grammatik kann?"
+    marc "Eigentlich schon..."
+    show Aki Cross Frown
+    aki "HELL NAH!"
+    aki "Ich kann kein scheiß."
+    aki "Alles was ich kann ist rumscheien und meckern!"
