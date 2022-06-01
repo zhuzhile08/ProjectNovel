@@ -14,6 +14,6 @@ label start:
 
     e "Sobald du eine Geschichte, Bilder und Musik hinzufügst, kannst du es für alle veröffentlichen!"
 
-    e "Suck mah cooooooc"
+    e "dont Suck mah cooooooc"
 
     return
