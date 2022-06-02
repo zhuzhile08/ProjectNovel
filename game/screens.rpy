@@ -254,7 +254,7 @@ screen quick_menu():
             yalign 1.0
 
             textbutton _("Zurück") action Rollback()
-            textbutton _("History") action ShowMenu('history')
+            textbutton _("Textgeschichte") action ShowMenu('history')
             textbutton _("Spulen") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Speichern") action ShowMenu('save')
@@ -294,8 +294,12 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        if main_menu:
+            xalign 0.5
+            yalign 0.8
+        else:
+            xoffset 40
+            yalign 0.5
 
         spacing gui.navigation_spacing
 
@@ -305,11 +309,11 @@ screen navigation():
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton _("Geschichte") action ShowMenu("history")
 
             textbutton _("Speichern") action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+        textbutton _("Laden") action ShowMenu("load")
 
         textbutton _("Einstellungen") action ShowMenu("preferences")
 
@@ -344,6 +348,7 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+    xalign 0.5
 
 
 ## Main Menu screen ############################################################
@@ -388,8 +393,6 @@ style main_menu_version is main_menu_text
 style main_menu_frame:
     xsize 280
     yfill True
-
-    background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -594,12 +597,12 @@ screen load():
 
     tag menu
 
-    use file_slots(_("Load"))
+    use file_slots(_("Laden"))
 
 
 screen file_slots(title):
 
-    default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
+    default page_name_value = FilePageNameInputValue(pattern=_("Seite {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
 
     use game_menu(title):
 
@@ -641,7 +644,7 @@ screen file_slots(title):
 
                         add FileScreenshot(slot) xalign 0.5
 
-                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("Leerer Platz")):
                             style "slot_time_text"
 
                         text FileSaveName(slot):
@@ -795,7 +798,7 @@ screen preferences():
                     if config.has_music or config.has_sound or config.has_voice:
                         null height gui.pref_spacing
 
-                        textbutton _("Mute All"):
+                        textbutton _("Alles Stummschalten"):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
 
