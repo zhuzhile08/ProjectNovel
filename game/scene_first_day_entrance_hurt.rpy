@@ -1,7 +1,9 @@
 label firstDayEntranceHurt:
     "Wir verabschiedeten uns, als wir am Eingang angekommen waren."
     aki "Dann, tschüss, Marcus!"
-    marcus "Den Test scheiben wir am Nachmittag, dann hast du noch ein bisschen Zeit zum Lernen. Ich kann heute nicht, bin mit dem Club beschäftigt."
+    marcus "Den Test scheiben wir am Nachmittag, du hast also noch ein bisschen Zeit zum Lernen." 
+    aki "Können wir dann zusammen lernen?"
+    marcus "Ich kann heute nicht, bin mit dem Club beschäftigt."
     aki "Okay!"
     aki "Aki lief mit einem Lächeln auf dem Gesicht in das Gebäude."
     "*Dumpf!*"
