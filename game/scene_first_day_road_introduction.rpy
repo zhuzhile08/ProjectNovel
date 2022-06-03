@@ -1,8 +1,9 @@
 label firstDayRoadIntroduction:
     with fade
-
+    play sound "audio/sfx/chirp2.flac" loop
     "Es ist ein sonniger Tag draußen, Vögel zwitschern, Blumen blühen..."
     "Und wieso schreiben wir an Tagen wie diesen einen Lateintest?"
+    play music "audio/music/Persona 3 OST - Afternoon Break.ogg" loop fadein 2.0
     scene Bg Home Road
     with squares
     play sound ["audio/sfx/step_lth1.ogg", "audio/sfx/step_lth2.ogg", "audio/sfx/step_lth3.ogg", "audio/sfx/step_lth4.ogg"] loop
