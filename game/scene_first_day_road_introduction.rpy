@@ -3,6 +3,7 @@ label firstDayRoadIntroduction:
 
     "Es ist ein sonniger Tag draußen, Vögel zwitschern, Blumen blühen..."
     "Und wieso schreiben wir an Tagen wie diesen einen Lateintest?"
+    scene Bg Home Road
     unknown "MAAAAAAAAAAAAAARRRRRRRRRCUUUUUUUUUUUUUUUUUUUUUUUUUUUS!!!"
     "Habe ich schon erwähnt? Ich bin Marcus. Marcus Kashima."
     "Und die, die gerade hinter mir herläuft ist meine Kindheitsfreundin Aki Kuzunoha."
@@ -31,4 +32,6 @@ label firstDayRoadIntroduction:
     marcus "Akkusativus cum Infinitivo."
     marcus "Du solltest das wissen, ich habe dir mehrmals gesagt, dass du das lernen solltest!"
     aki "Ich habe versucht, aber kanns immer nicht!"
+    scene Bg Load
+    with fade
     "Wir haben uns dann für den Rest des Schulweges Vokablen abgefragt. Ziemlich normal."
