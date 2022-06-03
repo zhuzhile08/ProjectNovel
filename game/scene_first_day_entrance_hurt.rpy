@@ -12,6 +12,7 @@ label firstDayEntranceHurt:
     "Ich rannte zu Aki rüber."
     marcus "Gehts dir gut?"
     aki "Ich glaube nicht."
+    marcus "Das war das zweite Mal, dass du diese Woche gespolperst bist"
     "Sie versuchte aufzustehen, aber ihr Versuch war nicht erfolgreich."
     "Dabei konnte ich für einen Moment einen Blick auf Aki's blutiges Knie werfen."
     marcus "Das sieht nicht so gut aus. Kannst du ins Krankenzimmer gehen?"
