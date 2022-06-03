@@ -4,6 +4,8 @@ label firstDayRoadIntroduction:
     "Es ist ein sonniger Tag draußen, Vögel zwitschern, Blumen blühen..."
     "Und wieso schreiben wir an Tagen wie diesen einen Lateintest?"
     scene Bg Home Road
+    with squares
+    play sound ["audio/sfx/step_lth1.ogg", "audio/sfx/step_lth2.ogg", "audio/sfx/step_lth3.ogg", "audio/sfx/step_lth4.ogg"] loop
     unknown "MAAAAAAAAAAAAAARRRRRRRRRCUUUUUUUUUUUUUUUUUUUUUUUUUUUS!!!"
     "Habe ich schon erwähnt? Ich bin Marcus. Marcus Kashima."
     "Und die, die gerade hinter mir herläuft ist meine Kindheitsfreundin Aki Kuzunoha."
@@ -13,6 +15,7 @@ label firstDayRoadIntroduction:
     "Von einer weiten Entfernung kann man schon ihre pinken Haare im Wind wehen."
     "Sie ist ein bisschen kleiner als ich, und eigentlich ein ganz nettes Mädchen"
     "Manchmal kann sie auch etwas... naja... blöd und ungeschickt sein."
+    stop sound fadeout 2.0
     aki "*Stöhn* Phew! Ich bin völlig aus der Puste. Bitte woaaaaaaaaaaaaaah!"
     "Aki ist über eine Kante gestolpert. Das vierte Mal in dieser Woche."
     marcus "Hey! Get's dir gut?"

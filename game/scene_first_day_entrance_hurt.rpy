@@ -1,11 +1,16 @@
+# add a custom noise channel
+init python:
+    renpy.music.register_channel('noise', "sound")
+
 label firstDayEntranceHurt:
     scene Bg School Entrance
-
     with dissolve
-    "Als wir am Eingang der Schule angekommen waren, habe wir noch darauf gewartet, bis die Glocke klingelte."
+    "Als wir am Eingang der Schule angekommen waren, habe wir noch ein bisschen rumgedadelt und gewartet."
     show Crowd
+    play noise "audio/sfx/crowd_outdoors.ogg" loop
     "Mittlerweile war eine riesige Menge von Schülern schon angekommen."
-    "Endlich. Die Menge ist in das Schulgebäude reingeströmt und wir machten uns auch langsam auf den Weg."
+    play sound "audio/sfx/school_bell.ogg" 
+    "Endlich. Als die Glocke klingelte, ist die Menge in das Schulgebäude reingeströmt und wir machten uns auch langsam auf den Weg."
     scene Bg Main Staircase Lower Floor
     with fade
     pause 1
@@ -22,6 +27,7 @@ label firstDayEntranceHurt:
     marcus "Ich kann heute nicht, bin mit dem Club beschäftigt."
     aki "Okay!"
     aki "Aki lief mit einem Lächeln auf dem Gesicht in das Gebäude."
+    stop voice fadeout 0.3
     "*Dumpf!*"
     "Aki knallte mit voller Wucht auf den Boden."
     aki "Ouch... Das tat weh!"
