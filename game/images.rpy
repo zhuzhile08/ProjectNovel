@@ -19,3 +19,4 @@ image Bg Side Path = im.Scale("bg/side_path.png", 1280, 720)
 image Bg Side Staircase Lower Floor = im.Scale("bg/side_staircase_lower_floor.png", 1280, 720)
 image Bg Side Staircase Upper Floor = im.Scale("bg/side_staircase_upper_floor.png", 1280, 720)
 image Bg Stone Circle = im.Scale("bg/stone_circle.png", 1280, 720)
+image Bg Load = "by/loading.png"
