@@ -1,4 +1,7 @@
 label firstDayEntranceHurt:
+    scene Bg School Entrance
+
+    with dissolve
     "Wir verabschiedeten uns, als wir am Eingang angekommen waren."
     aki "Dann, tschüss, Marcus!"
     marcus "Den Test scheiben wir am Nachmittag, du hast also noch ein bisschen Zeit zum Lernen." 

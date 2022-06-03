@@ -1,4 +1,6 @@
 label firstDayRoadIntroduction:
+    with fade
+
     "Es ist ein sonniger Tag draußen, Vögel zwitschern, Blumen blühen..."
     "Und wieso schreiben wir an Tagen wie diesen einen Lateintest?"
     unknown "MAAAAAAAAAAAAAARRRRRRRRRCUUUUUUUUUUUUUUUUUUUUUUUUUUUS!!!"
