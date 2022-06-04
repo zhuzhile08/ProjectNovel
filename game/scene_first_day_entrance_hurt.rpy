@@ -5,10 +5,11 @@ init python:
 label firstDayEntranceHurt:
     scene Bg School Entrance
     with dissolve
-    play noise "audio/sfx/crowd_outdoors.ogg" loop fadein 5.0 volume 0.1
+    play noise "audio/sfx/crowd_outdoors.ogg" loop fadein 4.0 volume 0.2
     "Als wir am Eingang der Schule angekommen waren, habe wir noch ein bisschen rumgedadelt und gewartet."
     show Crowd  with Dissolve(0.3)
     "Mittlerweile war eine riesige Menge von Schülern schon angekommen."
+    pause 2
     play sound "audio/sfx/school_bell.ogg"  volume 0.6
     "Endlich. Als die Glocke klingelte, ist die Menge in das Schulgebäude reingeströmt und wir machten uns auch langsam auf den Weg."
     scene Bg Main Staircase Lower Floor
