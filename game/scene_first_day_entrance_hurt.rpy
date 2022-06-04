@@ -5,11 +5,11 @@ init python:
 label firstDayEntranceHurt:
     scene Bg School Entrance
     with dissolve
+    play noise "audio/sfx/crowd_outdoors.ogg" loop fadein 5.0 volume 0.1
     "Als wir am Eingang der Schule angekommen waren, habe wir noch ein bisschen rumgedadelt und gewartet."
     show Crowd
-    play noise "audio/sfx/crowd_outdoors.ogg" loop
     "Mittlerweile war eine riesige Menge von Schülern schon angekommen."
-    play sound "audio/sfx/school_bell.ogg" 
+    play sound "audio/sfx/school_bell.ogg"  volume 0.6
     "Endlich. Als die Glocke klingelte, ist die Menge in das Schulgebäude reingeströmt und wir machten uns auch langsam auf den Weg."
     scene Bg Main Staircase Lower Floor
     with fade
@@ -27,7 +27,7 @@ label firstDayEntranceHurt:
     marcus "Ich kann heute nicht, bin mit dem Club beschäftigt."
     aki "Okay!"
     aki "Aki lief mit einem Lächeln auf dem Gesicht in das Gebäude."
-    stop voice fadeout 0.3
+    stop noise fadeout 0.3
     "*Dumpf!*"
     "Aki knallte mit voller Wucht auf den Boden."
     aki "Ouch... Das tat weh!"
