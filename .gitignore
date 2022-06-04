@@ -9,8 +9,10 @@
 *.rpym
 *.rpyb
 *.rpyc
+*.bak
 
 # files
 **/log.txt
 **/errors.txt
 **/traceback.txt
+**/project.json
