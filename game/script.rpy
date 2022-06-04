@@ -3,7 +3,7 @@
 # the game starts here.
 label start:
 
-    call firstDayRoadIntroduction
-    call firstDayEntranceHurt
+    call firstDayRoadIntroduction from _call_firstDayRoadIntroduction
+    call firstDayEntranceHurt from _call_firstDayEntranceHurt
  
     return
