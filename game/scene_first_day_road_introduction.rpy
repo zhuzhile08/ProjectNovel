@@ -7,7 +7,7 @@ label firstDayRoadIntroduction:
     scene Bg Home Road
     with squares
     play sound ["audio/sfx/step_lth1.ogg", "audio/sfx/step_lth2.ogg", "audio/sfx/step_lth3.ogg", "audio/sfx/step_lth4.ogg"] loop
-    unknown "MAAAAAAAAAAAAAARRRRRRRRRCUUUUUUUUUUUUUUUUUUUUUUUUUUUS!!!"
+    unknown "MAAAAAAAARRRRRRCUUUUUUUUUUUUUUUUUUUUS!!!"
     "Habe ich schon erwähnt? Ich bin Marcus. Marcus Kashima."
     "Und die, die gerade hinter mir herläuft ist meine Kindheitsfreundin Aki Kuzunoha."
     aki "MAAAAAAAAAAAARRRRRRCUUUUUUUUUUUS warte mal!"
