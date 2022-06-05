@@ -33,3 +33,4 @@ image Bg Home Door = im.Scale("bg/home_door.png", 1280, 720)
 image Bg Home Outwards = im.Scale("bg/home_outwards.png", 1280, 720)
 image Bg Home Road = im.Scale("bg/home_road.png", 1280, 720)
 image Bg Load = "bg/loading.png"
+image Bg Splashscreen = "bg/splashscreen.png"
