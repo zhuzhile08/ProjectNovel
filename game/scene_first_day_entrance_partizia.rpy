@@ -44,12 +44,12 @@ label firstDayEntrancePartizia:
     partizia "\"Hmm, du willst also Zeit mit A...\""
     "Bevor sie ihren Satz vollendet hat, wurde sie von der Menge schon weggeschoben."
     partizia "\"Eeh, vergiss es. Bis später, Markus!\""
-    stop music fadeout 3.0
-    queue music "audio/music/class.ogg" fadein 2.0
+    stop music fadeout 4.0
     hide Crowd with moveoutright
+    queue music "audio/music/class.ogg" fadein 2.0
     "Bevor ich noch Antworten konnte, war sie schon aus meiner Sichtweite raus."
     "Beliebt zu sein hat seine Nachteile."
-    "Früher war ich noch ganz neidisch, wenn einer beliebt war, aber heutzutage gefällt es mir doch mehr, wie ein Hintergrundcharakter in Animes zu sein: "
+    "Früher war ich noch ganz neidisch, wenn einer beliebt war, aber heutzutage gefällt es mir doch mehr, wie ein NPC in Videospielen zu sein: "
     "Nämlich unauffälliger als ein Blatt am Baum."
     "Als ich nach links geguckt habe, sah ich dass Aki etwas komisch drauf war."
     marcus "\"Hast du was auf den Herzen, Aki?\""
@@ -61,6 +61,8 @@ label firstDayEntrancePartizia:
     marcus "\"Wie schon gesagt, hast du was auf den Herzen, Aki?\""
     aki "\"Eeeh, nein, nichts.\""
     "Irgendwas war an dieser Aussage faul, aber ich habe mich dafür nicht mehr wirklich interessiert."
+    scene Bg Load
     "Und damit machten wir uns auf den Weg zu unseren Klassenraum."
+    pause 2.0
 
     
