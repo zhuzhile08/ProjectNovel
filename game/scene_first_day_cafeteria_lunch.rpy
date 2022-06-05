@@ -26,7 +26,7 @@ label firstDayCafeteriaLunch:
     aki "\"Das war aber fies! Versprichs, dass du es nie wieder machst!\""
     marcus "\"Jaja, schon gut.\""
     "Sie handelt manchmal wie ein Kindergartenkind."
-    "Und das war auch das 21ste mal, dass ich so ein sowas in der Art versprochen habe."
+    "Und das war auch das 21ste mal, dass ich so sowas in der Art versprochen habe."
     "Wie man sehr gut sieht, halte ich mich nicht wirklich daran."
     marcus "\"Naja, Guten Appetit!\""
     aki "\"Ich weiß nicht, ob ich noch Appetit habe, nachdem du Pizza Hawai erwähnt hast.\""
