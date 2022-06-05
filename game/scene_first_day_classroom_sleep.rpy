@@ -43,7 +43,25 @@ label firstDayClassroomSleep:
     "Aki versteht absolut kein Sarkasmus, obwohl ich immer so rede, welches ein bisschen nerfig sein kann."
     marcus "\"Nene, ich weiß schon. War Sarkasmus.\""
     aki "\"Hmpf. Jedenfalls, willst du mit mir Essen gehen?\""
-    marcus "\"Klar, wiso nicht?\""
-    scene Bg Load
-    with fade
-    stop music fadeout 3.0
+    menu lunch:
+        "Soll ich mit Aki essen gehen?"
+
+        "Ja":
+            marcus "\"Ich meine, wieso nicht?\""
+            "Im Aki's Gesicht war ein stolzes Lächeln aufgetaucht."
+            aki "\"Dann auf in die Cafeteria!\""
+            scene Bg Load
+            with fade
+            stop music fadeout 3.0
+            jump firstDayCafeteriaLunch
+        "Nein":
+            marcus "\"Tut mir leid, wie schon gesagt, heute muss ich mich mit den Club ein bisschen beschäftigen\""
+            aki "\"Hehe. OK, dann das nächste Mal.\""
+            "Man muss nicht ein Psychologe sein, um zu erkennen, dass es Aki gerade ziemlich schlecht geht."
+            "Jetzt fühle ich mich wie ein richtiges Arschloch, aber was solls, der Test ist mir immer noch wichtiger."
+            "Aki ging aus der Klasse heraus und ich folge ihr kurz später."
+            scene Bg Load
+            with fade
+            stop music fadeout 3.0
+            # jump firstDayClubroomLearning
+    
