@@ -63,5 +63,5 @@ label firstDayClassroomSleep:
             scene Bg Load
             with fade
             stop music fadeout 3.0
-            # jump firstDayClubroomLearning
+            return
     
