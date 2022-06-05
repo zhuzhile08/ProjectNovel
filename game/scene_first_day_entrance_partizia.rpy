@@ -3,8 +3,7 @@ init python:
     renpy.music.register_channel('noise', "sound")
 
 label firstDayEntrancePartizia:
-    scene Bg School Entrance
-    with dissolve
+    scene Bg School Entrance with fade
     play noise "audio/sfx/crowd_outdoors.ogg" loop fadein 4.0 volume 0.2
     "Als wir nach einer Weile am Eingang der Schule angekommen waren, habe wir noch ein bisschen rumgedadelt und gewartet."
     show Crowd with Dissolve(0.3)
@@ -12,14 +11,11 @@ label firstDayEntrancePartizia:
     pause 2
     play sound "audio/sfx/school_bell.ogg" volume 0.6
     "Endlich. Als die Glocke klingelte, ist die Menge in das Schulgebäude reingeströmt und wir machten uns auch langsam auf den Weg."
-    scene Bg Main Staircase Lower Floor
-    with fade
+    scene Bg Main Staircase Lower Floor with fade
     pause 1
-    scene Bg Hallway Staircase
-    with fade
+    scene Bg Hallway Staircase with fade
     pause 1
-    scene Bg Hallway
-    with fade
+    scene Bg Hallway with fade
     pause 1
     show Crowd with Dissolve(0.3)
     "Wir wollten jetzt eigentlich in unsere Klassen, aber eine riesige Menge steht jetzt gerade in unseren Weg."
@@ -61,7 +57,6 @@ label firstDayEntrancePartizia:
     marcus "\"Wie schon gesagt, hast du was auf den Herzen, Aki?\""
     aki "\"Eeeh, nein, nichts.\""
     "Irgendwas war an dieser Aussage faul, aber ich habe mich dafür nicht mehr wirklich interessiert."
-    scene Bg Load
-    with fade
+    scene Bg Load with fade
     "Und damit machten wir uns auf den Weg zu unseren Klassenraum."
     pause 2.0
