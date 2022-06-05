@@ -1,6 +1,5 @@
 label firstDayClassroomSleep:
-    scene Bg Classroom
-    with dissolve
+    scene Bg Classroom with fade
     play noise "audio/sfx/crowd_outdoors.ogg" loop fadein 4.0 volume 0.2
     "Ich saß, wie üblich, in meiner Ecke im Klassenraum."
     "Aki saß in der anderen Ecke in Klassenraum, direkt neben der Tür."
@@ -50,8 +49,7 @@ label firstDayClassroomSleep:
             marcus "\"Ich meine, wieso nicht?\""
             "Im Aki's Gesicht war ein stolzes Lächeln aufgetaucht."
             aki "\"Dann auf in die Cafeteria!\""
-            scene Bg Load
-            with fade
+            scene Bg Load with fade
             stop music fadeout 3.0
             jump firstDayCafeteriaLunch
         "Nein":
@@ -60,8 +58,7 @@ label firstDayClassroomSleep:
             "Man muss nicht ein Psychologe sein, um zu erkennen, dass es Aki gerade ziemlich schlecht geht."
             "Jetzt fühle ich mich wie ein richtiges Arschloch, aber was solls, der Test ist mir immer noch wichtiger."
             "Aki ging aus der Klasse heraus und ich folge ihr kurz später."
-            scene Bg Load
-            with fade
+            scene Bg Load with fade
             stop music fadeout 3.0
             return
     
