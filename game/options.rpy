@@ -30,6 +30,45 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Project Novel ist ein Visual Novel, also ein interaktives Buch, welches von Team Nocturne, einer kleinen Schülergruppe am Wolfgang Borchert Gymnasium in der Klasse 8e, für 
+ein Schulprojekt in 2 Wochen entwickelt wurde.
+
+Das Spiel folgt der Geschichte vom Protagonisten Marcus Kashima, der als eine der Einzigen, die die Konzeption überlebt hat, ein apokalyptisches Event, in welcher die Menschheit
+ausgerottet wurde. Nun bewohnen Demone die Erde und du, als ein Halbdemon kannst Auswählen, wie du die Welt wiederkreierst.
+
+Welche wählst du aus?
+
+Das Team wünscht euch viel Spaß beim spielen und lernen!
+
+Thorin Meyers, Sho "Basti" Nakatsu, Till Breinig und Zhile Zhu
+
+
+
+Copyright (c) 2022 Team Nocturne
+
+
+Diese Software unterliegt der Katze Private Use Licese, welches folgendes aussagt:
+
+This version of the Software is strictly made for a private school project and
+public and private viewing, distribution or publishing by anyone not involved R
+with the direct development of the Software is strictly forbidden, because it 
+contains sensitive information. Permission is only granted to modify and to 
+use the Software by those who got the Software legitimatly, which means via 
+the developers of the Software. Only people directly involved with the development 
+of the project have the rights to copy, merge, publish, distribute, sublicense, 
+and/or sell copies of the Software, and to permit persons to whom the Software 
+is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 """)
 
 
