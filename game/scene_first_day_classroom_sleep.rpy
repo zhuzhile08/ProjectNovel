@@ -43,6 +43,7 @@ label firstDayClassroomSleep:
     marcus "\"Nene, ich weiß schon. War Sarkasmus.\""
     aki "\"Hmpf. Jedenfalls, willst du mit mir Essen gehen?\""
     menu lunch:
+        with Dissolve(0.3)
         "Soll ich mit Aki essen gehen?"
 
         "Ja":

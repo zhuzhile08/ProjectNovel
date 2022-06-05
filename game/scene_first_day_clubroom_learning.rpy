@@ -5,15 +5,14 @@
 label firstDayClubroomLearning:
     "Endlich bin ich im Clubraum angekommen."
     scene Bg Classroom with fade
-    stop music fadeout 3.0
     queue music "audio/music/club.ogg" fadein 2.0
     "Der Leher hat gesagt, dass wir ein Test schreiben werden, aber nicht über was."
     "Wenn ich mal ehrlich bin, ist es ein ziemlich blöder move, aber was solls?"
     "Ich glaube der Sinn von solch einen Test liegt daran, dass man beides gleich lernen und beherrschen sollte."
     "Aber ich lerne nur eines von denen, weil ich es kann."
     menu:
+        with Dissolve(0.3)
         "Was soll ich denn überhaupt lernen?"
-
         "PC lernen":
             jump readPC
         "ACI lernen":
@@ -25,6 +24,7 @@ label readPC:
     "Ich puste das Staub weg und eine riesige Wolke taucht auf"
     "Unter der Staubschicht erscheint der Text:"
     "Partizipium Coniunctum für Beginner, von Ben Dover."
+    
     "{size=+10}{b}{u}Das PC{/u}{/b}{/size}\n{b}{u}Grundwissen und Aufbau:{/u}{/b}"
     "Das PC, Partizipium Coniunctum, kommt in lateinischen Sätzen oft als Attribut vor. Man bildet diese mit dem Bezugswort und dem PPP (Partizip Perfekt Passiv). Außerdem stehen Pcs immer vorzeitig zum Hauptsatz."
     "{color=#00a7ff}{u}Cattus{/u}{/color} {color=#FF4B4B}{u}servatus{/u}{/color} latus est. - Die {color=#FF4B4B}gerettete{/color} {color=#00a7ff}Katze{/color} ist fröhlich.\n {size=-10}*Cattus = Katze{/size}\n\n{size=-3}In diesem Fall ist \"Cattus\" das Bezugswort und \"servatus\" das Partizip.{/size}"
@@ -75,3 +75,4 @@ label after:
     scene Bg Load
     with fade
     stop music fadeout 3.0
+    
