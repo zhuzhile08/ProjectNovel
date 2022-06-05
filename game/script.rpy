@@ -5,5 +5,7 @@ label start:
 
     call firstDayRoadIntroduction
     call firstDayEntrancePartizia
- 
+    
+    call firstDayClubroomLearning
+
     return
