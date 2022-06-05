@@ -248,19 +248,17 @@ screen quick_menu():
     if quick_menu:
 
         hbox:
+            yoffset -45
             style_prefix "quick"
 
             xalign 0.5
             yalign 1.0
 
             textbutton _("Zurück") action Rollback()
-            textbutton _("Textgeschichte") action ShowMenu('history')
+            textbutton _("Speichern") action ShowMenu('save')
             textbutton _("Spulen") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Speichern") action ShowMenu('save')
-            textbutton _("S.Speichern") action QuickSave()
-            textbutton _("S. Laden") action QuickLoad()
-            textbutton _("Optionen") action ShowMenu('preferences')
+            textbutton _("Textgeschichte") action ShowMenu('history')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -322,11 +320,6 @@ screen navigation():
             textbutton _("Hauptmenü") action MainMenu()
 
         textbutton _("Über") action ShowMenu("about")
-
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Hilfe") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
@@ -561,7 +554,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Gemacht mit {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
 style about_label is gui_label
@@ -732,9 +725,9 @@ screen preferences():
                 vbox:
                     style_prefix "radio"
                     label _("Rollback Side")
-                    textbutton _("Disable") action Preference("rollback side", "disable")
-                    textbutton _("Left") action Preference("rollback side", "left")
-                    textbutton _("Right") action Preference("rollback side", "right")
+                    textbutton _("Aus") action Preference("rollback side", "disable")
+                    textbutton _("Links") action Preference("rollback side", "left")
+                    textbutton _("Rechts") action Preference("rollback side", "right")
 
                 vbox:
                     style_prefix "check"
@@ -884,7 +877,7 @@ screen history():
     ## Avoid predicting this screen, as it can be very large.
     predict False
 
-    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
+    use game_menu(_("Geschichte"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
 
         style_prefix "history"
 
