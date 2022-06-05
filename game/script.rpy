@@ -2,11 +2,9 @@
 
 # the game starts here.
 label start:
-
     call firstDayRoadIntroduction
     call firstDayEntrancePartizia
-
     call firstDayClassroomSleep
-
     call firstDayClubroomLearning
+
     return
