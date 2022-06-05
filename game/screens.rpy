@@ -1170,6 +1170,8 @@ style confirm_button_text is gui_medium_button_text
 
 style confirm_frame:
     background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    xsize 500
+    ysize 250
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
