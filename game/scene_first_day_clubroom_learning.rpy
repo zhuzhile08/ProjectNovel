@@ -14,17 +14,22 @@ label firstDayClubroomLearning:
         with Dissolve(0.3)
         "Was soll ich denn überhaupt lernen?"
         "PC lernen":
+            "Aus den Schank vor mir habe ich ein uraltes, mit Staub bedecktes Buch genommen."
+            "Ich puste das Staub weg und eine riesige Wolke taucht auf"
+            "Unter der Staubschicht erscheint der Text:"
+            "Partizipium Coniunctum für Beginner, von Ben Dover."
+
             jump readPC
         "ACI lernen":
+            "Aus den Schank vor mir habe ich ein uraltes, mit Staub bedecktes Buch genommen."
+            "Ich puste das Staub weg und eine riesige Wolke taucht auf"
+            "Unter der Staubschicht erscheint der Text:"
+            "Akkusativus cum Infinitivum made Easy, von Mike Oxlong."
+
             jump readACI
 
 
 label readPC:
-    "Aus den Schank vor mir habe ich ein uraltes, mit Staub bedecktes Buch genommen."
-    "Ich puste das Staub weg und eine riesige Wolke taucht auf"
-    "Unter der Staubschicht erscheint der Text:"
-    "Partizipium Coniunctum für Beginner, von Ben Dover."
-    
     "{size=+10}{b}{u}Das PC{/u}{/b}{/size}\n{b}{u}Grundwissen und Aufbau:{/u}{/b}"
     "Das PC, Partizipium Coniunctum, kommt in lateinischen Sätzen oft als Attribut vor. Man bildet diese mit dem Bezugswort und dem PPP (Partizip Perfekt Passiv). Außerdem stehen Pcs immer vorzeitig zum Hauptsatz."
     "{color=#00a7ff}{u}Cattus{/u}{/color} {color=#FF4B4B}{u}servatus{/u}{/color} latus est. - Die {color=#FF4B4B}gerettete{/color} {color=#00a7ff}Katze{/color} ist fröhlich.\n {size=-10}*Cattus = Katze{/size}\n\n{size=-3}In diesem Fall ist \"Cattus\" das Bezugswort und \"servatus\" das Partizip.{/size}"
@@ -44,11 +49,6 @@ label readPC:
             jump after
 
 label readACI:
-    "Aus den Schank vor mir habe ich ein uraltes, mit Staub bedecktes Buch genommen."
-    "Ich puste das Staub weg und eine riesige Wolke taucht auf"
-    "Unter der Staubschicht erscheint der Text:"
-    "Akkusativus cum Infinitivum made Easy, von Mike Oxlong."
-
     "{size=+10}{b}{u}Das AcI{/u}{/b}{/size}\n{b}{u}Grundwissen und Aufbau:{/u}{/b}"
     "Das Aci, Akkusativus cum Infinitivo (Akkusativ mit Infinitiv) auf Latein, kommt sehr oft in lateinischen Sätzen vor. Es wird im deutschen meistens mit einem dass-Satz übersetzt."
     "{size=-3}Ein AcI in lateinischen Sätzen enthält ein Kopfverb, Subjektakkusativ und einen Prädikatsinfinitiv:{/size}\n{color=#438A64}{u}Scio{/u}{/color} {color=#00a7ff}{u}sororem{/u}{/color} cattum suum {color=#FF4B4B}{u}amare{/u}{/color}. - Ich weiß, dass die Schwester ihre Katze liebt.\n {size=-10}*Cattus = Katze{/size}"
