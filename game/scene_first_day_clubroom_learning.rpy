@@ -15,17 +15,10 @@ label firstDayClubroomLearning:
         "Was soll ich denn überhaupt lernen?"
 
         "PC lernen":
-            call readPC
+            jump readPC
         "ACI lernen":
-            call readACI
+            jump readACI
 
-    "Recht einfach zu verstehen. Aber auch ein Lateinweltmeister wie ich braucht auch mal eine Pause"
-    "Ich gucke auf die Uhr und bemerke, dass ich noch 30 Minuten bis zum Test habe."
-    "Also habe ich mein Handy rausgenommen und ein bisschen darauf rumgedaddlet."
-    scene Bg Load
-    with fade
-    stop music fadeout 3.0
-    return
 
 label readPC:
     "Aus den Schank vor mir habe ich ein uraltes, mit Staub bedecktes Buch genommen."
@@ -46,9 +39,9 @@ label readPC:
 
         "Nein":
             "Nicht wirklich, aber alles nochmal zu lesen kann ja einen nichts schlechtes antun."
-            call readPC
+            jump readPC
         "Ja":
-            return
+            jump after
 
 label readACI:
     "Aus den Schank vor mir habe ich ein uraltes, mit Staub bedecktes Buch genommen."
@@ -63,4 +56,12 @@ label readACI:
             "Nicht wirklich, aber alles nochmal zu lesen kann ja einen nichts schlechtes antun."
             jump readACI
         "Ja":
-            return
+            jump after
+
+label after:
+    "Recht einfach zu verstehen. Aber auch ein Lateinweltmeister wie ich braucht auch mal eine Pause"
+    "Ich gucke auf die Uhr und bemerke, dass ich noch 30 Minuten bis zum Test habe."
+    "Also habe ich mein Handy rausgenommen und ein bisschen darauf rumgedaddlet."
+    scene Bg Load
+    with fade
+    stop music fadeout 3.0
