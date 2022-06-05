@@ -1,2 +1,3 @@
 label firstDayCafeteriaLunch:
     "fortnite"
+    return
