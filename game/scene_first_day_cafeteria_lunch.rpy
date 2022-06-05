@@ -49,4 +49,5 @@ label firstDayCafeteriaLunch:
     marcus "\"Danke Aki! Bis Später\""
     "Ich winkte ihr hinterher und sie tat das selbe. Danach machte ich auf den Weg zu unseren Clubraum."
     scene Bg Load with fade
+    stop noise fadeout 1.0
     stop music fadeout 3.0
