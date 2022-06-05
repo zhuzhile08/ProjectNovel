@@ -62,7 +62,6 @@ label firstDayEntrancePartizia:
     aki "\"Eeeh, nein, nichts.\""
     "Irgendwas war an dieser Aussage faul, aber ich habe mich dafür nicht mehr wirklich interessiert."
     scene Bg Load
+    with fade
     "Und damit machten wir uns auf den Weg zu unseren Klassenraum."
     pause 2.0
-
-    
