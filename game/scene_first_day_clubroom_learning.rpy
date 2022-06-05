@@ -49,6 +49,16 @@ label readACI:
     "Unter der Staubschicht erscheint der Text:"
     "Akkusativus cum Infinitivum made Easy, von Mike Oxlong."
 
+    "{size=+10}{b}{u}Das AcI{/u}{/b}{/size}\n{b}{u}Grundwissen und Aufbau:{/u}{/b}"
+    "Das Aci, Akkusativus cum Infinitivo (Akkusativ mit Infinitiv) auf Latein, kommt sehr oft in lateinischen Sätzen vor. Es wird im deutschen meistens mit einem dass-Satz übersetzt."
+    "{size=-3}Ein AcI in lateinischen Sätzen enthält ein Kopfverb, Subjektakkusativ und einen Prädikatsinfinitiv:{/size}\n{color=#438A64}{u}Scio{/u}{/color} {color=#00a7ff}{u}sororem{/u}{/color} cattum suum {color=#FF4B4B}{u}amare{/u}{/color}. - Ich weiß, dass die Schwester ihre Katze liebt.\n {size=-10}*Cattus = Katze{/size}"
+    "\"{color=#438A64}Scio{/color}\" ist das Kopfverb, \"{color=#00a7ff}sororem{/color}\" der Subjektakkusativ und \"{color=#FF4B4B}amare{/color}\" ist das Prädikatsinfinitiv. Wenn ein Infinitiv im Satz auftaucht, enthält dieser einen AcI mit hoher Wahrscheinlichkeit."
+    "Wörter wie videre, negare, putare oder scire werden oft als Kopfverb verwendet.\n{color=#FF4B4B}ACHTUNG:{/color} Es gibt Verben, die mit einem Infinitiv stehen, aber keine Kopverben sind, zum Beispiel: posse, velle und iubere."
+    "{b}{u}Vor- und Gleichzeitigkeit{/u}{/b}\n{size=-3}Mit dem AcI zeigt man auch das Zeitverhältnis zum Hauptsatz, indem man das Tempus vom Prädikatsinfinitiv ändert. Wenn man das Prädikatsininitiv in präsens schreibt, ist es gleichzeitig zum Hauptsatz, un wenn man es in Perfekt ausdrückt, ist es Vorzeitig.{/size}"
+    "Im deutschen ändert as Tempus vom Prädikatsinfinitv je nach dem Tempus des Kopfverbs."
+    "{color=#438A64}{u}Scio{/u}{/color} {color=#00a7ff}{u}sororem{/u}{/color} cattum suum {color=#FF4B4B}{u}amare{/u}{/color}. - Ich weiß, dass die Schwester ihre Katze liebt.\n{color=#438A64}{u}Scivi{/u}{/color} {color=#00a7ff}{u}sororem{/u}{/color} cattum {color=#FF4B4B}{u}amare{/u}{/color}. - Ich wusste, dass die Schwester ihre Katze liebte.\n{size=-10}- Gleichzeitigkeit{/size}"
+    "{color=#438A64}{u}Scio{/u}{/color} {color=#00a7ff}{u}sororem{/u}{/color} cattum {color=#FF4B4B}{u}amavisse{/u}{/color}. - Ich weiß, dass die Schwester ihre Katze liebte.\n{color=#438A64}{u}Scivi{/u}{/color} {color=#00a7ff}{u}sororem{/u}{/color} cattum {color=#FF4B4B}{u}amavisse{/u}{/color}. - Ich wusste, dass die Schwester ihre Katze geliebt hatte.\n{size=-10}- Vorzeitigkeit{/size}"
+    "Wenn das Kopverb im Präsens steht, wird das Prädikatsinfinitiv in Präteritum übersetzt, und wenn es im Perfekt steht, wird das Prädikatsinfinititiv in Plusquamperfekt, welches Vorzeitigkeit gegen Perekt ausdrückt, übersetzt."
     menu:
         "Das war ein Haufen. Habe ich das alles schon verstanden?"
 
