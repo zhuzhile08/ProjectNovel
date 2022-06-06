@@ -6,7 +6,7 @@ label start:
     call firstDayEntrancePartizia
     call firstDayClassroomSleep
     call firstDayClubroomLearning
-
+    call secondDayRoad
     call credits
 
     return
