@@ -7,6 +7,6 @@ label start:
     call firstDayClassroomSleep
     call firstDayClubroomLearning
     call secondDayRoad
-    call credits
+    call secondDayAfternoon
 
     return
