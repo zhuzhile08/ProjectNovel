@@ -25,10 +25,10 @@ label firstDayEntrancePartizia:
     unknown "\"Morgen, Marcus!\""
     stop noise fadeout 0.3
     stop music fadeout 3.0
-    queue music "audio/music/partizia.ogg" fadein 2.0
+    queue music "audio/music/partizia.ogg" loop fadein 2.0
     "Ich wusste es."
     marcus "\"Morgen, Partizia. Wie geht es dir?\""
-    "Es ist Partizia, die Schulratsvorsitzende. Sie ist super beliebt unter Jungs und Mädchen."
+    "Es ist Partizia, die Studentenratsvorsitzende. Sie ist super beliebt unter Jungs und Mädchen."
     "Egal wo man sie sieht, ist sie immer von einer Menge umzingelt."
     "Sie ist genau das Gegenteil von mir."
     partizia "\"Hast du Heute während der Mittagspause Zeit?\""
