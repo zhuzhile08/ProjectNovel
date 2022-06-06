@@ -1,5 +1,5 @@
 label credits:
-    scene black
+    scene black with Dissolve(3.0)
     play music "audio/music/credits.ogg" fadein 5.0
     with Pause(2.0)
 
@@ -91,5 +91,5 @@ label credits:
     show Bg Splashscreen with Dissolve(2.0)
     with Pause(4.0)
 
-    return
+    $ MainMenu(confirm=False)()
     
