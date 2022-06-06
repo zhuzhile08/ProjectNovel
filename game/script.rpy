@@ -2,11 +2,14 @@
 
 # the game starts here.
 label start:
-    call firstDayRoadIntroduction
-    call firstDayEntrancePartizia
-    call firstDayClassroomSleep
-    call firstDayClubroomLearning
-    call secondDayRoad
-    call secondDayAfternoon
+    call firstDayRoadIntroduction from _call_firstDayRoadIntroduction
+    call firstDayEntrancePartizia from _call_firstDayEntrancePartizia
+    call firstDayClassroomSleep from _call_firstDayClassroomSleep
+    call firstDayClubroomLearning from _call_firstDayClubroomLearning
+    call secondDayRoad from _call_secondDayRoad
+    call secondDayAfternoon from _call_secondDayAfternoon
+    call thirdDayParkTutorRequest
+
+    call credits # temporary
 
     return
