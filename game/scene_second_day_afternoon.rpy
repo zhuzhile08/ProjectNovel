@@ -102,7 +102,7 @@ label secondDayAfternoon:
         menu:
             "Soll ich?"
             "\"Ja\"":
-                "\"Ja.\""
+                marcus "\"Ja.\""
                 aki "\"Yay!\""
                 "Sie machte ein ganz kleinen Hüpfer in die Luft"
                 "Wir haben beide unsere Sachen gepackt und sind zusammen nach Hause gegangen, während wir unsere Testergebnisse diskutiert haben."
@@ -121,7 +121,10 @@ label secondDayAfternoon:
         "Ich habe meine Sachen gepackt und bin dann nach Hause gegangen."
 
     scene Bg Load with fade
+    stop noise fadeout 2.0
     stop music fadeout 6.0
     "Nachdem ich zuhause angekommen bin, habe ich mich sofort in Bett gelegt."
     "Dieser Tag war anstrengend, aber morgen ist ja Samstag."
     "Eine Weile später bin ich in aller Ruhe eingeschlafen."
+
+    scene Bg Load with fade
