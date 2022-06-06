@@ -14,7 +14,7 @@ label firstDayClubroomLearning:
         with Dissolve(0.3)
         "Was soll ich denn überhaupt lernen?"
         "PC lernen":
-            "Aus den Schank vor mir habe ich ein uraltes, mit Staub bedecktes Buch genommen."
+            "Aus den Schrank vor mir habe ich ein uraltes, mit Staub bedecktes Buch genommen."
             "Ich puste das Staub weg und eine riesige Wolke taucht auf"
             "Unter der Staubschicht erscheint der Text:"
             "Partizipium Coniunctum für Beginner, von Ben Dover."
@@ -23,10 +23,10 @@ label firstDayClubroomLearning:
 
             jump readPC
         "ACI lernen":
-            "Aus den Schank vor mir habe ich ein uraltes, mit Staub bedecktes Buch genommen."
+            "Aus den Schrank vor mir habe ich ein uraltes, mit Staub bedecktes Buch genommen."
             "Ich puste das Staub weg und eine riesige Wolke taucht auf"
             "Unter der Staubschicht erscheint der Text:"
-            "Akkusativus cum Infinitivum made Easy, von Mike Oxlong."
+            "Akkusativus cum Infinitivo made Easy, von Mike Oxlong."
 
             $ aki_route = True
 
