@@ -15,7 +15,7 @@ label firstDayCafeteriaLunch:
     "Wissen die nicht, dass Ananas auf Pizza absolut grässlich ist?"
     "So gern ich mich jetzt auch beim Chef beschweren möchte, habe ich einfach in aller Stille meine Lieblingspizza Magherita und Akis Lieblingspizza Pizza Tuna geholt."
     "Ich machte mich mit zwei Tablets auf den Weg."
-    "Man muss nicht so hart bei Aki schauen, wenn man sie suchen will, ihre Haare sind aufgälliger als eine Mülltonne im Heuhaufen"
+    "Man muss nicht so hart bei Aki schauen, wenn man sie suchen will, ihre Haare sind aufgälliger als eine Mülltonne im Heuhaufen."
     "Woher ich diesen Vergleich habe, weiß ich auch nicht."
     scene Bg Cafeteria with fade
     aki "\"Marcus, hast du für mich die Pizza Tuna genommen?\""
