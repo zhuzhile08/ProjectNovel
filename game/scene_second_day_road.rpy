@@ -19,16 +19,18 @@ label secondDayRoad:
         marcus "\"Wieso denn?\""
         aki "\"Naja, der Test.\""
         "Achso, der Test! Den habe ich komplett vergessen."
+        aki "\"Ich hoffe wirklich, dass ich bestehen werde.\""
+        marcus "\"Ich auch.\""
+        aki "\"Hoffst du also, dass ich bestehen werde oder dass du bestehen wirst?\""
+        marcus "\"Das erste.\""
+        aki "\"Hey, das war fies!\""
         "Danach machten wir uns auf den Weg zur Schule, während wir über den Test diskutiert haben und uns Vokabel abgefragt haben."
-        scene Bg Load
-        with fade
-        stop music fadeout 3.0
     else:
         queue music "audio/music/school_way.ogg" loop fadein 2.0
         "Aber was heute nicht normal war, ist dass ich Aki nicht hinter mier rennen hören oder sehen gesehen habe."
         "Vielleicht hat sie auch überschlafen, wer weiß?"
         "Ich mache mich auf den Weg ohne weitere Sorgen."
-        scene Bg Load
-        with fade
-        stop music fadeout 3.0
+    scene Bg Load
+    with fade
+    stop music fadeout 3.0
         
