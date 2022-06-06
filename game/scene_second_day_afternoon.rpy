@@ -95,16 +95,27 @@ label secondDayAfternoon:
     queue music "audio/music/park.ogg" loop fadein 2.0
     play sound "audio/sfx/school_bell.ogg" volume 0.6
     teacher "\"Die Stunde ist hiermit beendet. Ihr könnt eure Sachen packen. Ich wünsche euch noch ein schönes Wochenende!\""
-    play noise "audio/sfx/crowd_indoors" loop fadein 1.0 volume 0.1
+    play noise "audio/sfx/crowd_indoors.ogg" loop fadein 1.0 volume 0.3
 
     if aki_route == True:
         aki "\"Wollen wir zusammen nach Hause gehen?\""
         menu:
             "Soll ich?"
             "\"Ja\"":
-                ""
+                "\"Ja.\""
+                aki "\"Yay!\""
+                "Sie machte ein ganz kleinen Hüpfer in die Luft"
+                "Wir haben beide unsere Sachen gepackt und sind zusammen nach Hause gegangen, während wir unsere Testergebnisse diskutiert haben."
             "\"Tut mir leid, nein.\"":
-                ""
+                marcus "\"Tut mir leid, nein.\""
+                "Manchmal habe ich auch kein Bock und will alleine sein."
+                "Und heute ist solch ein Tag."
+                aki "\"Wieso denn?\""
+                "Aki guckte mich ganz traurig an."
+                marcus "\"Ehhm, ich habe also eeh... zuhause noch etwas zu tun! Genau!\""
+                "Ich bin ein verdammt schlechter Lügner"
+                aki "\"Wenn du es so meinst.\""
+                "Ich habe meine Sachen gepackt und bin dann alleine nach Hause gegangen."
     if partizia_route == True:
         "Endlich!"
         "Ich habe meine Sachen gepackt und bin dann nach Hause gegangen."
@@ -113,4 +124,4 @@ label secondDayAfternoon:
     stop music fadeout 6.0
     "Nachdem ich zuhause angekommen bin, habe ich mich sofort in Bett gelegt."
     "Dieser Tag war anstrengend, aber morgen ist ja Samstag."
-    "Eine Weile später bin ich in aller ruhe eingeschlafen."
+    "Eine Weile später bin ich in aller Ruhe eingeschlafen."
