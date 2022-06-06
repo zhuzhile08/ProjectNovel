@@ -19,7 +19,7 @@ label firstDayClubroomLearning:
             "Unter der Staubschicht erscheint der Text:"
             "Partizipium Coniunctum für Beginner, von Ben Dover."
 
-            $ patrizia_route = True
+            $ partizia_route = True
 
             jump readPC
         "ACI lernen":
