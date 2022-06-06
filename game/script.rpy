@@ -10,6 +10,6 @@ label start:
     call secondDayAfternoon from _call_secondDayAfternoon
     call thirdDayParkTutorRequest
 
-    call credits # temporary
+    call eighthDayEnding
 
     return
