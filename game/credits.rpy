@@ -73,6 +73,12 @@ label credits:
     show text "Alex, Henrik, Ben" with Dissolve(1.0)
     with Pause(1.0)
     scene black with Dissolve(2.0)
+    show text "Das Katawa Shoujo Team" with Dissolve(1.0)
+    with Pause(1.0)
+    scene black with Dissolve(2.0)
+    show text "Dan Salvato" with Dissolve(1.0)
+    with Pause(1.0)
+    scene black with Dissolve(2.0)
 
     show text "Und ein Dankesehr an euch fürs Spielen!" with Dissolve(2.0)
     scene black with Dissolve(3.0)
