@@ -9,7 +9,7 @@ label secondDayRoad:
     "Alles deutet auf einen normalen Tag hin."
     scene Bg Home Road with fade
     stop music fadeout 3.0
-    if aki_route:
+    if aki_route == True:
         queue music "audio/music/aki.ogg" loop fadein 2.0
         "Ich biege auf die Straße ab und vor mir war ein recht ungewöhnliches Bild."
         aki "\"Hey, Marcus!\""
