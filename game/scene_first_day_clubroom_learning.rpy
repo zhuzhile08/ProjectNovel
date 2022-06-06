@@ -5,7 +5,7 @@
 label firstDayClubroomLearning:
     "Endlich bin ich im Clubraum angekommen."
     scene Bg Classroom with fade
-    queue music "audio/music/club.ogg" fadein 2.0
+    queue music "audio/music/club.ogg" loop fadein 2.0
     "Der Leher hat gesagt, dass wir ein Test schreiben werden, aber nicht über was."
     "Wenn ich mal ehrlich bin, ist es ein ziemlich blöder move, aber was solls?"
     "Ich glaube der Sinn von solch einen Test liegt daran, dass man beides gleich lernen und beherrschen sollte."
@@ -19,12 +19,16 @@ label firstDayClubroomLearning:
             "Unter der Staubschicht erscheint der Text:"
             "Partizipium Coniunctum für Beginner, von Ben Dover."
 
+            $ patrizia_route = True
+
             jump readPC
         "ACI lernen":
             "Aus den Schank vor mir habe ich ein uraltes, mit Staub bedecktes Buch genommen."
             "Ich puste das Staub weg und eine riesige Wolke taucht auf"
             "Unter der Staubschicht erscheint der Text:"
             "Akkusativus cum Infinitivum made Easy, von Mike Oxlong."
+
+            $ aki_route = True
 
             jump readACI
 
