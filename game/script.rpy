@@ -8,8 +8,8 @@ label start:
     call firstDayClubroomLearning from _call_firstDayClubroomLearning
     call secondDayRoad from _call_secondDayRoad
     call secondDayAfternoon from _call_secondDayAfternoon
-    call thirdDayParkTutorRequest
+    call thirdDayParkTutorRequest from _call_thirdDayParkTutorRequest
 
-    call eighthDayEnding
+    call eighthDayEnding from _call_eighthDayEnding
 
     return
