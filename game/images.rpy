@@ -1,7 +1,53 @@
 # define images here
-# image Aki Cross Frown = "Aki/mishashort_cross_frown.png"
-# image Aki Sign Sad = "Aki/mishashort_sign_sad.png"
-# image Aki Cross Grin = "Aki/mishashort_cross_grin.png"
+# aki
+image Aki Default Angry: 
+    "aki/aki_default_angry.png" 
+    zoom 0.65
+image Aki Default Angry Talk Big: 
+    "aki/aki_default_angry_talk_big.png" 
+    zoom 0.65
+image Aki Default Angry Talk Small: 
+    "aki/aki_default_angry_talk_small.png" 
+    zoom 0.65
+image Aki Default Angry Teeth: 
+    "aki/aki_default_angry_teeth.png" 
+    zoom 0.65
+image Aki Default Happy Laugh: 
+    "aki/aki_default_happy_laugh.png" 
+    zoom 0.65
+image Aki Default Happy Laugh Teeth: 
+    "aki/aki_default_happy_laugh_teeth.png" 
+    zoom 0.65
+image Aki Default Happy Smile: 
+    "aki/aki_default_happy_smile.png" 
+    zoom 0.65
+image Aki Default Happy Laugh Teeth Closed: 
+    "aki/aki_default_happy_laugh_teeth_closed.png" 
+    zoom 0.65
+image Aki Default Happy Laugh Closed: 
+    "aki/aki_default_happy_laugh_closed.png" 
+    zoom 0.65
+image Aki Default Normal Talk Big: 
+    "aki/aki_default_normal_talk_big.png" 
+    zoom 0.65
+image Aki Default Normal Talk Small: 
+    "aki/aki_default_normal_talk_small.png"
+    zoom 0.65
+image Aki Default Sad: 
+    "aki/aki_default_sad.png" 
+    zoom 0.65
+image Aki Default Sad Laugh: 
+    "aki/aki_default_sad_laugh.png" 
+    zoom 0.65
+image Aki Default Sad Smile: 
+    "aki/aki_default_sad_smile.png" 
+    zoom 0.65
+image Aki Default Sad Talk Big: 
+    "aki/aki_default_sad_talk_big.png" 
+    zoom 0.65
+image Aki Default Sad Talk Small: 
+    "aki/aki_default_sad_talk_small.png" 
+    zoom 0.65
 
 # crowd effect
 image Crowd:
