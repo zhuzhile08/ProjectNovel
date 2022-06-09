@@ -1,10 +1,11 @@
 label firstDayClassroomExam:
     scene Bg Classroom with fade
+    play music ""
     "Moment der Wahrheit."
     "Das Prüfungsblatt liegt vor mir."
     "Ich schaute mich um, und sah, wie Aki auf ihren Platz saß und betete."
     if aki_route == True:
-        teacher "Ihr könnt loslegen. Dreht das Blatt um."
+        teacher "\"Ihr könnt loslegen. Dreht das Blatt um.\""
         "Die Arbeit ist über AcI."
         "Das nenne ich reiner Zufall."
         jump aciExam
@@ -223,4 +224,43 @@ label aftermath:
     "Klasse! Letzte Aufgabe fertig."
     "Ich schaute mich in der Klasse um. Anscheinend bin ich der erste, der fertig bin."
     "Jetzt muss ich die letzten paar Minuten auswarten. Das wird langweilig."
-    # todo
+    scene Bg Load with fade
+    pause 3.0
+    scene Bg Classroom with fade
+    teacher "\"Stifte niederlegen! Ich werde jetzt den Test einsammeln!\""
+    "Alle legen ihre Stifte nieder."
+    "Der Leher ging dann bei jeden herum und nahm sich ein Zettel nach den anderen."
+    teacher "\"Die Testergebnisse bekommt jeder morgen zurück.\""
+    play sound "audio/sfx/school_bell.ogg" volume 0.6
+    teacher "\"Damit ist der Schultag beendet. Erholt euch zuhause gut!\""
+    if aki_route == True:
+        "Ich sah rüber zu Aki und bemerkte, dass sie völlig erledigt in ihren Sitz saß."
+        "Ich ging zu ihr rüber."
+        aki "\"Phew! Endlich ist das vorbei!\""
+        marcus "\"Und? Wie ist es gelaufen?\""
+        aki "\"Ehrlich gesagt, ganz OK. Glaube ich.\""
+        
+    if partizia_route == True:
+        "Ich sah rüber zu Aki und sie saß stolz in ihren Stuhl."
+        marcus "\"Diesmal hattest du ja Glück.\""
+        aki "\"Hehe! Du weißt ja, dass PCs meine Spezialität sind.\""
+    
+    aki "\"Jedenfalls, willst du mit mir nach Hause gehen?\""
+    menu:
+        with Dissolve(0.3)
+        "Soll ich?"
+        "\"Ja\"":
+            marcus "\"Ja.\""
+            aki "\"Dann, lass loslegen!\""
+            "Wir haben uns auf den Weg gemacht, nachdem wir unsere Sachen gepackt haben."
+        "\"Ne, vieleicht nächstes mal.\"":
+            marcus "\"Ne, vieleicht nächstes mal.\""
+            aki "\"Oooh, schade!\""
+            aki "\"Aber naja, ich habe auf den Weg eh was zu tun.\""
+            marcus "\"OK. Dann bis morgen!\""
+            aki "\"Bis morgen, Marcus!\""
+            "Und damit sammelte sie ihre Sachen ein und machte sich auf den Weg."
+
+    scene Bg Load with fade
+    stop noise fadeout 1.0
+    stop music fadeout 3.0            
