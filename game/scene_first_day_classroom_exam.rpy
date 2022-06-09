@@ -1,17 +1,20 @@
 label firstDayClassroomExam:
+    pause 3.0
     scene Bg Classroom with fade
-    play music ""
+    queue music "audio/music/class.ogg" loop fadein 2.0
     "Moment der Wahrheit."
     "Das Prüfungsblatt liegt vor mir."
     "Ich schaute mich um, und sah, wie Aki auf ihren Platz saß und betete."
     if aki_route == True:
         teacher "\"Ihr könnt loslegen. Dreht das Blatt um.\""
-        "Die Arbeit ist über AcI."
+        "Die Arbeit ist über AcIs."
+        "Genau das was ich gelernt habe!"
         "Das nenne ich reiner Zufall."
         jump aciExam
     else:
         teacher "Ihr könnt loslegen. Dreht das Blatt um."
-        "Die Arbeit ist über PC."
+        "Die Arbeit ist über PCs."
+        "Genau das was ich gelernt habe!"
         "Das nenne ich reiner Zufall."
         jump pcExam
 
@@ -75,7 +78,7 @@ label pcExam:
         "1) Amicus petitus flebat."
         "a) Der Freund, der angegriffen worden ist, weint.":
             $ test_score -= 1
-        "b) Der Freund weinte, wweil er angegriffen worden war.":
+        "b) Der Freund weinte, weil er angegriffen worden war.":
             $ test_score -= 0
     "Erste Aufgabe, einfach."
     menu:
@@ -197,11 +200,11 @@ label aciExam:
     "Bin mir ziemlich sicher."
     menu:
         with Dissolve(0.3)
-        "a) Der Junge wusste, dass große Hilfe gekommen ist.":
+        "a) Der Junge wusste, dass die große Hilfe gekommen ist.":
             $ test_score -= 1
         "b) Der große Junge wusste, dass Hilfe gekommen war.":
             $ test_score -= 0
-        "10) Puer magnus scivit magnum auxilium venivisse."
+        "10) Puer magnus scivit auxilium venivisse."
     "Easy."
     menu:
         with Dissolve(0.3)
@@ -233,6 +236,7 @@ label aftermath:
     teacher "\"Die Testergebnisse bekommt jeder morgen zurück.\""
     play sound "audio/sfx/school_bell.ogg" volume 0.6
     teacher "\"Damit ist der Schultag beendet. Erholt euch zuhause gut!\""
+    play noise "audio/sfx/crowd_indoors.ogg" loop fadein 1.0 volume 0.3
     if aki_route == True:
         "Ich sah rüber zu Aki und bemerkte, dass sie völlig erledigt in ihren Sitz saß."
         "Ich ging zu ihr rüber."

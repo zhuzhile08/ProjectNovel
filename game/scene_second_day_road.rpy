@@ -24,7 +24,7 @@ label secondDayRoad:
         aki "\"Hoffst du also, dass ich bestehen werde oder dass du bestehen wirst?\""
         marcus "\"Das erste.\""
         aki "\"Hey, das war fies!\""
-        "Danach machten wir uns auf den Weg zur Schule, während wir über den Test diskutiert haben und uns Vokabel abgefragt haben."
+        "Danach machten wir uns auf den Weg zur Schule, während wir über den Test diskutiert haben und uns Vokabeln abgefragt haben."
     else:
         queue music "audio/music/school_way.ogg" loop fadein 2.0
         "Aber was heute nicht normal war, ist dass ich Aki nicht hinter mier rennen hören oder sehen gesehen habe."

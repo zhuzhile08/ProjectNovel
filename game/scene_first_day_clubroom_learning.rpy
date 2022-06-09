@@ -9,7 +9,7 @@ label firstDayClubroomLearning:
     "Das ist der Clubraum vom Lateinclub."
     "Ich war hier schon sehr oft, und alles ist so wie es sein sollte."
     "Eigentlich ist es nicht mal unser Clubraum, es ist eigentlich ein Raum für den Litaraturclub."
-    "Aber sie haben uns freundlicherweise und sie haben uns diese Ecke des Raumes völlig freiwillig gegeben."
+    "Aber sie haben uns freundlicherweise diese Ecke des Raumes völlig freiwillig gegeben."
     "Völlig freiwillig."
     "Sie wurden überhaupt nicht von den Lehern dazu gezwungen, uns diese Ecke zu geben."
     "Achja, der Drache in der Ecke da."

@@ -19,7 +19,7 @@ label fourthDayRoomTutor:
             marcus "\"BOOOOOOM GET RECT LOOOOOOOOSERS!\""
             marcus "\"VICTORY ROYALE!\""
             "Ich schmiss mein Controller auf den Tisch."
-            "Ich tanzte durch mein Zimmer bis ich Aki vor meiner Tür mit einen entsetzten Gesicht auf mich guckte."
+            "Ich tanzte durch mein Zimmer bis ich Aki vor meiner Tür mit einen entsetzten Gesicht sah."
             marcus "\"Aki, warte ich kann es erklä-\""
             "Bevor ich mein Satz vollenden konnte, stürmte sie aus mein Zimmer."
             scene Bg Load with fade
