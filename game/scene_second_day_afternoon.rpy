@@ -65,8 +65,6 @@ label secondDayAfternoon:
         "Es ist unvermeidbar."
         "Es ist natürlich."
         "Man kriegt immer eine zweite Chance."
-        "Dein Fall von deinen Thron."
-        "Wird eines Tages auch kommen."
         "Also komm..."
         "Versuchs nochmal."
         jump credits
