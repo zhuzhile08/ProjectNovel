@@ -40,7 +40,7 @@ label firstDayEntrancePartizia:
     marcus "\"Nein, tut mir leid, leider nicht.\""
     partizia "\"Hmm, du willst also Zeit mit A...\""
     "Bevor sie ihren Satz vollendet hat, wurde sie von der Menge schon weggeschoben."
-    partizia "\"Eeh, vergiss es. Bis später, Markus!\""
+    partizia "\"Eeh, vergiss es. Bis später, Marcus!\""
     stop music fadeout 4.0
     hide Crowd with moveoutright
     queue music "audio/music/class.ogg" fadein 2.0
@@ -53,7 +53,7 @@ label firstDayEntrancePartizia:
     "Aki war völlig abwesend und in ihren Gedanken versunken."
     marcus "\"Boo!\""
     aki "\"Waaaaaaaaah!\""
-    aki "\"Erschreck mich doch nicht so, Markus!\""
+    aki "\"Erschreck mich doch nicht so, Marcus!\""
     aki "\"Was ist denn los?\""
     marcus "\"Wie schon gesagt, hast du was auf den Herzen, Aki?\""
     aki "\"Eeeh, nein, nichts.\""
