@@ -100,6 +100,7 @@ label secondDayAfternoon:
     if aki_route == True:
         aki "\"Wollen wir zusammen nach Hause gehen?\""
         menu:
+            with Dissolve(0.3)
             "Soll ich?"
             "\"Ja\"":
                 marcus "\"Ja.\""
