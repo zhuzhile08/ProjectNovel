@@ -4,8 +4,24 @@
 
 label firstDayClubroomLearning:
     "Endlich bin ich im Clubraum angekommen."
-    scene Bg Classroom with fade
+    scene Bg Clubroom with fade
     queue music "audio/music/club.ogg" loop fadein 2.0
+    "Das ist der Clubraum vom Lateinclub."
+    "Ich war hier schon sehr oft, und alles ist so wie es sein sollte."
+    "Eigentlich ist es nicht mal unser Clubraum, es ist eigentlich ein Raum für den Litaraturclub."
+    "Aber sie haben uns freundlicherweise und sie haben uns diese Ecke des Raumes völlig freiwillig gegeben."
+    "Völlig freiwillig."
+    "Sie wurden überhaupt nicht von den Lehern dazu gezwungen, uns diese Ecke zu geben."
+    "Achja, der Drache in der Ecke da."
+    show Bg Clubroom with dissolve:
+        xpos 0.05 ypos 1.28 xanchor 0.5 yanchor 1.0 zoom 2.0
+    "Das ist Raidou."
+    "Er ist ein Preis, welches der Literaturclub bei ein Wettbewerb gewonnen hat."
+    "Eigentlich war der Literaturclub und der Lateinclub früher recht gut im Sachen Wettbewerb, aber seitdem wir den Drachen bekommen haben, haben beide Clubs nie mehr einen gewonnen."
+    "Alle meinen, dass der Drache ein Unglücksbringer ist, aber ich meine, dass in der Drache eine Wanze versteckt ist, mitdem uns die gegnerischen Antreter in den Wettbewerben ausspionieren."
+    "Achja, und ich trete Raidou auch manchmal eine in die Fresse, wenn es mir schlecht geht."
+    scene Bg Clubroom with dissolve
+    "Wie sehr interessant ich die Backstory vom Literaturclub finde, muss ich mich jetzt auch auf Latein konzentrieren."
     "Der Leher hat gesagt, dass wir ein Test schreiben werden, aber nicht über was."
     "Wenn ich mal ehrlich bin, ist es ein ziemlich blöder move, aber was solls?"
     "Ich glaube der Sinn von solch einen Test liegt daran, dass man beides gleich lernen und beherrschen sollte."
