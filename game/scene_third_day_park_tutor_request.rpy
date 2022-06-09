@@ -60,7 +60,7 @@ label thirdDayParkTutorRequest:
         "Ich habe noch ein Paar Runden um den See gedreht, während Aki mich über Sheen Megoomy Tensai oder sowas vollgeredet hat."
     if partizia_route == True:
         queue music "audio/music/partizia.ogg" loop fadein 2.0
-        unknown "\"Morgen, Markus.\""
+        unknown "\"Morgen, Marcus.\""
         "Wer kann das denn sein?"
         "Ich drehe mich um."
         marcus "\"Hallo, Partizia!\""
