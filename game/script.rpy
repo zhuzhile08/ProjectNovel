@@ -10,7 +10,7 @@ label start:
     call secondDayRoad from _call_secondDayRoad
     call secondDayAfternoon from _call_secondDayAfternoon
     call thirdDayParkTutorRequest from _call_thirdDayParkTutorRequest
-
+    call fourthDayRoomTutor
     call eighthDayEnding from _call_eighthDayEnding
 
     return
