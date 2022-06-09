@@ -42,7 +42,7 @@ label firstDayClassroomSleep:
     "Aki versteht absolut kein Sarkasmus, obwohl ich immer so rede, welches ein bisschen nerfig sein kann."
     marcus "\"Nene, ich weiß schon. War Sarkasmus.\""
     aki "\"Hmpf. Jedenfalls, willst du mit mir Essen gehen?\""
-    menu lunch:
+    menu:
         with Dissolve(0.3)
         "Soll ich mit Aki essen gehen?"
 
