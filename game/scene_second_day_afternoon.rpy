@@ -31,7 +31,7 @@ label secondDayAfternoon:
     stop noise fadeout 1.0
     scene Bg Load with fade
     stop music fadeout 3.0
-    pause 1.0
+    pause 3.0
     queue music "audio/music/class.ogg" loop fadein 2.0
     scene Bg Classroom with fade
     "Die Stunde ist gerade zu Ende gegangen und wir haben unsere Testergebnisse zurückbekommen."
@@ -42,7 +42,7 @@ label secondDayAfternoon:
         "Eine eins wie immer."
     if 10 >= test_score >= 8:
         "Gut genug!"
-        "Es war leicht enttäuschend, dass ich keine eins gekriegt habe, aber was solls?"
+        "Es war leicht enttäuschend, dass ich keine Eins gekriegt habe, aber was solls?"
         "Ist immer noch eine zwei."
     if 7 >= test_score >= 6:
         "Mmmmmmh, unkomfortabel."
