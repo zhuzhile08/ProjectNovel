@@ -63,7 +63,7 @@ label credits:
     with Pause(1.0)
     scene black with Dissolve(2.0)
 
-    show Bg Home Door with Dissolve(2.0) # reserved for club room
+    show Bg Clubroom with Dissolve(2.0)
     scene black with Dissolve(2.0)
 
     show text "Ein speziales Dankeschön an:" with Dissolve(2.0)
