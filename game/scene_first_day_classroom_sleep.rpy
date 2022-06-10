@@ -47,6 +47,7 @@ label firstDayClassroomSleep:
         "Soll ich mit Aki essen gehen?"
 
         "Ja":
+            $ aki_affec += 4
             marcus "\"Ich meine, wieso nicht?\""
             "Im Aki's Gesicht war ein stolzes Lächeln aufgetaucht."
             aki "\"Dann auf in die Cafeteria!\""
@@ -54,6 +55,7 @@ label firstDayClassroomSleep:
             stop music fadeout 3.0
             jump firstDayCafeteriaLunch
         "Nein":
+            $ partizia_affec += 4
             marcus "\"Tut mir leid, wie schon gesagt, heute muss ich mich mit den Club ein bisschen beschäftigen\""
             aki "\"Hehe. OK, dann das nächste Mal.\""
             "Man muss nicht ein Psychologe sein, um zu erkennen, dass es Aki gerade ziemlich schlecht geht."

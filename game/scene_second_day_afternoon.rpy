@@ -101,6 +101,7 @@ label secondDayAfternoon:
             with Dissolve(0.3)
             "Soll ich?"
             "\"Ja\"":
+                $ aki_affec += 4
                 marcus "\"Ja.\""
                 aki "\"Yay!\""
                 "Sie machte ein ganz kleinen Hüpfer in die Luft"
