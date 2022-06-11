@@ -19,9 +19,14 @@ label firstDayEntrancePartizia:
     pause 1
     show Crowd with Dissolve(0.3)
     "Wir wollten jetzt eigentlich in unsere Klassen, aber eine riesige Menge steht jetzt gerade in unseren Weg."
+    show Aki eyebrows_angry mouth_big with dissolve
     aki "\"Och nee, was soll das denn?\""
     aki "\"Wenn wir hier nicht schnellstmöglich durchkommen, kommen wir noch zu spät zum Unterricht.\""
     "Solch eine Menge habe ich schon oft gesehen, und ich habe schon eine Ahnung, wass da passiert."
+    show Aki eyebrows_neutral mouth_small:
+        xalign 0.5
+        linear 1.0 xalign 0.1
+    with dissolve
     unknown "\"Morgen, Marcus!\""
     stop noise fadeout 0.3
     stop music fadeout 3.0
@@ -46,18 +51,11 @@ label firstDayEntrancePartizia:
     queue music "audio/music/class.ogg" fadein 2.0
     "Bevor ich noch Antworten konnte, war sie schon aus meiner Sichtweite raus."
     "Beliebt zu sein hat seine Nachteile."
-    "Früher war ich noch ganz neidisch, wenn einer beliebt war, aber heutzutage gefällt es mir doch mehr, wie ein NPC in Videospielen zu sein: "
-    "Nämlich unauffälliger als ein Blatt am Baum."
-    "Als ich nach links geguckt habe, sah ich dass Aki etwas komisch drauf war."
-    marcus "\"Hast du was auf den Herzen, Aki?\""
-    "Aki war völlig abwesend und in ihren Gedanken versunken."
-    marcus "\"Boo!\""
-    aki "\"Waaaaaaaaah!\""
-    aki "\"Erschreck mich doch nicht so, Marcus!\""
-    aki "\"Was ist denn los?\""
-    marcus "\"Wie schon gesagt, hast du was auf den Herzen, Aki?\""
-    aki "\"Eeeh, nein, nichts.\""
-    "Irgendwas war an dieser Aussage faul, aber ich habe mich dafür nicht mehr wirklich interessiert."
+    show Aki eyebrows_angry mouth_big:
+        linear 0.5 xalign 0.5
+    with dissolve
+    aki "\"Eeeeeeendlich!\""
+    aki "\"Wie kann man überhaupt so leben, den ganzen Tag von einer Menge unzingelt zu sein?\""
     scene Bg Load with fade
     "Und damit machten wir uns auf den Weg zu unseren Klassenraum."
     pause 2.0

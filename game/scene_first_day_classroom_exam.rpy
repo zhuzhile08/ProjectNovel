@@ -7,13 +7,13 @@ label firstDayClassroomExam:
     "Ich schaute mich um, und sah, wie Aki auf ihren Platz saß und betete."
     if aki_route == True:
         teacher "\"Ihr könnt loslegen. Dreht das Blatt um.\""
-        "Die Arbeit ist über AcIs."
+        "Der Test ist über AcIs."
         "Genau das was ich gelernt habe!"
         "Das nenne ich reiner Zufall."
         jump aciExam
     else:
         teacher "Ihr könnt loslegen. Dreht das Blatt um."
-        "Die Arbeit ist über PCs."
+        "Der Test ist über PCs."
         "Genau das was ich gelernt habe!"
         "Das nenne ich reiner Zufall."
         jump pcExam
@@ -203,10 +203,10 @@ label aciExam:
     "Klasse."
     menu:
         with Dissolve(0.3)
-        "a) Die große Herrin glaubt, dass seine Sklaven die Aufgaben unternehmen.":
+        "a) Die große Herrin glaubt, dass ihre Sklaven die Aufgaben unternehmen.":
             $ aki_affec += 1
             $ test_score -= 0
-        "b) Die große Herrin glaubt, dass seine Sklaven die großen Aufgaben unternehmen.":
+        "b) Die Herrin glaubt, dass ihre Sklaven die großen Aufgaben unternehmen.":
             $ test_score -= 1
         "8) Domina magna muneram a servis suis suscipi credit."
     "Heißt lange nicht dass sie es tatsächlich machen."
@@ -259,19 +259,24 @@ label aftermath:
     "Der Leher ging dann bei jeden herum und nahm sich ein Zettel nach den anderen."
     teacher "\"Die Testergebnisse bekommt jeder morgen zurück.\""
     play sound "audio/sfx/school_bell.ogg" volume 0.6
+    pause 3.0
     teacher "\"Damit ist der Schultag beendet. Erholt euch zuhause gut!\""
     play noise "audio/sfx/crowd_indoors.ogg" loop fadein 1.0 volume 0.3
     if aki_route == True:
         "Ich sah rüber zu Aki und bemerkte, dass sie völlig erledigt in ihren Sitz saß."
         "Ich ging zu ihr rüber."
+        show Aki eyes_closed mouth_big with dissolve
         aki "\"Phew! Endlich ist das vorbei!\""
         marcus "\"Und? Wie ist es gelaufen?\""
+        show Aki eyes_open mouth_small with dissolve
         aki "\"Ehrlich gesagt, ganz OK. Glaube ich.\""
         
     if partizia_route == True:
         "Ich sah rüber zu Aki und sie saß stolz in ihren Stuhl."
         marcus "\"Diesmal hattest du ja Glück.\""
+        show Aki mouth_happy with dissolve
         aki "\"Hehe! Du weißt ja, dass PCs meine Spezialität sind.\""
+        show Aki eyes_open mouth_small with dissolve
     
     aki "\"Jedenfalls, willst du mit mir nach Hause gehen?\""
     menu:
@@ -280,16 +285,19 @@ label aftermath:
         "\"Ja\"":
             $ aki_affec += 4
             marcus "\"Ja.\""
+            show Aki eyes_closed mouth_laugh_teeth with dissolve
             aki "\"Dann, lass loslegen!\""
             "Wir haben uns auf den Weg gemacht, nachdem wir unsere Sachen gepackt haben."
         "\"Ne, vieleicht nächstes mal.\"":
             $ partizia_affec += 4
             marcus "\"Ne, vieleicht nächstes mal.\""
+            show Aki eyebrows_sad mouth_sad with dissolve
             aki "\"Oooh, schade!\""
             aki "\"Aber naja, ich habe auf den Weg eh was zu tun.\""
             marcus "\"OK. Dann bis morgen!\""
+            show Aki mouth_happy with dissolve
             aki "\"Bis morgen, Marcus!\""
-            "Und damit sammelte sie ihre Sachen ein und machte sich auf den Weg."
+            "Und damit sammelte ich meine Sachen ein und machte mich auf den Weg."
 
     scene Bg Load with fade
     stop noise fadeout 1.0

@@ -14,52 +14,52 @@ label thirdDayParkTutorRequest:
         "Verdammt."
         "Wie hat sie mich hier gefunden?"
         marcus "*stöhn* \"Ja, was ist?\""
-        show Aki Default Happy Laugh Teeth Closed with dissolve
+        show Aki outfit_casual left_casual right_casual eyes_closed mouth_laugh_teeth with dissolve
         aki "\"Wie geht es dir?\""
         "Das wars?"
         "Normalerweise würde sie mich jetzt mit ihren Lieblingsspiele oder Animes volllabern."
         "Dark Souls war das?"
         "Aber diesmal tat sie es nicht."
         marcus "\"Wieso fragst du.\""
-        show Aki Default Normal Talk Small with dissolve
+        show Aki eyes_open mouth_small with dissolve
         aki "\"Du bist doch der Lateinweltmeister, oder?\""
         marcus "\"Wieso fragst du?\""
-        show Aki Default Happy Smile with dissolve
+        show Aki mouth_happy with dissolve
         aki "\"Einfach so!\""
         "Sie will mich irgentwie austricksen, das weiß ich jetzt schon."
         marcus "\"Ja und?\""
-        show Aki Default Normal Talk Small with dissolve
+        show Aki mouth_small with dissolve
         aki "\"Dann kannst du mir doch auch ein bisschen Nachhilfe geben, oder?\""
         marcus "\"Wieso?\""
-        show Aki Default Normal Talk Big with dissolve
+        show Aki mouth_big with dissolve
         aki "\"Naja, du bist ein Weltmeister in Latein, deiner Kindheitsfreunden einbisschen Nachhilfe zu geben ist doch nichts!\""
         "Kacke."
         "Wie soll ich mich hier rausreden?"
-        show Aki Default Sad Smile with dissolve
+        show Aki eyebrows_sad mouth_sad with dissolve
         aki "\"Komm schon!\""
         "Sie guckte mich ganz traurig an."
         "Wie soll ich jetzt noch nein sagen können?!"
         marcus "\"Eeeeh, also ich muss...\""
         "Aki kam jetzt ganz nah an mich ran."
-        show Aki Default Happy Laugh with dissolve:
-            xpos 0.5 ypos 1.65 xanchor 0.5 yanchor 1.0 zoom 2.0
-        aki "\"Wenn du nicht ja sagst, dann erzähl ich der ganzen Schule dass du unter deinen Bett Hen...\""
+        show Aki eyebrows_neutral eyes_closed mouth_laugh_teeth with dissolve:
+            ypos 1.65 xanchor 0.5 yanchor 1.0 zoom 2.0
+        aki "\"Wenn du nicht ja sagst, dann erzähl ich der ganzen Schule dass du unter deinen Bett diese komischen Zeitschriften mit n...\""
         marcus "\"JAJAJAJAJA OK OK ICH GEBE DIR NACHHILFE!\""
         "Wie zur Hölle wusste sie das?"
         marcus "\"Wer hat das dir denn erzählt?\""
-        hide Aki Default Happy Laugh with dissolve
-        show Aki Default Normal Talk Small with dissolve
+        show Aki eyes_open mouth_small with dissolve:
+            ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 1.0
         aki "\"Also das stimmt?\""
         "Doppelt reingelegt und verkackt."
         marcus "\"Nein nein nein, das stimmt gar nicht, wirklich nicht.\""
         "Aki interessierte sich nicht mehr dafür und fing an zu kichern."
-        show Aki Default Happy Laugh Teeth Closed with dissolve
+        show Aki eyes_closed mouth_laugh_teeth with dissolve
         aki "\"Aber danke Marcus~. Hihi!\""
         "Ich habe aufgegeben."
         "Am liebsten würde ich jetzt ins Wasser springen und ertrinken."
         "Aber was solls."
         marcus "\"Wann hast du denn Zeit?\""
-        show Aki Default Normal Talk Small with dissolve
+        show Aki eyes_open mouth_small with dissolve
         aki "\"Morgen? Nachmittags?\""
         marcus "\"Geht bei mir.\""
         "Aki sprang in die Luft."
@@ -67,7 +67,7 @@ label thirdDayParkTutorRequest:
         "Wie stolpert man bei Hüpfen nochmal?"
         marcus "\"Gehts dir gut?\""
         "Aki konnte sich gerade noch fangen."
-        show Aki Default Happy Laugh Closed with dissolve
+        show Aki eyes_closed mouth_laugh with dissolve
         aki "\"Gut genug! Hihi.\""
         "Das wars also mit mein chilligen Wochenende."
         "Ich habe noch ein Paar Runden um den See gedreht, während Aki mich über Sheen Megoomy Tensai oder sowas vollgeredet hat."

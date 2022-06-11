@@ -12,17 +12,22 @@ label secondDayRoad:
     if aki_route == True:
         queue music "audio/music/aki.ogg" loop fadein 2.0
         "Ich biege auf die Straße ab und vor mir war ein recht ungewöhnliches Bild."
+        show Aki eyes_closed mouth_laugh_teeth with dissolve
         aki "\"Hey, Marcus!\""
         "Vor mir stand Aki. Normalerweise würde sie erst ein bisschen später auftauchen, aber heute war sie ungewöhnlich früh hier, früher als ich."
         marcus "\"Und wieso bist du jetzt so früh hier?\""
+        show Aki eyes_open mouth_small with dissolve
         aki "\"Keine Ahnung. Ich konnte gestern einfach nicht so gut schlafen.\""
         marcus "\"Wieso denn?\""
         aki "\"Naja, der Test.\""
         "Achso, der Test! Den habe ich komplett vergessen."
+        show Aki eyebrows_sad with dissolve
         aki "\"Ich hoffe wirklich, dass ich bestehen werde.\""
         marcus "\"Ich auch.\""
+        show Aki eyebrows_neutral with dissolve
         aki "\"Hoffst du also, dass ich bestehen werde oder dass du bestehen wirst?\""
         marcus "\"Das erste.\""
+        show Aki eyebrows_angry mouth_big with dissolve
         aki "\"Hey, das war fies!\""
         "Danach machten wir uns auf den Weg zur Schule, während wir über den Test diskutiert haben und uns Vokabeln abgefragt haben."
     else:

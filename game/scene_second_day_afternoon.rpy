@@ -6,6 +6,7 @@ label secondDayAfternoon:
     "Nach 3 harten Unterrichtsstunden von Mathe, Deutsch und Bio bin ich EEEEEENDLIIICH frei!"
     "Naja, für die Mittagspause zumindest."
     if aki_route == True:
+        show Aki eyebrows_sad with dissolve
         "Mein Mittagsessen mit Aki war recht normal, wir haben uns über alles mögliche unterhalten."
         "Aki scheint heute aber etwas zu sehr nervös zu sein."
         marcus "\"Hey, es gibt keinen Grund so nervös zu sein!\""
@@ -61,8 +62,6 @@ label secondDayAfternoon:
         scene black with dissolve
         "Jeder wird mal Fehler machen."
         "Es ist unvermeidbar."
-        "Jeder wird mal von seinen Thron fallen."
-        "Es ist unvermeidbar."
         "Es ist natürlich."
         "Man kriegt immer eine zweite Chance."
         "Also komm..."
@@ -73,21 +72,27 @@ label secondDayAfternoon:
         "Ich ging aus neugier zu Akis Platz."
         marcus "\"Hey, Aki!\""
         "Aki schien sehr aufgeregt zu sein."
+        show Aki eyes_closed mouth_laugh_teeth with dissolve
         aki "\"Rate mal.\""
         marcus "\"Was?\""
+        show Aki eyes_closed mouth_laugh with dissolve
         aki "\"Na. meine Note!\""
         marcus "\"Kein Plan.\""
+        show Aki eyes_open mouth_happy with dissolve
         aki "\"Eine Vier!\""
         "Wie man sich über sowas freuen kann, das weiß ich nicht."
         "Aber naja, wenn sie eine Sechs erwartet hätte, kann ich es schon verstehen."
+        show Aki eyebrows_sad mouth_small with dissolve
         aki "\"Gut ist es jetzt aber auch nicht.\""
         marcus "\"Das sehe ich.\""
+        show Aki eyes_closed mouth_laugh_teeth with dissolve
         aki "\"Aber bestanden ist bestanden!\""
         "Ihr Gesicht glänzte vor Stolz, aber irgendwo kann ich auch ein Hauch von Enttäuschung sehen."
     if partizia_route == True:
         "Der Leher hat mir auch Akis Test gegeben, weil sie heute nicht anwesend war."
         "Ich sollte es ihr geben, wenn ich sie treffe"
     
+    show Aki eyebrows_neutral eyes_open mouth_small with dissolve
     pause 2
     stop music fadeout 2.0
     queue music "audio/music/park.ogg" loop fadein 2.0
@@ -103,17 +108,17 @@ label secondDayAfternoon:
             "\"Ja\"":
                 $ aki_affec += 4
                 marcus "\"Ja.\""
+                show Aki eyes_closed mouth_laugh_teeth with dissolve
                 aki "\"Yay!\""
                 "Sie machte ein ganz kleinen Hüpfer in die Luft"
                 "Wir haben beide unsere Sachen gepackt und sind zusammen nach Hause gegangen, während wir unsere Testergebnisse diskutiert haben."
             "\"Tut mir leid, nein.\"":
                 marcus "\"Tut mir leid, nein.\""
-                "Manchmal habe ich auch kein Bock und will alleine sein."
-                "Und heute ist solch ein Tag."
+                show Aki eyebrows_sad mouth_sad with dissolve
                 aki "\"Wieso denn?\""
                 "Aki guckte mich ganz traurig an."
                 marcus "\"Ehhm, ich habe also eeh... zuhause noch etwas zu tun! Genau!\""
-                "Ich bin ein verdammt schlechter Lügner"
+                "Ich bin ein verdammt schlechter Lügner."
                 aki "\"Wenn du es so meinst.\""
                 "Ich habe meine Sachen gepackt und bin dann alleine nach Hause gegangen."
     if partizia_route == True:
