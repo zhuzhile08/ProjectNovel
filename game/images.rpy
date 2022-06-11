@@ -5,51 +5,51 @@ layeredimage Aki:
         "aki_head"
 
     group outfit:
-        attribute uniform default:
+        attribute outfit_uniform default:
             "aki_uniform_base"
-        attribute casual:
+        attribute outfit_casual:
             "aki_casual_base"
         
     group left_arm:
-        attribute uniform default:
+        attribute left_uniform default:
             "aki_uniform_left"
-        attribute casual:
+        attribute left_casual:
             "aki_casual_left"
     
     group right_arm:
-        attribute uniform default:
+        attribute right_uniform default:
             "aki_uniform_right"
-        attribute casual:
+        attribute right_casual:
             "aki_casual_right"
     
     group eyes:
-        attribute normal default:
+        attribute eyes_open default:
             "aki_eyes_open"
-        attribute closed:
+        attribute eyes_closed:
             "aki_eyes_closed"
 
-    group eyelids:
-        attribute neutral default:
-            "aki_eyelids_neutral"
-        attribute sad:
-            "aki_eyelids_sad"
-        attribute angry:
-            "aki_eyelids_angry"
+    group eyebrows:
+        attribute eyebrows_neutral default:
+            "aki_eyebrows_neutral"
+        attribute eyebrows_sad:
+            "aki_eyebrows_sad"
+        attribute eyebrows_angry:
+            "aki_eyebrows_angry"
     
     group mouth:
-        attribute small default:
+        attribute mouth_small default:
             "aki_mouth_small"
-        attribute big:
+        attribute mouth_big:
             "aki_mouth_big"
-        attribute happy:
+        attribute mouth_happy:
             "aki_mouth_happy"
-        attribute sad:
+        attribute mouth_sad:
             "aki_mouth_sad"
-        attribute laugh:
+        attribute mouth_laugh:
             "aki_mouth_laugh"
-        attribute laugh_teeth:
+        attribute mouth_laugh_teeth:
             "aki_mouth_laugh_teeth"
-        attribute angry:
+        attribute mouth_angry:
             "aki_mouth_angry"
     
     zoom 0.65
