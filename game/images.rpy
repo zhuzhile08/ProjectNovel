@@ -1,52 +1,57 @@
 # define images here
 # aki
-image Aki Default Angry: 
-    "aki/aki_default_angry.png" 
-    zoom 0.65
-image Aki Default Angry Talk Big: 
-    "aki/aki_default_angry_talk_big.png" 
-    zoom 0.65
-image Aki Default Angry Talk Small: 
-    "aki/aki_default_angry_talk_small.png" 
-    zoom 0.65
-image Aki Default Angry Teeth: 
-    "aki/aki_default_angry_teeth.png" 
-    zoom 0.65
-image Aki Default Happy Laugh: 
-    "aki/aki_default_happy_laugh.png" 
-    zoom 0.65
-image Aki Default Happy Laugh Teeth: 
-    "aki/aki_default_happy_laugh_teeth.png" 
-    zoom 0.65
-image Aki Default Happy Smile: 
-    "aki/aki_default_happy_smile.png" 
-    zoom 0.65
-image Aki Default Happy Laugh Teeth Closed: 
-    "aki/aki_default_happy_laugh_teeth_closed.png" 
-    zoom 0.65
-image Aki Default Happy Laugh Closed: 
-    "aki/aki_default_happy_laugh_closed.png" 
-    zoom 0.65
-image Aki Default Normal Talk Big: 
-    "aki/aki_default_normal_talk_big.png" 
-    zoom 0.65
-image Aki Default Normal Talk Small: 
-    "aki/aki_default_normal_talk_small.png"
-    zoom 0.65
-image Aki Default Sad: 
-    "aki/aki_default_sad.png" 
-    zoom 0.65
-image Aki Default Sad Laugh: 
-    "aki/aki_default_sad_laugh.png" 
-    zoom 0.65
-image Aki Default Sad Smile: 
-    "aki/aki_default_sad_smile.png" 
-    zoom 0.65
-image Aki Default Sad Talk Big: 
-    "aki/aki_default_sad_talk_big.png" 
-    zoom 0.65
-image Aki Default Sad Talk Small: 
-    "aki/aki_default_sad_talk_small.png" 
+layeredimage Aki:
+    always:
+        "aki_head"
+
+    group outfit:
+        attribute uniform default:
+            "aki_uniform_base"
+        attribute casual:
+            "aki_casual_base"
+        
+    group left_arm:
+        attribute uniform default:
+            "aki_uniform_left"
+        attribute casual:
+            "aki_casual_left"
+    
+    group right_arm:
+        attribute uniform default:
+            "aki_uniform_right"
+        attribute casual:
+            "aki_casual_right"
+    
+    group eyes:
+        attribute normal default:
+            "aki_eyes_open"
+        attribute closed:
+            "aki_eyes_closed"
+
+    group eyelids:
+        attribute neutral default:
+            "aki_eyelids_neutral"
+        attribute sad:
+            "aki_eyelids_sad"
+        attribute angry:
+            "aki_eyelids_angry"
+    
+    group mouth:
+        attribute small default:
+            "aki_mouth_small"
+        attribute big:
+            "aki_mouth_big"
+        attribute happy:
+            "aki_mouth_happy"
+        attribute sad:
+            "aki_mouth_sad"
+        attribute laugh:
+            "aki_mouth_laugh"
+        attribute laugh_teeth:
+            "aki_mouth_laugh_teeth"
+        attribute angry:
+            "aki_mouth_angry"
+    
     zoom 0.65
 
 # crowd effect
