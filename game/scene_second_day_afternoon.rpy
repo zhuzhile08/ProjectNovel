@@ -124,6 +124,47 @@ label secondDayAfternoon:
     if partizia_route == True:
         "Endlich!"
         "Ich habe meine Sachen gepackt und bin dann nach Hause gegangen."
+        scene Bg Load with fade
+        stop noise fadeout 2.0
+        scene Bg School Entrance with fade
+        "Als ich am Schuleingang angekommen bin, sah ich Partizia, wie sie alleine auf den Bänken saß."
+        stop music fadeout 5.0
+        "Sie winkte mir hinterher."
+        "Ich glaube, dass sie will, dass ich zu ihr rüberkomme."
+        queue music "audio/music/partizia.ogg" loop fadein 3.0
+        marcus "\"Ach, Hallo, Partizia!\""
+        partizia "\"Hallo, Marcus! Zum Glück hast du mich bemerkt. Wie geht es dir?\""
+        marcus "\"Eigentlich ganz gut.\""
+        "Normalerweise redet Partizia nur im Club mit mir, und wenn, dann auch nur wenn es nötig ist."
+        "Daher bin ich jetzt leicht überrascht."
+        partizia "\"Könntest du mir bitte einen Gefallen tun?\""
+        marcus "\"Ja, klar. Wieso nicht?\""
+        "Normalerweise fragt mich sowas nur Aki."
+        partizia "\"Danke sehr. Kannst du nun bitte 200 Euro mir überreichen?\""
+        marcus "\"Was?\""
+        "Partizia fand das aber ehr lustigiger als es bei mir rübergekommen ist und fing an zu kichern."
+        partizia "\"Nein, das war ein Scherz. Eigentlich wollte ich fragen, ob du mir Nachhilfe für Latein geben kannst?\""
+        "Anscheinend ist sie recht humorvoll, was ich von ihr nicht erwartet hätte."
+        "Und Nachhilfe? Für Partizia? Das habe ich mir nicht wirklich vorgestellt."
+        "Da finde ich die 200 Euro sogar warscheinlicher."
+        marcus "\"Klar. Welches Thema denn?\""
+        partizia "\"PCs.\""
+        marcus "\"Alles klar.\""
+        partizia "\"Danke sehr. Ich hätte nichts anderes von dir erwartet.\""
+        partizia "\"Wie wärs, nächsten Montag im Clubraum?\""
+        marcus "\"Da sehe ich kein Problem. Alle anderen Clubmitglieder haben sich abgemeldet.\""
+        partizia "\"Ich weiß.\""
+        marcus "\"Dann ist es so abgeschlossen. Ich warte dann nächsten Montag nachmittags im Clubraum auf dich.\""
+        partizia "\"Danke. Achja, wieso ist Aki heute nicht da? Normalerweise würde sie die ganze Zeit neben dir gehen.\""
+        marcus "\"Sie hat sich krankgemeldet.\""
+        partizia "\"Achso.\""
+        partizia "\"Naja, Auf Wiedersehen! Ich wünsche dir ein schönes Wochenende!\""
+        "Damit ging sie zum Hinterausgang der Schule und verschwindete kurz danach aus mein Sichtfeld."
+        "Verdammt, jetzt werden alle Jungs aus meiner Klasse neidisch, da ich das beliebteste Mädchen in der Schule nachhilfe gebe."
+        "Als ich mich auch auf den Weg gemacht habe, dachte ich mir, wie Partizia das alles wusste."
+        "Nicht viele wissen, dass ich und Aki befreundet sind, und weniger wissen, dass wir zusammen nach Hause gehen."
+        "Naja, was solls, sie ist die Studentenratsleiterin, sie hat warscheinlich ihre eigene Methoden, um das rauszufinden."
+        "Und damit ging ich langsam nach Hause."
 
     scene Bg Load with fade
     stop noise fadeout 2.0
@@ -132,4 +173,5 @@ label secondDayAfternoon:
     "Dieser Tag war anstrengend, aber morgen ist ja Samstag."
     "Eine Weile später bin ich in aller Ruhe eingeschlafen."
 
-    scene Bg Load with fade
+    if aki_route == True:
+        jump thirdDayParkTutorRequest
