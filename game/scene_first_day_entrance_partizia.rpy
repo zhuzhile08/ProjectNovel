@@ -5,7 +5,7 @@ init python:
 label firstDayEntrancePartizia:
     scene Bg School Entrance with fade
     play noise "audio/sfx/crowd_outdoors.ogg" loop fadein 4.0 volume 0.2
-    "Als wir nach einer Weile am Eingang der Schule angekommen waren, habe wir noch ein bisschen rumgedadelt und gewartet."
+    "Als wir nach einer Weile am Eingang der Schule angekommen waren, haben wir noch ein bisschen rumgedadelt und gewartet."
     show Crowd with Dissolve(0.3)
     "Mittlerweile war eine riesige Menge von Schülern schon angekommen."
     pause 2
@@ -18,11 +18,11 @@ label firstDayEntrancePartizia:
     scene Bg Hallway with fade
     pause 1
     show Crowd with Dissolve(0.3)
-    "Wir wollten jetzt eigentlich in unsere Klassen, aber eine riesige Menge steht jetzt gerade in unseren Weg."
+    "Wir wollten jetzt eigentlich in unsere Klasse, aber eine riesige Menge steht jetzt gerade in unseren Weg."
     show Aki eyebrows_angry mouth_big with dissolve
     aki "\"Och nee, was soll das denn?\""
     aki "\"Wenn wir hier nicht schnellstmöglich durchkommen, kommen wir noch zu spät zum Unterricht.\""
-    "Solch eine Menge habe ich schon oft gesehen, und ich habe schon eine Ahnung, wass da passiert."
+    "Solch eine Menge habe ich schon oft gesehen, und ich habe schon eine Ahnung, was da passiert."
     show Aki eyebrows_neutral mouth_small:
         xalign 0.5
         linear 1.0 xalign 0.1
@@ -38,10 +38,10 @@ label firstDayEntrancePartizia:
     "Sie ist genau das Gegenteil von mir."
     partizia "\"Hast du Heute während der Mittagspause Zeit?\""
     marcus "\"Wieso?\""
-    partizia "\"Wegen den Lateintest.\""
-    "Ach ja, sie ist auch ein Mitglied vom Lateinclub und eine Klassenkameradin."
+    partizia "\"Wegen dem Lateintest.\""
+    "Ach ja, sie ist auch ein Mitglied vom Lateinclub und eine meiner Klassenkameradin."
     "Auch wenn sie sehr oft nicht anwesend ist."
-    partizia "\"Ich brauche noch ein Bisschen Hilfe bei PCs.\""
+    partizia "\"Ich brauche noch ein bisschen Hilfe bei PCs.\""
     marcus "\"Nein, tut mir leid, leider nicht.\""
     partizia "\"Hmm, du willst also Zeit mit A...\""
     "Bevor sie ihren Satz vollendet hat, wurde sie von der Menge schon weggeschoben."
@@ -57,5 +57,5 @@ label firstDayEntrancePartizia:
     aki "\"Eeeeeeendlich!\""
     aki "\"Wie kann man überhaupt so leben, den ganzen Tag von einer Menge unzingelt zu sein?\""
     scene Bg Load with fade
-    "Und damit machten wir uns auf den Weg zu unseren Klassenraum."
+    "Und damit machten wir uns auf den Weg zu unserem Klassenraum."
     pause 2.0

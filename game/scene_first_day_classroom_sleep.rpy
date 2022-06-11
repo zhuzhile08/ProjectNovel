@@ -2,8 +2,8 @@ label firstDayClassroomSleep:
     scene Bg Classroom with fade
     play noise "audio/sfx/crowd_outdoors.ogg" loop fadein 4.0 volume 0.2
     "Ich saß, wie üblich, in meiner Ecke im Klassenraum."
-    "Aki saß in der anderen Ecke in Klassenraum, direkt neben der Tür."
-    "Wenn sie nehen mir säße, würde sie jetzt gerade mich volllabern."
+    "Aki saß in der anderen Ecke, direkt neben der Tür."
+    "Wenn sie nehen mir säße, würde sie mich jetzt gerade volllabern."
     "Aber mir gefällt es aus irgendeinen Grund, wenn sie es tut."
     pause 2.0
     unknown "\"Guten Morgen!\""

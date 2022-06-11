@@ -20,12 +20,12 @@ label firstDayRoadIntroduction:
     stop sound fadeout 2.0
     aki "*Stöhn* \"Phew! Ich bin völlig aus der Puste. Bitte woaaaaaaaaaaaaaah!\""
     "Aki ist über eine Kante gestolpert. Das vierte Mal in dieser Woche."
-    marcus "\"Hey! Get's dir gut?\""
+    marcus "\"Hey! Geht's dir gut?\""
     aki "\"Ja, eigentlich schon.\""
     marcus "\"Sag mal, was geht denn bei dir täglich ab, das war das vierte mal in dieser Woche.\""
     show Aki eyes_closed mouth_laugh with dissolve
     aki "\"Hehehe.\""
-    "Nachdem sie mich endlich aufgeholt hat und sich erholt hat, gehen wir nebeneinander los."
+    "Nachdem sie mich endlich eingeholt hat und sich erholt hat, gehen wir nebeneinander los."
     "Aki wohnt ein paar Blöcke hinter mir, und eigentlich wäre der Plan, dass sie zuerst losgeht, und dass sie dann vor unserer Tür wartet, bis ich fertig bin."
     "Aber anscheinend klappt das nicht so ganz."
     show Aki eyes_open mouth_small with dissolve
