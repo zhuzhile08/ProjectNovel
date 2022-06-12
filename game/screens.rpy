@@ -24,9 +24,10 @@ style hyperlink_text:
 style gui_text:
     properties gui.text_properties("interface")
 
-
 style button:
     properties gui.button_properties("button")
+    hover_sound "audio/sfx/hover.ogg"
+    activate_sound "audio/sfx/click.ogg"
 
 style button_text is gui_text:
     properties gui.text_properties("button")
@@ -273,6 +274,8 @@ style quick_button_text is button_text
 
 style quick_button:
     properties gui.button_properties("quick_button")
+    hover_sound "audio/sfx/hover.ogg"
+    activate_sound "audio/sfx/click.ogg"
 
 style quick_button_text:
     properties gui.button_text_properties("quick_button")
@@ -849,6 +852,8 @@ style check_button_text:
 
 style slider_slider:
     xsize 350
+    hover_sound "audio/sfx/hover.ogg"
+    activate_sound "audio/sfx/click.ogg"
 
 style slider_button:
     properties gui.button_properties("slider_button")
