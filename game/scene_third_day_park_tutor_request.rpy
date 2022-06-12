@@ -3,7 +3,7 @@ label thirdDayParkTutorRequest:
     pause 5.0
     scene Bg Park Path with fade
     play noise "audio/sfx/nature.mp3" loop fadein 4.0 volume 0.2
-    play music "audio/music/park.ogg" loop fadein 3.0
+    queue music "audio/music/park.ogg" loop fadein 3.0
     "Aaah..."
     "Die wunderschöne Natur."
     "Gibt es eine bessere Art sein Wochenende zu genießen?"
@@ -74,4 +74,4 @@ label thirdDayParkTutorRequest:
     scene Bg Load with fade
     stop music fadeout 2.0
     stop noise fadeout 3.0
-    pause 2.0
+    pause 5.0
