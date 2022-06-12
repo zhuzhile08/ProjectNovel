@@ -44,20 +44,20 @@ Thorin Meyers, Sho "Basti" Nakatsu, Till Breinig und Zhile Zhu
 
 
 
-Copyright (c) 2022 Team Nocturne
 
+Copyright (c) 2022 Team Nocturne
 
 Diese Software unterliegt der Katze Private Use Licese, welches folgendes aussagt:
 
 This version of the Software is strictly made for a private school project and
-public and private viewing, distribution or publishing by anyone not involved R
+public and private viewing, distribution or publishing by anyone not involved 
 with the direct development of the Software is strictly forbidden, because it 
-contains sensitive information. Permission is only granted to modify and to 
-use the Software by those who got the Software legitimatly, which means via 
-the developers of the Software. Only people directly involved with the development 
-of the project have the rights to copy, merge, publish, distribute, sublicense, 
-and/or sell copies of the Software, and to permit persons to whom the Software 
-is furnished to do so, subject to the following conditions:
+contains sensitive information and copyrighted material. Permission is only 
+granted to modify and to use the Software to those who got the Software 
+legitimatly, which means via the developers of the Software. Only people 
+directly involved with the development of the project have the rights to copy, 
+merge, publish, distribute, sublicense, and/or sell copies of the Software, 
+subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
@@ -69,6 +69,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+
+
+Diese Software beinhaltet geschützte Musik von ©ATLUS ©SEGA und deren beitragenden
+Künstlern und gehört nicht Team Nocturne. Das Spiel und die Musik ist, wie erwähnt, 
+nur für Privatgebrauch gedacht und ist unter keinen Umständen für den öffendlichen
+Gebrauch gedacht.
 """)
 
 
