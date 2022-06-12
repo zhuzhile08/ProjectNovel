@@ -1,7 +1,7 @@
 label fifthDayCorrection:
     pause 5.0
     if aki_route:
-        music queue "audio/music/park.ogg" loop fadein 3.0
+        queue music "audio/music/park.ogg" loop fadein 3.0
         "Eine ganze Woche ist vergangen, und heute liege ich mit Kopfhörern im Bett und denke über mein Leben nach."
         "So verbringe ich mein Wochenende."
         "Ich könnte jetzt Sport machen, ich könnte jetzt ein ganzes Videospiel für ein Schulprojekt programmieren."
@@ -11,6 +11,7 @@ label fifthDayCorrection:
         "Ich hatte schon oft solche Halluzinationen, wo ich gedacht habe, dass irgendeiner meinen Namen ruft oder dass irgendjemand an der Tür klopft."
         "Keine Ahnung warum das passiert, aber es passiert und es ist nerfig."
         menu:
+            with Dissolve(0.3)
             "Soll ich das Klopfen ignorieren?"
             "Ja":
                 stop music fadeout 5.0
@@ -26,7 +27,7 @@ label fifthDayCorrection:
                 stop music fadeout 3.0
                 queue music "audio/music/aki.ogg" loop fadein 2.0
                 unknown "\"Hi Marcus~!\""
-                "FUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUC-"
+                "FUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUC-"
                 "Ich kanns nicht glauben."
                 "Ich habe einmal meine Ruhe gefunden, schon kommt sie und ruiniert alles."
                 "Genau so wie wenn ich Pizza Hawaii auf einer langen Liste von normalen und leckeren Pizzen sehe."
@@ -42,7 +43,7 @@ label fifthDayCorrection:
                 marcus "\"Willst du was zu trinken?\""
                 aki "\"Mountain Dew!\""
                 "Ich rollte meine Augen."
-                "Ernsthaft jetzt."
+                marcus "\"Ernsthaft jetzt.\""
                 aki "\"Kaffee.\""
                 marcus "\"OK.\""
                 "Nachdem ich die Getränke vorbereitet habe, ging ich zu meinen Zimmer zurück."
@@ -60,7 +61,7 @@ label fifthDayCorrection:
                 marcus "\"OK OK, was hast du denn da?\""
                 aki "\"Aufgaben.\""
                 marcus "\"Was?\""
-                aki "\"Naja, ich habe zuhause selber noch ein bisschen geübt und eine Art Test geschrieben.\""
+                aki "\"Naja, ich habe Zuhause selber noch ein bisschen am AcI geübt und ein Art Selbsttest geschrieben.\""
                 aki "\"Kannst du meine Sätze bitte für mich korrigieren?\""
                 "Ich stöhnte."
                 "Ich meine, ich habe eh nichts zu tun, also wieso nicht?"
@@ -69,7 +70,7 @@ label fifthDayCorrection:
                 marcus "\"Dabei machte sie einen kleinen Hüpfer.\""
 
                 stop music fadeout 2.0
-                music queue "audio/music/park.ogg" fadein 3.0
+                queue music "audio/music/park.ogg" loop fadein 3.0
                 # the tasks go here
 
                 marcus "\"Du hast dich definitv sehr viel Verbessert, Aki.\""
@@ -78,15 +79,15 @@ label fifthDayCorrection:
                 marcus "\"Wenn du Hilfe brauchst, kannst du immer mich fragen.\""
                 aki "\"Danke Marcus!\""
                 scene Bg Load with fade
-                stop music fadeout 8.0
+                stop music fadeout 4.0
                 "Wir haben den restlichen Tag noch miteinander verbracht."
                 "Ich habe schon lange keine Runde Monopoly mehr mit Aki gespielt."
                 "Hat recht viel Spaß gemacht."
                 "Am Abend bin ich völlig erschöpft in mein Bett gefallen."
                 "*Gähn* 10/10 würde ich nochmal machen."
                 "Gute Nacht."
-                scene Bg Load with irisin
+                scene Bg Load with fade
     if partizia_route == True:
-        music queue "audio/music/club.ogg" fadein 3.0
+        queue music "audio/music/club.ogg" loop fadein 3.0
         "Es ist Freitags, und ich war gerade dabei, den Clubraum aufzuräumen, als ich ein leichtes Klopfen an der Tür hörte."
         unknown "\"Hallo?\""
