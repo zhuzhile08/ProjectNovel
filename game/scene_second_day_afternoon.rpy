@@ -154,7 +154,7 @@ label secondDayAfternoon:
         partizia "\"Wie wärs, nächsten Montag im Clubraum?\""
         marcus "\"Da sehe ich kein Problem. Alle anderen Clubmitglieder haben sich abgemeldet.\""
         partizia "\"Ich weiß.\""
-        marcus "\"Dann ist es so abgeschlossen. Ich warte dann nächsten Montag nachmittags im Clubraum auf dich.\""
+        marcus "\"Dann ist es so abgeschlossen. Ich warte dann nächsten Montag nachmittags um 16 Uhr im Clubraum auf dich.\""
         partizia "\"Danke. Achja, wieso ist Aki heute nicht da? Normalerweise würde sie die ganze Zeit neben dir gehen.\""
         marcus "\"Sie hat sich krankgemeldet.\""
         partizia "\"Achso.\""
