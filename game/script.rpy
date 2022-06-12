@@ -11,6 +11,7 @@ label start:
     call secondDayRoad from _call_secondDayRoad
     call secondDayAfternoon from _call_secondDayAfternoon
     call fourthDayTutor
+    call fifthDayCorrection
     call eighthDayEnding from _call_eighthDayEnding
 
     return
