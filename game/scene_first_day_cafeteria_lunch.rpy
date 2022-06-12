@@ -13,14 +13,46 @@ label firstDayCafeteriaLunch:
     "Ich meine Ananas auf Pizza?!"
     "Was soll das den?"
     "Wissen die nicht, dass Ananas auf Pizza absolut grässlich ist?"
-    "So gern ich mich jetzt auch beim Chef beschweren möchte, habe ich einfach in aller Stille meine Lieblingspizza Magherita und Akis Lieblingspizza Pizza Tuna geholt."
+    "So gern ich mich jetzt auch beim Chef beschweren möchte, habe ich einfach in aller Stille meine Lieblingspizza Magherita geholt."
+    "Der Klassiker."
+    menu:
+        with Dissolve(0.3)
+        "Welche Pizza soll ich für Aki Mitnehmen?"
+        "Pizza Tuna":
+            $ aki_affec += 4
+            "Ich habe für Aki die Pizza Tuna bestellt, ihre Lieblingspizza."
+        "Pizza Prosciutto e Fungi":
+            $ aki_affec += 2
+            "Etwas ungewöhnlicher für Aki, aber sie mag alle Sorten von Pizzen außer Pizza Hawai."
+        "Pizza Pigliese":
+            $ aki_affec += 3
+            "Ich glaube das war Aki's Lieblingspizza. Oder zumindest etwas ähnliches."
+        "Pizza Hawaii":
+            "Ich habe die Pizza Hawai bestellt."
+            "Damit machte ich mich mit zwei Tablets auf den Weg."
+            "Man muss nicht so hart bei Aki schauen, wenn man sie suchen will, ihre Haare sind aufgälliger als eine Mülltonne im Heuhaufen."
+            "Woher ich diesen Vergleich habe, weiß ich auch nicht."
+            scene Bg Cafeteria with fade
+            show Aki
+            aki "\"Marcus, welche Pizza hast du für mich genommen?\""
+            marcus "\"Ich habe dir die Pizza Hawaii bestellt.\""
+            stop noise fadeout 1.0
+            stop music fadeout 1.0
+            show Aki eyebrows_angry mouth_big with dissolve
+            "Sie sah auf die Pizza Hawaii in meinen Händen"
+            "Aki wurde auf einmal blass."
+            aki "\"Ich hasse dich!\""
+            "Damit stürmte Aki aus der Cafeteria raus."
+            hide Aki with moveoutright
+            scene Bg Load with fade
+            jump credits
     "Ich machte mich mit zwei Tablets auf den Weg."
     "Man muss nicht so hart bei Aki schauen, wenn man sie suchen will, ihre Haare sind aufgälliger als eine Mülltonne im Heuhaufen."
     "Woher ich diesen Vergleich habe, weiß ich auch nicht."
     scene Bg Cafeteria with fade
     show Aki
-    aki "\"Marcus, hast du für mich die Pizza Tuna genommen?\""
-    marcus "\"Nein, weißt du, ich habe dir die Pizza Hawai bestellt.\""
+    aki "\"Marcus, welche Pizza hast du für mich genommen?\""
+    marcus "\"Weißt du, ich habe dir die Pizza Hawaii bestellt.\""
     show Aki eyebrows_angry mouth_big with dissolve
     "Aki wurde auf einmal blass."
     "Ehrlich gesagt, ich habe auch was hochkommen spüren, als ich auch nur das Wort gesagt habe."
@@ -33,7 +65,7 @@ label firstDayCafeteriaLunch:
     "Wie man sehr gut sieht, halte ich mich nicht wirklich daran."
     marcus "\"Naja, Guten Appetit!\""
     show Aki eyebrows_sad mouth_sad with dissolve
-    aki "\"Ich weiß nicht, ob ich noch Appetit habe, nachdem du Pizza Hawai erwähnt hast.\""
+    aki "\"Ich weiß nicht, ob ich noch Appetit habe, nachdem du Pizza Hawaii erwähnt hast.\""
     marcus "\"Was?!\""
     show Aki eyebrows_neutral eyes_closed mouth_laugh_teeth with dissolve
     "Aki fing an zu kichern."
