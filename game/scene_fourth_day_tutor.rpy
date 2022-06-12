@@ -65,7 +65,7 @@ label fourthDayTutor:
             "Ernsthaft?"
             marcus "\"Akkusativus cum Infinitivo, habe ich doch gesagt.\""
             "Gerade erst gesagt, bitte enttäusch mich nicht."
-            $ aki_affec += 1
+            $ aki_affec += 2
         "Akkusativ cum Infinitiv":
             "Ernsthaft?"
             marcus "\"Akkusativ cum Infinitiv, habe ich doch gesagt.\""
@@ -75,7 +75,7 @@ label fourthDayTutor:
         with Dissolve(0.3)
         aki "\"Und wie übersetzt man nochmal einen AcI ins Deutsche?\""
         "Als dass-Satz":
-            $ aki_affec += 1
+            $ aki_affec += 2
             marcus "\"Als dass-Satz, soltest du doch wissen!\""
         "Als Adverbialsatz":
             marcus "\"Als Adverbialsatz, soltest du doch wissen!\""
@@ -91,7 +91,7 @@ label fourthDayTutor:
             marcus "\"Video, is ire. - Ich sehe, dass er geht.\""
             marcus "\"In diesen Fall wäre Video das Kopfverb, is das Nominativsubject und ire das Prädikatsinfinitiv.\""
         "Kopfverb im Rahmensatz, Subjektsakkusativ und Prädikatsinfinitiv im AcI":
-            $ aki_affec += 1
+            $ aki_affec += 2
             marcus "\"Ein AcI besteht aus einen Rahmensatz und das AcI.\""
             marcus "\"Im Rahmensatz muss sich ein Verb befinden.\""
             marcus "\"Im AcI selbst befindet sich ein Akkusativ, den sogenannten Subjektsakkusativ und ein Verb im Infinitiv, nämlich das Prädikatsinfinitiv.\""
@@ -105,7 +105,7 @@ label fourthDayTutor:
         "Nein":
             marcus "\"Nein, nicht immer, das Subjektsakkusativ kann auch das Subjekt vom Rahmensatz sein.\""
         "Ja":
-            $ aki_affec += 1
+            $ aki_affec += 2
             marcus "\"Ja, so ungefähr.\""
     aki "\"Interessant...\""
     aki "\"\Ich habe auch etwas von Vorzeitigkeit oder so mittbekommen\""
@@ -118,7 +118,7 @@ label fourthDayTutor:
         with Dissolve(0.3)
         aki "\"Wann wird nochmal ein AcI überhaupt vorzeitig?\""
         "Wenn der Prädikatsinfinitiv im Perfekt steht":
-            $ aki_affec += 1
+            $ aki_affec += 2
             marcus "\"Wenn der Prädikatsinfinitiv im Perfekt steht.\""
             marcus "\"Verändern wir das vorherige Beispiel:\""
             marcus "\"Video eum isse. - Ich sehe, wie er gegangen ist.\""
@@ -137,6 +137,7 @@ label fourthDayTutor:
             "nein"
         "b) Auf das Subjektakkusativ":
             # correct
+            $ aki_affec += 2
             "ja"
     menu:
         with Dissolve(0.3)
@@ -146,6 +147,7 @@ label fourthDayTutor:
             marcus "\"Das ist ein großer Nachteil an AcIs.\""
         "Mit is/ea/id":
             # correct
+            $ aki_affec += 2
             "ja"
     marcus "\"War das alles?\""
     aki "\"Jup. Danke Marcus! Ich wusste dass du mir hilfst!\""
