@@ -89,5 +89,43 @@ label fifthDayCorrection:
                 scene Bg Load with fade
     if partizia_route == True:
         queue music "audio/music/club.ogg" loop fadein 3.0
+        scene Bg Clubroom with fade
         "Es ist Freitags, und ich war gerade dabei, den Clubraum aufzuräumen, als ich ein leichtes Klopfen an der Tür hörte."
         unknown "\"Hallo?\""
+        marcus "\"Sie können reinkommen.\""
+        stop music fadeout 2.0
+        "Die Tür öffnete sich langsam."
+        queue music "audio/music/partizia.ogg" loop fadein 2.0
+        marcus "\"Ach, Hallo, Partizia!\""
+        partizia "\"Schön dich hier zu sehen, Marcus.\""
+        partizia "\"Hättest du für einen ganz kurzen Moment Zeit?\""
+        marcus "\"Klar.\""
+        partizia "\"Dies ist bezüglich der Aufgabne, die du mir das Letzte mal gegeben hast.\""
+        "Sie holte aus ihrer Tasche ein Heft heraus."
+        partizia "\"Könntest du diese bitte für mich korrigieren?\""
+        marcus "\"Ich sehe keinen Grund, wieso ich es nicht machen sollte.\""
+        "Partizia überreichte mir ihr Heft."
+        partizia "\"Danke sehr.\""
+        "Ich höffnete ihr Heft."
+        stop music fadeout 2.0
+        queue music "audio/music/club.ogg" loop fadein 3.0
+
+        # the tasks go here.
+
+        "Ich gab ihr das Heft zurück."
+        partizia "\"Hmmm, ich sehe.\""
+        partizia "\"Ein nochmals sehr großes Danke schön.\""
+        marcus "\"Kein Problem, wir sind ja Klassenkameraden, ich denke wir sollten uns helfen.\""
+        "Parzitia zeigte mir ein Lächeln."
+        partizia "\"Hättest du noch einige Tipps für mich?\""
+        marcus "\"Einfach viel üben. Du hast dich verglichen zum letzten Mal deutlich verbessert.\""
+        "Partizia schaute auf ihre Uhr."
+        partizia "\"Ach, sieh dir die Zeit an. Ich muss ganz schnell los. Ich habe noch was zu machen.\""
+        "Wahrscheinlich Gedenken lesen üben."
+        partizia "\"Und nein, ich übe zuhause kein Gedanken lesen.\""
+        "Warte was?"
+        partizia "\"Jedenfalls, schönes Wochenende noch.\""
+        "Sie ging zügig aus der Tür raus, während sie mir hinterhergewinkt hat."
+        "Was zum Teufel war das?"
+        stop music fadeout 3.0
+        scene Bg Load with fade
