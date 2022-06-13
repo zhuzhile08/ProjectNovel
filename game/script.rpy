@@ -10,8 +10,9 @@ label start:
     call firstDayClassroomExam from _call_firstDayClassroomExam
     call secondDayRoad from _call_secondDayRoad
     call secondDayAfternoon from _call_secondDayAfternoon
-    call fourthDayTutor
-    call fifthDayCorrection
+    call fourthDayTutor from _call_fourthDayTutor
+    call fifthDayCorrection from _call_fifthDayCorrection
+    call sixthDayPreBoss from _call_sixthDayPreBoss
     call sixthDayBoss from _call_sixthDayBoss
 
     call eighthDayEnding from _call_eighthDayEnding
