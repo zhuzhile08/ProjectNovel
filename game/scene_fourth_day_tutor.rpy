@@ -176,32 +176,40 @@ label fourthDayTutor:
         "Wie das Blatt sich gewendet hat."
         "Naja, jeder hat mal diese Tag- warte das hört sich falsch an."
         "Genau als ich in meinen Gedanken versunken war, kam Partizia in den Clubraum rein."
+        show Partizia eyes_closed mouth_happy with dissolve
         partizia "\"Schön dich hier zu sehen, Marcus.\""
         marcus "\"Gleichfalls.\""
+        show Partizia eyes_open mouth_small with dissolve
         partizia "\"Du denkst wohl, wieso ich so spät gekommen bin, oder?\""
         "Warte wie wusste sie das?"
         partizia "\"Ich musste Arbeit für den Studentenrat tun.\""
+        partizia "\"Da macht die Menge, die mich immer unzingelt, meine Arbeit auch nicht einfacher.\""
         "Ich glaube, dass ich nicht fragen sollte woher sie das alles weiß."
         "Manchmal ist es auch besser so."
-        partizia "\"Da macht die Menge, die mich immer unzingelt, meine Arbeit auch nicht einfacher.\""
-        "Stimmt."
+        show Partizia eyes_closed with dissolve
         partizia "\"Nein nein, keine Sorge, mach dir keine Gedanken drüber.\""
         marcus "\"Worüber?\""
+        show Partizia mouth_laugh with dissolve
         partizia "\"Fufufu~\""
         "Partizia packte ihre Sachen aus, ohne mich ausreden zu lassen."
+        show Partizia eyes_open mouth_small with dissolve
         partizia "\"Nun, wollen wir Anfangen?\""
         marcus "\"Ja, aber-\""
+        show Partizia eyes_closed mouth_happy with dissolve
         partizia "\"Klasse. Nun, kannst du mir bitte noch einmal von Grund auf PCs erklären?\""
         partizia "\"Ich denke, dass es keinen besseren als du gibt, der es mir erklären könnte.\""
         "Klasse. Jetzt lässt sie mich nicht ausreden."
         "Da ist definitiv etwas Zwielichtiges im Gange, aber das ist jetzt nicht das wichtige."
         marcus "\"Klar.\""
+        show Partizia eyes_open mouth_happy with dissolve
         partizia "\"Danke.\""
 
         #here are the explainations
 
         marcus "\"War das alles?\""
+        show Partizia eyes_open mouth_small with dissolve
         partizia "\"So ungefähr.\""
+        show Partizia eyes_open mouth_happy with dissolve
         partizia "\"Nochmals ein großes Dankeschön an dich, Marcus.\""
         marcus "\"Kein Problem.\""
         scene Bg Load with fade
@@ -210,4 +218,4 @@ label fourthDayTutor:
         "Desto mehr Zeit ich mit mir Verbringe, desto mehr denke ich, dass sie schwarte Magie beherrscht, regelmäßig Gedanken liest und Dämo- oh warte falsches Spiel."
         "Jedenfalls, Partizia hat definitiv sehr große Fortschritte gemacht, und am Ende des Tages habe ich ihr mit ein Paar schwierigeren Übungsaufgaben auf den Weg geschickt."
         "Sie hat mir gesagt, dass sie mir ihre Antworten zeigt, wenn wir das nächste Mal uns im Clubraum sehen."
-        scene BgLoad with fade
+        scene Bg Load with fade

@@ -54,6 +54,50 @@ layeredimage Aki:
     
     zoom 0.65
 
+layeredimage Partizia:
+    always:
+        "partizia_base"
+        
+    group left_arm:
+        attribute left_normal default:
+            "partizia_left"
+    
+    group right_arm:
+        attribute right_normal default:
+            "partizia_right"
+    
+    group eyes:
+        attribute eyes_open default:
+            "partizia_eyes_open"
+        attribute eyes_closed:
+            "partizia_eyes_closed"
+
+    group eyebrows:
+        attribute eyebrows_neutral default:
+            "partizia_eyebrows_neutral"
+        attribute eyebrows_sad:
+            "partizia_eyebrows_sad"
+        attribute eyebrows_angry:
+            "partizia_eyebrows_angry"
+    
+    group mouth:
+        attribute mouth_small default:
+            "partizia_mouth_small"
+        attribute mouth_big:
+            "partizia_mouth_big"
+        attribute mouth_happy:
+            "partizia_mouth_happy"
+        attribute mouth_sad:
+            "partizia_mouth_sad"
+        attribute mouth_laugh:
+            "partizia_mouth_laugh"
+        attribute mouth_laugh_teeth:
+            "partizia_mouth_laugh_teeth"
+        attribute mouth_angry:
+            "partizia_mouth_angry"
+    
+    zoom 0.65
+
 # crowd effect
 image Crowd:
     "vfx/crowd_1.png" with Dissolve(0.3)

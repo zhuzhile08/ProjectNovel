@@ -33,6 +33,7 @@ label firstDayEntrancePartizia:
     queue music "audio/music/partizia.ogg" loop fadein 2.0
     "Ich wusste es."
     marcus "\"Morgen, Partizia. Wie geht es dir?\""
+    show Partizia with dissolve
     "Es ist Partizia, die Studentenratsvorsitzende. Sie ist super beliebt unter Jungs und Mädchen."
     "Egal wo man sie sieht, ist sie immer von einer Menge umzingelt."
     "Sie ist genau das Gegenteil von mir."
@@ -45,8 +46,10 @@ label firstDayEntrancePartizia:
     marcus "\"Nein, tut mir leid, leider nicht.\""
     partizia "\"Hmm, du willst also Zeit mit A...\""
     "Bevor sie ihren Satz vollendet hat, wurde sie von der Menge schon weggeschoben."
+    show Partizia eyes_closed eyebrows_sad mouth_laugh with dissolve
     partizia "\"Eeh, vergiss es. Bis später, Marcus!\""
     stop music fadeout 4.0
+    hide Partizia with moveoutright
     hide Crowd with moveoutright
     queue music "audio/music/class.ogg" fadein 2.0
     "Bevor ich noch Antworten konnte, war sie schon aus meiner Sichtweite raus."

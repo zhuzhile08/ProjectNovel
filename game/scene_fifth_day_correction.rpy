@@ -90,6 +90,7 @@ label fifthDayCorrection:
     if partizia_route == True:
         queue music "audio/music/club.ogg" loop fadein 3.0
         scene Bg Clubroom with fade
+        "Fast eine ganze Woche ist vergangen."
         "Es ist Freitags, und ich war gerade dabei, den Clubraum aufzuräumen, als ich ein leichtes Klopfen an der Tür hörte."
         unknown "\"Hallo?\""
         marcus "\"Sie können reinkommen.\""
@@ -97,7 +98,9 @@ label fifthDayCorrection:
         "Die Tür öffnete sich langsam."
         queue music "audio/music/partizia.ogg" loop fadein 2.0
         marcus "\"Ach, Hallo, Partizia!\""
+        show Partizia eyes_closed mouth_happy with dissolve
         partizia "\"Schön dich hier zu sehen, Marcus.\""
+        show Partizia eyes_open mouth_small with dissolve
         partizia "\"Hättest du für einen ganz kurzen Moment Zeit?\""
         marcus "\"Klar.\""
         partizia "\"Dies ist bezüglich der Aufgabne, die du mir das Letzte mal gegeben hast.\""
@@ -105,6 +108,7 @@ label fifthDayCorrection:
         partizia "\"Könntest du diese bitte für mich korrigieren?\""
         marcus "\"Ich sehe keinen Grund, wieso ich es nicht machen sollte.\""
         "Partizia überreichte mir ihr Heft."
+        show Partizia mouth_happy with dissolve
         partizia "\"Danke sehr.\""
         "Ich höffnete ihr Heft."
         stop music fadeout 2.0
@@ -113,17 +117,22 @@ label fifthDayCorrection:
         # the tasks go here.
 
         "Ich gab ihr das Heft zurück."
+        show Partizia mouth_small with dissolve
         partizia "\"Hmmm, ich sehe.\""
+        show Partizia mouth_happy with dissolve
         partizia "\"Ein nochmals sehr großes Danke schön.\""
         marcus "\"Kein Problem, wir sind ja Klassenkameraden, ich denke wir sollten uns helfen.\""
         "Parzitia zeigte mir ein Lächeln."
+        show Partizia mouth_small with dissolve
         partizia "\"Hättest du noch einige Tipps für mich?\""
         marcus "\"Einfach viel üben. Du hast dich verglichen zum letzten Mal deutlich verbessert.\""
         "Partizia schaute auf ihre Uhr."
         partizia "\"Ach, sieh dir die Zeit an. Ich muss ganz schnell los. Ich habe noch was zu machen.\""
         "Wahrscheinlich Gedenken lesen üben."
+        show Partizia eyes_closed mouth_happy with dissolve
         partizia "\"Und nein, ich übe zuhause kein Gedanken lesen.\""
         "Warte was?"
+        show Partizia eyes_closed mouth_laugh with dissolve
         partizia "\"Jedenfalls, schönes Wochenende noch.\""
         "Sie ging zügig aus der Tür raus, während sie mir hinterhergewinkt hat."
         "Was zum Teufel war das?"

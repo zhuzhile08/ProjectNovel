@@ -133,24 +133,30 @@ label secondDayAfternoon:
         "Ich glaube, dass sie will, dass ich zu ihr rüberkomme."
         queue music "audio/music/partizia.ogg" loop fadein 3.0
         marcus "\"Ach, Hallo, Partizia!\""
+        show Partizia mouth_happy eyes_closed with dissolve
         partizia "\"Hallo, Marcus! Zum Glück hast du mich bemerkt. Wie geht es dir?\""
         marcus "\"Eigentlich ganz gut.\""
         "Normalerweise redet Partizia nur im Club mit mir, und wenn, dann auch nur wenn es nötig ist."
         "Daher bin ich jetzt leicht überrascht."
+        show Partizia eyes_open mouth_small with dissolve
         partizia "\"Könntest du mir bitte einen Gefallen tun?\""
         marcus "\"Ja, klar. Wieso nicht?\""
         "Normalerweise fragt mich sowas nur Aki."
         partizia "\"Danke sehr. Kannst du nun bitte 200 Euro mir überreichen?\""
         marcus "\"Was?\""
+        show Partizia eyes_closed mouth_laugh with dissolve
         "Partizia fand das aber ehr lustigiger als es bei mir rübergekommen ist und fing an zu kichern."
         partizia "\"Nein, das war ein Scherz. Eigentlich wollte ich fragen, ob du mir Nachhilfe für Latein geben kannst?\""
         "Anscheinend ist sie recht humorvoll, was ich von ihr nicht erwartet hätte."
         "Und Nachhilfe? Für Partizia? Das habe ich mir nicht wirklich vorgestellt."
         "Da finde ich die 200 Euro sogar warscheinlicher."
         marcus "\"Klar. Welches Thema denn?\""
+        show Partizia eyes_open mouth_small with dissolve
         partizia "\"PCs.\""
         marcus "\"Alles klar.\""
+        show Partizia eyes_closed mouth_happy with dissolve
         partizia "\"Danke sehr. Ich hätte nichts anderes von dir erwartet.\""
+        show Partizia eyes_open mouth_small with dissolve
         partizia "\"Wie wärs, nächsten Montag im Clubraum?\""
         marcus "\"Da sehe ich kein Problem. Alle anderen Clubmitglieder haben sich abgemeldet.\""
         partizia "\"Ich weiß.\""
@@ -158,8 +164,10 @@ label secondDayAfternoon:
         partizia "\"Danke. Achja, wieso ist Aki heute nicht da? Normalerweise würde sie die ganze Zeit neben dir gehen.\""
         marcus "\"Sie hat sich krankgemeldet.\""
         partizia "\"Achso.\""
+        show Partizia eyes_closed mouth_happy with dissolve
         partizia "\"Naja, Auf Wiedersehen! Ich wünsche dir ein schönes Wochenende!\""
-        "Damit ging sie zum Hinterausgang der Schule und verschwindete kurz danach aus mein Sichtfeld."
+        hide Partizia with moveoutleft
+        "Damit eilte sie zum Hinterausgang der Schule und verschwindete kurz danach aus mein Sichtfeld."
         "Verdammt, jetzt werden alle Jungs aus meiner Klasse neidisch, da ich das beliebteste Mädchen in der Schule nachhilfe gebe."
         "Als ich mich auch auf den Weg gemacht habe, dachte ich mir, wie Partizia das alles wusste."
         "Nicht viele wissen, dass ich und Aki befreundet sind, und weniger wissen, dass wir zusammen nach Hause gehen."
