@@ -12,6 +12,8 @@ label start:
     call secondDayAfternoon from _call_secondDayAfternoon
     call fourthDayTutor
     call fifthDayCorrection
+    call sixthDayBoss from _call_sixthDayBoss
+
     call eighthDayEnding from _call_eighthDayEnding
 
     return
