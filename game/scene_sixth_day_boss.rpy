@@ -13,48 +13,97 @@ init python:
             self.y = y
             self.obj = obj
             self.txt = txt
+            self.currentObj = None
+        
+        def hasCorrectObject(self):
+            return self.currentObj == self.obj
 
     def drag_placed(drags, drop):
         if not drop:
-            # Check if it is in draggedList and if yes remove it
-            if drags[0].drag_name in store.draggedList:
-                store.draggedList.remove(drags[0].drag_name)
+            # Check if a dragspot has this drag object
+            dragObj = None
+            for dragO in dragItems:
+                if dragO.txt == drags[0].drag_name:
+                    dragObj = dragO
+                    break
+            if not dragObj:
+                return
+            dragObj.dragPosition = None
+            for dragS in dragSpots:
+                if dragS.currentObj == dragObj:
+                    dragS.currentObj = None
+                    break
             return
-        
-        # "store.draggable": Use of a store variable that has not been defaulted.
-        # danke vscode... aber es geht
-        store.draggable = drags[0].drag_name
-        store.droppable = drop.drag_name
+
+        # Get dragSpot with txt == drop drag_name
+        dragSpt =None
+        for dragSpot in dragSpots:
+            if dragSpot.txt == drop.drag_name:
+                dragSpt = dragSpot 
+                break
+        if not dragSpt:
+            return
+        if dragSpt.currentObj:
+            return
+        # Get current drag object
+        dragObj = None
+        for dragO in dragItems:
+            if dragO.txt == drags[0].drag_name:
+                dragObj = dragO
+                break
+        if not dragObj:
+            return
+        for dragS in dragSpots:
+            if dragS.currentObj == dragObj:
+                dragS.currentObj = None
+                break
+
+        dragSpt.currentObj = dragObj
+        dragObj.dragPosition = dragSpt
 
         newX = drop.x + (drop.w / 2) - (drags[0].w / 2)
-        # Round newX
         newX = int(newX)
-        #print(newX)
-        #print(drags[0].w / drop.w)
+
+        print(dragSpt.txt + ". Correct: " + str(dragSpt.hasCorrectObject()))
+
         drags[0].snap(newX, drop.y, .2)
-        if not drags[0].drag_name in store.draggedList:
-            store.draggedList.append(drags[0].drag_name)
+        
+        doAllSpotsHaveObject = True
+        for dragSpot in dragSpots:
+            if not dragSpot.currentObj:
+                doAllSpotsHaveObject = False
 
-        if len(store.draggedList) == store.dragAmount:
-            return True
+        if doAllSpotsHaveObject:
+            return True    
 
-        #return True
+        #if len(store.draggedList) == store.dragAmount:
+            #return True
+
+default dragItems = []
+default dragSpots = []
 
 label sixthDayBoss:
-    default draggedList = []
-    default dragAmount = 2
+    jump firstDrag
+
+label firstDrag:
     
-    default dragItems = []
+    $ dragItems = []
+    $ dragSpots = []
+
     $ dragItems.append(DragObject("1", 0.25, 0.5))
     $ dragItems.append(DragObject("Test 2", 0.5, 0.5))
 
-    default dragSpots = []
-    $ dragSpots.append(DragSpot(0.1, 0.1, dragItems[0], "Spot 1"))
-    $ dragSpots.append(DragSpot(0.1, 0.4, dragItems[1], "Very long text ss"))
-
+    
+    $ dragSpots.append(DragSpot(0.1, 0, dragItems[0], "Spot 1"))
+    $ dragSpots.append(DragSpot(0.6, 0, dragItems[1], "Very long text ss"))
     call screen drag_test2
-    "[draggable] was put on [droppable]"
-
+    menu:
+        "Bist du dir sicher?"
+        "Ja":
+            hide screen drag_test2
+        "Nein":
+            # warum repeatet sich das wieder hilfe
+            jump firstDrag
 
 screen drag_test2:
     draggroup:
@@ -72,17 +121,6 @@ screen drag_test2:
                     xpadding 20
                     ypadding 20
                     text dragSpot.txt
-        
-        drag:
-            drag_name "Spot2"
-            xpos 0.3
-            draggable False
-            droppable True
-            # child "image.png"
-            frame:
-                xpadding 20
-                ypadding 20
-                text "Spot"
         # Draggable object
         for dragg in dragItems:
             drag:
