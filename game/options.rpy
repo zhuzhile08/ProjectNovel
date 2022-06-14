@@ -200,7 +200,11 @@ define config.save_directory = "ProjectNovel-1654081839"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "gui/aki_icon.png"
+
+## itch.io project path
+
+define build.itch_project = "team-nocturne/project-novel"
 
 
 ## Build configuration #########################################################
