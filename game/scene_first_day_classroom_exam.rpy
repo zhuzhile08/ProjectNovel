@@ -185,7 +185,7 @@ label aciExam:
     "Hmmm..."
     menu:
         with Dissolve(0.3)
-        "a) Ich hatte geglaubt, dass das Gasthaus dich augesucht hat.":
+        "a) Ich hatte geglaubt, dass das Gasthaus dich aufgesucht hat.":
             $ test_score -= 1
         "b) Ich glaubte, dass du das Gasthaus aufgesucht hattest.":
             $ aki_affec += 1
