@@ -297,7 +297,7 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xoffset 40
+        xoffset 62
         yalign 0.5
 
         spacing gui.navigation_spacing
@@ -367,16 +367,11 @@ screen main_menu():
     use navigation
 
     if gui.show_name:
-
         vbox:
             style "main_menu_vbox"
 
             text "[config.name!t]":
                 style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
-
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -388,17 +383,24 @@ style main_menu_frame:
     xsize 280
     yfill True
 
+    background "gui/overlay/main_menu.png"
+
 style main_menu_vbox:
-    xalign 1.0
+    xalign 0.5
     xoffset -20
     xmaximum 800
-    yalign 1.0
-    yoffset -20
+    yalign 0.0
+    yoffset 20
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
 
 style main_menu_title:
+    font "gui/msmincho.ttc"
+    properties gui.text_properties("title")
+
+style main_menu_subtitle:
+    font "gui/baskville.ttf"
     properties gui.text_properties("title")
 
 style main_menu_version:
@@ -519,16 +521,18 @@ style game_menu_side:
     spacing 10
 
 style game_menu_label:
-    xpos 50
+    xalign 0.5
+    yoffset -10
     ysize 120
 
 style game_menu_label_text:
     size gui.title_text_size
     color gui.accent_color
+    font "gui/baskville.ttf"
     yalign 0.5
 
 style return_button:
-    xpos gui.navigation_xpos
+    xpos 62
     yalign 0.74
 
 
@@ -546,7 +550,7 @@ screen about():
     ## This use statement includes the game_menu screen inside this one. The
     ## vbox child is then included inside the viewport inside the game_menu
     ## screen.
-    use game_menu(_("Über"), scroll="viewport"):
+    use game_menu(_("VBER"), scroll="viewport"):
 
         style_prefix "about"
 
@@ -583,14 +587,14 @@ screen save():
 
     tag menu
 
-    use file_slots(_("Speichern"))
+    use file_slots(_("SPEICHERN"))
 
 
 screen load():
 
     tag menu
 
-    use file_slots(_("Laden"))
+    use file_slots(_("LADEN"))
 
 
 screen file_slots(title):
@@ -689,6 +693,7 @@ style page_label_text:
     hover_color gui.hover_color
 
 style page_button:
+    yoffset -13
     properties gui.button_properties("page_button")
 
 style page_button_text:
@@ -712,7 +717,7 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Einstellungen"), scroll="viewport"):
+    use game_menu(_("EINSTELLVNGEN"), scroll="viewport"):
 
         vbox:
 
@@ -884,7 +889,7 @@ screen history():
     ## Avoid predicting this screen, as it can be very large.
     predict False
 
-    use game_menu(_("Geschichte"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
+    use game_menu(_("GESCHICHTE"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
 
         style_prefix "history"
 
@@ -912,7 +917,7 @@ screen history():
                     substitute False
 
         if not _history_list:
-            label _("The dialogue history is empty.")
+            label _("Die Dialoggeschichte ist leer.")
 
 
 ## This determines what tags are allowed to be displayed on the history screen.
