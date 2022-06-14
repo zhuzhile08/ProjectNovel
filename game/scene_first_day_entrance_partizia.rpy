@@ -18,7 +18,7 @@ label firstDayEntrancePartizia:
     scene Bg Hallway with fade
     pause 1
     show Crowd with Dissolve(0.3)
-    "Wir wollten jetzt eigentlich in unsere Klasse, aber eine riesige Menge steht jetzt gerade in unseren Weg."
+    "Wir wollten jetzt eigentlich in unsere Klasse, aber eine riesige Menge steht jetzt gerade in unserem Weg."
     show Aki eyebrows_angry mouth_big with dissolve
     aki "\"Och nee, was soll das denn?\""
     aki "\"Wenn wir hier nicht schnellstmöglich durchkommen, kommen wir noch zu spät zum Unterricht.\""
@@ -52,7 +52,7 @@ label firstDayEntrancePartizia:
     hide Partizia with moveoutright
     hide Crowd with moveoutright
     queue music "audio/music/class.ogg" fadein 2.0
-    "Bevor ich noch Antworten konnte, war sie schon aus meiner Sichtweite raus."
+    "Bevor ich noch Antworten konnte, war sie schon aus meiner Sichtweite."
     "Beliebt zu sein hat seine Nachteile."
     show Aki eyebrows_angry mouth_big:
         linear 0.5 xalign 0.5
