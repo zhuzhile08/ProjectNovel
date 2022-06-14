@@ -62,9 +62,8 @@ label thirdDayParkTutorRequest:
     show Aki eyes_open mouth_small with dissolve
     aki "\"Morgen? Nachmittags?\""
     marcus "\"Geht bei mir.\""
-    "Aki sprang in die Luft."
-    aki "\"Yaaaaaaaaa- woooooaaaaaah\""
-    "Wie stolpert man bei Hüpfen nochmal?"
+    "Aki hüpfte in die Luft."
+    aki "\"Yaaaaaaaaay\""
     marcus "\"Gehts dir gut?\""
     "Aki konnte sich gerade noch fangen."
     show Aki eyes_closed mouth_laugh with dissolve
