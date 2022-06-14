@@ -27,6 +27,9 @@ label credits:
     with Pause(1.0)
     scene black with Dissolve(2.0)
 
+    show Bg Cafeteria with Dissolve(2.0)
+    scene black with Dissolve(2.0)
+
     show text "Aufgaben:" with Dissolve(2.0)
     scene black with Dissolve(2.0)
     show text "Basti" with Dissolve(1.0)
@@ -81,7 +84,7 @@ label credits:
     with Pause(1.0)
     scene black with Dissolve(2.0)
 
-    show Bg Stone Cirlce with Dissolve(2.0)
+    show Bg Stone Circle with Dissolve(2.0)
     scene black with Dissolve(2.0)
 
     show text "Qualitätskontrolle:" with Dissolve(2.0)
