@@ -1,6 +1,6 @@
 label fourthDayTutor:
     if aki_route == True:
-        # load room
+        scene Bg Room with fade
         queue music "audio/music/park.ogg" loop fadein 3.0
         "Ich habe schon seit heute morgen auf Aki gewartet."
         "Jetzt ist es gerade 10 Uhr."
@@ -34,6 +34,7 @@ label fourthDayTutor:
                 marcus "\"VICTORY ROYALE!\""
                 "Ich schmiss mein Controller auf den Tisch."
                 "Ich tanzte durch mein Zimmer bis ich Aki vor meiner Tür mit einen entsetzten Gesicht sah."
+                show Aki outfit_casual left_casual right_casual eyebrows_angry mouth_big with dissolve
                 marcus "\"Aki, warte ich kann es erklä-\""
                 "Bevor ich mein Satz vollenden konnte, stürmte sie aus mein Zimmer."
                 scene Bg Load with fade
@@ -42,8 +43,10 @@ label fourthDayTutor:
         
         scene Bg Load with fade
         pause 1.0
-        # load room
+        scene Bg Room with fade
+        show Aki outfit_casual left_casual right_casual mouth_laugh with dissolve
         aki "\"Wow! Ich war schon lange nicht mehr in deinen Zimmer!\""
+        show Aki mouth_small with dissolve
         aki "\"Das letzte mal war vor... 7 Jahren?\""
         aki "\"Nicht vieles hat sich geändert.\""
         "Mein Zimmer ist ziemlich kahl."
@@ -51,9 +54,11 @@ label fourthDayTutor:
         "Vieleicht auch einen Schrank um meine Bücher zu lagern."
         aki "\"Vieleicht gucke ich jetzt mal unter deinen Be-\""
         marcus "\"NEIN NEIN NEIN DAS MACHST DU JETZT NICHT.\""
+        show Aki eyebrows_angry eyes_closed mouth_laugh_teeth with dissolve
         "Aki fing an zu lachen."
         aki "\"Hehehe!\""
         "Ich will nicht mehr."
+        show Aki eyebrows_neutral eyes_open mouth_small with dissolve
         marcus "\"Na gut. Sollen wir jetzt mit der Nachhilfe anfangen?\""
         aki "\"Jep!\""
         "Aki packte ihre Sachen aus."
@@ -70,7 +75,7 @@ label fourthDayTutor:
             "Akkusativ cum Infinitiv":
                 "Ernsthaft?"
                 marcus "\"Akkusativ cum Infinitiv, habe ich doch gesagt.\""
-                "Gerade erst gesagt, bitte enttäusch mich nicht."
+                "Ich habe gerade erst gesagt, bitte enttäusch mich nicht."
         aki "\"Stimmt!\""
         menu:
             with Dissolve(0.3)
@@ -80,8 +85,10 @@ label fourthDayTutor:
                 marcus "\"Als dass-Satz, soltest du doch wissen!\""
             "Als Adverbialsatz":
                 marcus "\"Als Adverbialsatz, soltest du doch wissen!\""
+        show Aki eyebrows_angry mouth_big with dissolve
         aki "\"Ich verstehe es aber nicht!\""
         marcus "\"Das sind die absoluten Basics!\""
+        show Aki eyebrows_neutral eyes_open mouth_small with dissolve
         menu:
             with Dissolve(0.3)
             aki "\"Wie wird der AcI im lateinischen denn überhauput aufgebaut?\""
@@ -111,8 +118,10 @@ label fourthDayTutor:
         aki "\"Interessant...\""
         aki "\"\Ich habe auch etwas von Vorzeitigkeit oder so mittbekommen\""
         marcus "\"Also hast du den ganzen Unterricht doch nicht durchgeschlafen!\""
+        show Aki eyebrows_angry mouth_big with dissolve
         aki "\"Hey! Das war fies!\""
         marcus "\"Hehe.\""
+        show Aki eyebrows_neutral eyes_open mouth_small with dissolve
         marcus "\"Aber zurück zum Thema, verstehst du das?\""
         aki "\"Nicht wirklich.\""
         menu:
@@ -132,32 +141,23 @@ label fourthDayTutor:
         aki "\"Ja.\""
         menu:
             with Dissolve(0.3)
-            aki "\"Worauf beziehen sich nochmal \'se\', \'sibi\' und \'suus\' im AcI?\""
-            "a) Auf das Subjekt im Rahmensatz":
-                # wrong
-                "nein"
-            "b) Auf das Subjektakkusativ":
-                # correct
+            aki "\"Kann man dann ein Bezug auf das Subjekt im Rahmensatz machen?\""
+            "Mit Reflexivpronomen":
                 $ aki_affec += 2
-                "ja"
-        menu:
-            with Dissolve(0.3)
-            aki "\"Wie kann man dann ein Bezug auf das Subjekt im Rahmensatz machen?\""
-            "Geht nicht":
-                marcus "\"Geht leider nicht.\""
-                marcus "\"Das ist ein großer Nachteil an AcIs.\""
-            "Mit is/ea/id":
-                # correct
-                $ aki_affec += 2
-                "ja"
+                marcus "\"Ja, nämlich mit Personalpronomen.\""
+                marcus "\"Zum Beispiel Videt se ire. - Er sieht, dass er geht.\""
+            "Mit Personalpronomen":
+                marcus "\"Ja, nämlich mit Personalpronomen.\""
+                marcus "\"Video me ire. - Ich sehe, dass ich gehe.\""
+                marcus "\"Oder auch Videt eum ire. - Er sieht, dass er geht.\""
+        "Aki und ich haben uns noch einige Aufgaben angeguckt."
         marcus "\"War das alles?\""
+        show Aki eyes_closed mouth_laugh_teeth with dissolve
         aki "\"Jup. Danke Marcus! Ich wusste dass du mir helfen wirst!\""
         "Aki sah mich mit ein Lächeln an."
-        marcus "\"Kein Problem. Hast du sonst noch irgendetwas?\""
-        aki "\"Nope.\""
         scene Bg Load with fade
         stop music fadeout 8.0
-        "Aki und ich haben den Rest des Tages damit verbracht, einige Übungsaufgaben zum Thema AcIs zu machen."
+        "Aki und ich haben den Rest des Tages damit verbracht, weitere Übungsaufgaben zum Thema AcIs zu machen."
         "Auch wenn sie eigentlich jeden Satz falsch übersetzt hat, hat man bei ihr zumindest ein bisschen Fortschritt erkannt."
         "Machte mir mehr Spaß als erwartet."
         "Nachdem wir fertig geworden sind, habe ich sie nach Hause begleitet und ich bin kurz später in mein Bett gefallen."
@@ -203,9 +203,59 @@ label fourthDayTutor:
         marcus "\"Klar.\""
         show Partizia eyes_open mouth_happy with dissolve
         partizia "\"Danke.\""
-
-        #here are the explainations
-
+        show Partizia eyes_open mouth_small with dissolve
+        menu:
+            with Dissolve(0.3)
+            partizia "\"PC steht für Partizipium Coniunctum, soweit ich weiß.\""
+            "Ja":
+                $ partizia_affec += 2
+                marcus "\"Ja\""
+            "Nein":
+                marcus "\"Nein, PC steht für Partizipium cum Coniuncto\""
+        partizia "\"OK.\""
+        menu:
+            with Dissolve(0.3)
+            partizia "\"Wie wird das PPP gebildet?\""
+            "Es gibt keine feste Regel bei der Bildung":
+                marcus "\"Keine feste Regel existiert, deshalb muss du dir das PPP bei jeden Wort auswendig lernen.\""
+            "Präsensstamm + -tus, -a, -um":
+                $ partizia_affec += 2
+                marcus "\"Du nimmst dir das Präsensstamm vom Verb und packst ein -tus, a, um dahinter.\""
+                marcus "\"Das PPP muss aber KNG-Kongurent zum Bezugswort sein, also muss du darauf achten.\""
+                marcus "\"Jedoch ist das PPP bei vielen Wörtern unregelmäßig, wie bei ferre (latum), weshalb du diese dir auswendig lernen muss.\""
+        show Partizia eyes_closed with dissolve
+        partizia "\"Hört sich aber aufwendig an.\""
+        show Partizia eyes_open mouth_small with dissolve
+        menu:
+            with Dissolve(0.3)
+            partizia "\"Was ist eigentlich der Unterschied zwischen dem normalen Perfekt Passiv und dem Pc?\""
+            "Es gibt keinen":
+                marcus "\"Kein echter Unterschied existiert zwischen denen.\""
+            "Bei Perfekt Passiv gibt es ein From von “esse” im Satz":
+                $ partizia_affec += 2
+                marcus "\"Der Unterschied liegt darin, dass bei einen normalen Perfekt Passiv ein esse im Satz ist.\""
+        show Partizia eyes_closed mouth_happy with dissolve
+        partizia "\"Gut zu wissen.\""
+        show Partizia eyes_open mouth_small with dissolve
+        menu:
+            with Dissolve(0.3)
+            partizia "\"Soweit ich weiß, kann man das PC als sehr viele verschiedene Sorten von Nebensätzen übersetzen, oder?\""
+            "Ja":
+                $ partizia_affec += 2
+                marcus "\"Ja, du kannst es zum Beispiel als Relativ- und Adverbialsatz übersetzen, aber auch als Beiordnung und Präpositionalausdruck.\""
+            "Nein, es muss als Relativsatz übersetzt werden.":
+                marcus "\"Nein, da das Partizipium Coniunctum eine Beschreibung ist, muss man es als Relativsatz übersetzten.\""
+        partizia "\"Alles Klar.\""
+        menu:
+            with Dissolve(0.3)
+            partizia "\"Man kann PCs nur vorzeitig zum Hauptsatz übersetzen, oder?\""
+            "Ja":
+                $ partizia_affec += 2
+                marcus "\"Jep.\""
+            "Nein, es muss nicht":
+                marcus "\"Nein, du muss auf den Kontext im Satz achten.\""
+        show Partizia eyes_closed mouth_happy with dissolve
+        partizia "\"Danke sehr für deine Zeit, Marcus.\""
         marcus "\"War das alles?\""
         show Partizia eyes_open mouth_small with dissolve
         partizia "\"So ungefähr.\""
