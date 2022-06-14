@@ -12,7 +12,7 @@ label firstDayClassroomSleep:
     "Das sagte die Klasse, wie immer bei jeden Lehrer im der klassischen und mototonen Stimme."
     "Kein Witz, das ist wirklich sein Name. Ist aber eigentlich ein ganz netter Typ. Sein Unterricht kann nur etwas langweilig sein."
     "Informatik ist nicht so mein Ding."
-    "Herr Bratfisch legte seine Sachen neben den Pult ab und fing an zu reden."
+    "Herr Bratfisch legte seine Sachen neben dem Pult ab und fing an zu reden."
     teacher "\"Heute reden wir weiter über Hashmaps. Kann jeder noch erklären was Hashmaps sind?\""
     unknown "\"Ich, ich, Herr Bratfisch!\""
     teacher "\"Ja?\""
@@ -20,8 +20,8 @@ label firstDayClassroomSleep:
     unknown "\"Hashmaps funktionieren mit einen Hash-Algorythmus, der...\""
     stop music fadeout 13.0
     "Ich fühlte schon, wie ich wegdöste."
-    "Hashmaps, Hash Algorythmus, das geht mir völlig übers Kopf."
-    "Das letzte mal, wo wir selber eine machen sollten, war meine in Geschwidingkeit der Vorletzte."
+    "Hashmaps, Hash Algorythmus, das geht mir völlig über den Kopf."
+    "Das letzte mal, wo wir selber eine machen sollten, war meine in Geschwindigkeit der Vorletzte."
     "Zumindest habe ich es geschafft, eine zu machen, im Gegensatz zu Aki."
     "Naja, ich kann eh nicht hoffen, das alles zu verstehen, also kann ich auch einmal schlafen gehen."
     scene Bg Load
@@ -40,7 +40,7 @@ label firstDayClassroomSleep:
     aki "\"Marcus, du hast den ganzen Unterricht durchgeschlafen!\""
     marcus "\"Ach was?!\""
     aki "\"Wirklich!\""
-    "Aki versteht absolut kein Sarkasmus, obwohl ich immer so rede, welches ein bisschen nerfig sein kann."
+    "Aki versteht absolut kein Sarkasmus, obwohl ich immer so rede, welches ein bisschen nervig sein kann."
     marcus "\"Nene, ich weiß schon. War Sarkasmus.\""
     show Aki eyebrows_neutral mouth_small with dissolve
     aki "\"Hmpf. Jedenfalls, willst du mit mir Essen gehen?\""
@@ -60,7 +60,7 @@ label firstDayClassroomSleep:
             jump firstDayCafeteriaLunch
         "Nein":
             $ partizia_affec += 4
-            marcus "\"Tut mir leid, wie schon gesagt, heute muss ich mich mit den Club ein bisschen beschäftigen\""
+            marcus "\"Tut mir leid, wie schon gesagt, heute muss ich mich mit dem Club ein bisschen beschäftigen\""
             show Aki eyebrows_sad mouth_laugh with dissolve
             aki "\"Hehe. OK, dann das nächste Mal.\""
             "Man muss nicht ein Psychologe sein, um zu erkennen, dass es Aki gerade ziemlich schlecht geht."
