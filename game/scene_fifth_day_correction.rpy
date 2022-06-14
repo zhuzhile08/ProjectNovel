@@ -75,6 +75,62 @@ label fifthDayCorrection:
                 stop music fadeout 2.0
                 queue music "audio/music/park.ogg" loop fadein 3.0
                 # the tasks go here
+                # ok
+
+                menu:
+                    with Dissolve(0.3)
+                    "1) Sciunt hostes in patriam esse.\n- Die Feinde wusste, dass sie in der Heimat waren."
+                    "a) Bezugsfehler - \"hostes\" ist der Subjektsakkusativ":
+                        # correct
+                        "ja"
+                    "b) Richtig":
+                        # wrong
+                        "nein"
+                menu:
+                    with Dissolve(0.3)
+                    "2) Vidit alios in timore fuisse.\n- Er sah, dass andere in Furcht waren."
+                    "a) Richtig":
+                        # wrong
+                        "nein"
+                    "b) Tempusfehler - \"fuisse\" muss in Plusquamperfekt übersetzt werden":
+                        # correct
+                        "ja"
+                menu:
+                    with Dissolve(0.3)
+                    "3) Audivimus multos patriam defendere.\n- Wir hörten, dass viele die Heimat beschützen."
+                    "a) Richtig":
+                        # correct
+                        "ja"
+                    "b) Bezugsfehler - \"patriam\" bezieht sich nicht auf \"defendere\"":
+                        # wrong
+                        "nein"
+                menu:
+                    with Dissolve(0.3)
+                    "4) Sciunt milites magnum periculum sustinere.\n- Sie wissen, dass die großen Soldaten die Gefahr aushalten."
+                    "a) Bezugsfehler - \"magnum\" bezieht sich auf \"periculum\"":
+                        # correct
+                        "ja"
+                    "b) Richtig":
+                        # wrong
+                        "nein"
+                menu:
+                    with Dissolve(0.3)
+                    "5) Audivimus copias in patriam vincere.\n- Wir hörten, dass die Truppen in der Heimat gewonnen haben."
+                    "a) Tempusfehler - \"vincere\" ist vorzeitig":
+                        # wrong
+                        "nein"
+                    "b) Richtig":
+                        # correct
+                        "ja"
+                menu:
+                    with Dissolve(0.3)
+                    "6) Dicit sibi semper in tabernam stare.\n- Er sagt, dass er immer in das Gasthaus steht."
+                    "a) Richtig":
+                        # correct
+                        "ja"
+                    "b) Bezugsfehler - \"sibi\" bezieht sich auf \"tabernam\"":
+                        # wrong
+                        "nein"
 
                 marcus "\"Du hast dich definitv sehr viel Verbessert, Aki.\""
                 "Aki lachte."
@@ -141,3 +197,4 @@ label fifthDayCorrection:
         "Was zum Teufel war das?"
         stop music fadeout 3.0
         scene Bg Load with fade
+
