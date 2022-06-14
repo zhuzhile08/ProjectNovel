@@ -1,6 +1,7 @@
 label fifthDayCorrection:
     pause 5.0
     if aki_route:
+        scene Bg Room with fade
         queue music "audio/music/park.ogg" loop fadein 3.0
         "Eine ganze Woche ist vergangen, und heute liege ich mit Kopfhörern im Bett und denke über mein Leben nach."
         "So verbringe ich mein Wochenende."
@@ -24,7 +25,8 @@ label fifthDayCorrection:
             "Nein":
                 "Ich legte meine Kopfhörer ab und ging zu Tür."
                 "Ich öffne vorsichtig die Tür."
-                stop music fadeout 3.0
+                scene Bg Home Outwards with fade
+                stop music fadeout 1.0
                 queue music "audio/music/aki.ogg" loop fadein 2.0
                 unknown "\"Hi Marcus~!\""
                 "FUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUC-"
@@ -39,6 +41,7 @@ label fifthDayCorrection:
                 marcus "\"Weil du hier bist und mich nerfst!\""
                 aki "\"Aber ich habe ein paar Fragen!\""
                 marcus "\"Jaja, komm rein.\""
+                scene Bg Room with fade
                 "Ich ließ Aki in mein Haus rein."
                 marcus "\"Willst du was zu trinken?\""
                 aki "\"Mountain Dew!\""
