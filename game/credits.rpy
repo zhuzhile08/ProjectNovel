@@ -3,34 +3,16 @@ label credits:
     play music "audio/music/credits.ogg" fadein 5.0
     with Pause(2.0)
 
-    show text "Programmierer:" with Dissolve(2.0)
+    show text "Konzept:" with Dissolve(2.0)
     scene black with Dissolve(2.0)
-    show text "Till, Zhile" with Dissolve(1.0)
+    show text "Zhile, Basti" with Dissolve(1.0)
     with Pause(1.0)
     scene black with Dissolve(2.0)
 
-    show Bg Home Door with Dissolve(2.0)
-    scene black with Dissolve(2.0)
-    
-    show text "Künstler:" with Dissolve(2.0)
-    scene black with Dissolve(2.0)
-    show text "Zhile" with Dissolve(1.0)
-    with Pause(1.0)
+    show Bg Room with Dissolve(2.0)
     scene black with Dissolve(2.0)
 
-    show Bg Home Road with Dissolve(2.0)
-    scene black with Dissolve(2.0)
-
-    show text "Fotos:" with Dissolve(2.0)
-    scene black with Dissolve(2.0)
-    show text "Till, Thorin, Zhile" with Dissolve(1.0)
-    with Pause(1.0)
-    scene black with Dissolve(2.0)
-
-    show Bg Stone Circle with Dissolve(2.0) # reserved for room
-    scene black with Dissolve(2.0)
-
-    show text "Geschichte:" with Dissolve(2.0)
+    show text "Szenarien/Handlungen:" with Dissolve(2.0)
     scene black with Dissolve(2.0)
     show text "Zhile" with Dissolve(1.0)
     with Pause(1.0)
@@ -39,18 +21,15 @@ label credits:
     show Bg School Entrance with Dissolve(2.0)
     scene black with Dissolve(2.0)
 
-    show text "Qualitätskontrolle:" with Dissolve(2.0)
+    show text "Programmierer:" with Dissolve(2.0)
     scene black with Dissolve(2.0)
-    show text "Zhile, Thorin" with Dissolve(1.0)
+    show text "Till, Zhile" with Dissolve(1.0)
     with Pause(1.0)
-    scene black with Dissolve(2.0)
-
-    show Bg Classroom with Dissolve(2.0)
     scene black with Dissolve(2.0)
 
     show text "Aufgaben:" with Dissolve(2.0)
     scene black with Dissolve(2.0)
-    show text "Till, Basti" with Dissolve(1.0)
+    show text "Basti" with Dissolve(1.0)
     with Pause(1.0)
     scene black with Dissolve(2.0)
 
@@ -64,6 +43,54 @@ label credits:
     scene black with Dissolve(2.0)
 
     show Bg Clubroom with Dissolve(2.0)
+    scene black with Dissolve(2.0)
+
+    show Bg Home Door with Dissolve(2.0)
+    scene black with Dissolve(2.0)
+    
+    show text "Charaktere:" with Dissolve(2.0)
+    scene black with Dissolve(2.0)
+    show text "Zhile" with Dissolve(1.0)
+    with Pause(1.0)
+    scene black with Dissolve(2.0)
+
+    show Bg Home Road with Dissolve(2.0)
+    scene black with Dissolve(2.0)
+
+    show text "UI Designer:" with Dissolve(2.0)
+    scene black with Dissolve(2.0)
+    show text "Zhile" with Dissolve(1.0)
+    with Pause(1.0)
+    scene black with Dissolve(2.0)
+
+    show Bg Main Staircase Lower Floor with Dissolve(2.0)
+    scene black with Dissolve(2.0)
+
+    show text "Audio:" with Dissolve(2.0)
+    scene black with Dissolve(2.0)
+    show text "Zhile" with Dissolve(1.0)
+    with Pause(1.0)
+    scene black with Dissolve(2.0)
+
+    show Bg Home Road with Dissolve(2.0)
+    scene black with Dissolve(2.0)
+
+    show text "Fotos:" with Dissolve(2.0)
+    scene black with Dissolve(2.0)
+    show text "Zhile, Till, Basti, Thorin" with Dissolve(1.0)
+    with Pause(1.0)
+    scene black with Dissolve(2.0)
+
+    show Bg Stone Cirlce with Dissolve(2.0)
+    scene black with Dissolve(2.0)
+
+    show text "Qualitätskontrolle:" with Dissolve(2.0)
+    scene black with Dissolve(2.0)
+    show text "Thorin" with Dissolve(1.0)
+    with Pause(1.0)
+    scene black with Dissolve(2.0)
+
+    show Bg Classroom with Dissolve(2.0)
     scene black with Dissolve(2.0)
 
     show text "Ein speziales Dankeschön an:" with Dissolve(2.0)
