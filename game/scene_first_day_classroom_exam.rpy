@@ -99,10 +99,10 @@ label pcExam:
     "Hoffendlich."
     menu:
         with Dissolve(0.3)
-        "3) Populus a regem dono datus gaudet."
-        "a) Das Volk freute sich über das Geschenk des Königs.":
+        "3) Populus a regem servatus gaudet."
+        "a) Das Volk freut sich über die Rettungs des Königs.":
             $ test_score -= 1
-        "b) Das Volk freute sich, nachdem der König ein Geschenk gab.":
+        "b) Das Volk, nachdem sie vom König gerretet worden ist, freut sich.":
             $ test_score -= 0
             $ partizia_affec += 1
     "Endlich gibt der König auch etwas."
