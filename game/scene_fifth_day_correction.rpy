@@ -79,56 +79,56 @@ label fifthDayCorrection:
 
                 menu:
                     with Dissolve(0.3)
-                    "1) Sciunt hostes in patriam esse.\n- Die Feinde wusste, dass sie in der Heimat waren."
-                    "a) Bezugsfehler - \"hostes\" ist der Subjektsakkusativ":
+                    "Sciunt hostes in patriam esse.\n- Die Feinde wusste, dass sie in der Heimat waren."
+                    "Bezugsfehler - \"hostes\" ist der Subjektsakkusativ":
                         # correct
                         "ja"
-                    "b) Richtig":
+                    "Richtig":
                         # wrong
                         "nein"
                 menu:
                     with Dissolve(0.3)
-                    "2) Vidit alios in timore fuisse.\n- Er sah, dass andere in Furcht waren."
-                    "a) Richtig":
+                    "Vidit alios in timore fuisse.\n- Er sah, dass andere in Furcht waren."
+                    "Richtig":
                         # wrong
                         "nein"
-                    "b) Tempusfehler - \"fuisse\" muss in Plusquamperfekt übersetzt werden":
+                    "Tempusfehler - \"fuisse\" muss in Plusquamperfekt übersetzt werden":
                         # correct
                         "ja"
                 menu:
                     with Dissolve(0.3)
-                    "3) Audivimus multos patriam defendere.\n- Wir hörten, dass viele die Heimat beschützen."
-                    "a) Richtig":
+                    "Audivimus multos patriam defendere.\n- Wir hörten, dass viele die Heimat beschützen."
+                    "Richtig":
                         # correct
                         "ja"
-                    "b) Bezugsfehler - \"patriam\" bezieht sich nicht auf \"defendere\"":
+                    "Bezugsfehler - \"patriam\" bezieht sich nicht auf \"defendere\"":
                         # wrong
                         "nein"
                 menu:
                     with Dissolve(0.3)
-                    "4) Sciunt milites magnum periculum sustinere.\n- Sie wissen, dass die großen Soldaten die Gefahr aushalten."
-                    "a) Bezugsfehler - \"magnum\" bezieht sich auf \"periculum\"":
+                    "Sciunt milites magnum periculum sustinere.\n- Sie wissen, dass die großen Soldaten die Gefahr aushalten."
+                    "Bezugsfehler - \"magnum\" bezieht sich auf \"periculum\"":
                         # correct
                         "ja"
-                    "b) Richtig":
+                    "Richtig":
                         # wrong
                         "nein"
                 menu:
                     with Dissolve(0.3)
-                    "5) Audivimus copias in patriam vincere.\n- Wir hörten, dass die Truppen in der Heimat gewonnen haben."
-                    "a) Tempusfehler - \"vincere\" ist vorzeitig":
+                    "Audivimus copias in patriam vincere.\n- Wir hörten, dass die Truppen in der Heimat gewonnen haben."
+                    "Tempusfehler - \"vincere\" ist vorzeitig":
                         # wrong
                         "nein"
-                    "b) Richtig":
+                    "Richtig":
                         # correct
                         "ja"
                 menu:
                     with Dissolve(0.3)
-                    "6) Dicit sibi semper in tabernam stare.\n- Er sagt, dass er immer in das Gasthaus steht."
-                    "a) Richtig":
+                    "Dicit sibi semper in tabernam stare.\n- Er sagt, dass er immer in das Gasthaus steht."
+                    "Richtig":
                         # correct
                         "ja"
-                    "b) Bezugsfehler - \"sibi\" bezieht sich auf \"tabernam\"":
+                    "Bezugsfehler - \"sibi\" bezieht sich auf \"tabernam\"":
                         # wrong
                         "nein"
 
@@ -174,6 +174,58 @@ label fifthDayCorrection:
         queue music "audio/music/club.ogg" loop fadein 3.0
 
         # the tasks go here.
+        # vielleicht
+        menu:
+            with Dissolve(0.3)
+            "relinquere - relinctum"
+            "Richtig":
+                # keine ahnung was überhaupt die aufgabe ist 
+                "vielleicht"
+            "Falsch, richtig ist relictus":
+                "vielleicht"
+        menu:
+            with Dissolve(0.3)
+            "ducere - ductum"
+            "Richtig":
+                # keine ahnung was überhaupt die aufgabe ist 
+                "vielleicht"
+            "Falsch, richtig ist duxtum":
+                "vielleicht"
+        menu:
+            with Dissolve(0.3)
+            "Graeci a Polyphemo capti in magno timore sunt.\n- Die Griechen, die vom Polyphemo gefangen worden waren, sind in großer Furcht."
+            "Tempusfehler - \"a Polyphemo capti\" muss im Präteritum übersetzt werden":
+                # correct
+                "ja"
+            "Richtig":
+                # wrong
+                "nein"
+        menu:
+            with Dissolve(0.3)
+            "Ulixes solus socios relictos servare potuit.\n- Odysseus konnte alleine die zurückgelassenen Soldaten retten."
+            " ":
+                # wrong
+                "nein"
+            "Richtig":
+                # correct
+                "ja"
+        menu:
+            with Dissolve(0.3)
+            "Ulixes et socii Troiam interfecta reliquit.\n- Odysseus und die Soldaten vernichteten Troja, die verlassen worden war."
+            "Richtig":
+                # wrong
+                "nein"
+            "Formfehler - \"reliquit\" ist ein Verb und auf \"Troiam\" bezieht sich \"interfecta\"":
+                # correct
+                "ja"
+        menu:
+            with Dissolve(0.3)
+            "Viri uxores et liberos relictos desiderabant.\n- Die Männer sehnten auf die Ehefrauen undd Kinder, obwohl sie zurückgelassen worden waren."
+            "Tempusfehler -":
+                # keine ahnung ob richtig, frag basti
+                "vielleicht"
+            "Richtig, aber der Satz macht vom Inhalt keinen Sinn":
+                "vielleicht"
 
         "Ich gab ihr das Heft zurück."
         show Partizia mouth_small with dissolve
