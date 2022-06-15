@@ -3,13 +3,13 @@ label firstDayClassroomSleep:
     play noise "audio/sfx/crowd_outdoors.ogg" loop fadein 4.0 volume 0.2
     "Ich saß, wie üblich, in meiner Ecke im Klassenraum."
     "Aki saß in der anderen Ecke, direkt neben der Tür."
-    "Wenn sie nehen mir säße, würde sie mich jetzt gerade volllabern."
+    "Wenn sie neben mir säße, würde sie mich jetzt gerade volllabern."
     "Aber mir gefällt es aus irgendeinen Grund, wenn sie es tut."
     pause 2.0
     unknown "\"Guten Morgen!\""
     stop noise fadeout 1.0
     class "\"Guten Morgen Herr Bratfisch.\""
-    "Das sagte die Klasse, wie immer bei jeden Lehrer im der klassischen und mototonen Stimme."
+    "Das sagte die Klasse, wie immer bei jeden Lehrer im der klassischen und monotonen Stimme."
     "Kein Witz, das ist wirklich sein Name. Ist aber eigentlich ein ganz netter Typ. Sein Unterricht kann nur etwas langweilig sein."
     "Informatik ist nicht so mein Ding."
     "Herr Bratfisch legte seine Sachen neben dem Pult ab und fing an zu reden."
@@ -52,7 +52,7 @@ label firstDayClassroomSleep:
             $ aki_affec += 4
             marcus "\"Ich meine, wieso nicht?\""
             show Aki eyes_closed mouth_laugh_teeth with dissolve
-            "Im Aki's Gesicht war ein stolzes Lächeln aufgetaucht."
+            "In Aki's Gesicht war ein stolzes Lächeln aufgetaucht."
             aki "\"Yipee!\""
             aki "\"Dann auf in die Cafeteria!\""
             scene Bg Load with fade

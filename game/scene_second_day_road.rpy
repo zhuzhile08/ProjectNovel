@@ -2,6 +2,7 @@ label secondDayRoad:
     pause 5.0 
     queue music "audio/music/park.ogg" loop fadein 2.0
     "Ein neuer Tag hat begonnen, und ich muss wie immer wieder aus meinen Bett."
+    scene Bg Room with fade
     "Ich öffne meine Augen zu meinen vertraulichen Zimmer"
     "Ich steige aus meinen Bett heraus und bereite mich für die Schule vor."
     scene Bg Home Outwards with fade

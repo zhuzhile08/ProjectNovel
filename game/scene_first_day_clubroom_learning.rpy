@@ -17,13 +17,13 @@ label firstDayClubroomLearning:
         xpos 0.05 ypos 1.28 xanchor 0.5 yanchor 1.0 zoom 2.0
     "Das ist Raidou."
     "Er ist ein Preis, welches der Literaturclub bei einem Wettbewerb gewonnen hat."
-    "Eigentlich war der Literaturclub und der Lateinclub früher recht gut in Sachen Wettbewerb, aber seitdem wir den Drachen bekommen haben, haben beide Clubs nie mehr einen gewonnen."
+    "Eigentlich war der Literaturclub und der Lateinclub früher recht gut in Wettbewerben, aber seitdem wir den Drachen bekommen haben, haben beide Clubs nie mehr einen gewonnen."
     "Alle meinen, dass der Drache ein Unglücksbringer ist, aber ich meine, dass in den Drachen eine Wanze versteckt ist, mitdem uns die gegnerischen Antreter in den Wettbewerben ausspionieren."
     "Achja, und ich trete Raidou auch manchmal eine in die Fresse, wenn es mir schlecht geht."
     scene Bg Clubroom with dissolve
-    "Wie sehr interessant ich die Backstory vom Literaturclub finde, muss ich mich jetzt auch auf Latein konzentrieren."
+    "Wie sehr interessant ich die Backstory vom Literaturclub auch finde, muss ich mich jetzt auch auf Latein konzentrieren."
     "Der Leher hat gesagt, dass wir einen Test schreiben werden, aber nicht über was."
-    "Wenn ich mal ehrlich bin, ist es ein ziemlich blöder move, aber was solls?"
+    "Wenn ich mal ehrlich bin, ist es ein ziemlich blöder Move, aber was solls?"
     "Ich glaube der Sinn von solch einem Test liegt daran, dass man beides gleich lernen und beherrschen sollte."
     "Aber ich lerne nur eines von denen, weil ich es kann."
     menu:
@@ -33,7 +33,7 @@ label firstDayClubroomLearning:
             "Aus den Schrank vor mir habe ich ein uraltes, mit Staub bedecktes Buch genommen."
             "Ich puste den Staub weg und eine riesige Wolke taucht auf"
             "Unter der Staubschicht erscheint der Text:"
-            "Partizipium Coniunctum für Beginner, von Ben Dover."
+            "Partizipium coniunctum für Beginner, von Ben Dover."
 
             $ partizia_route = True
 
@@ -70,15 +70,18 @@ label readPc:
 
 label readAcI:
     "{size=+10}{b}{u}Der AcI{/u}{/b}{/size}\n{b}{u}Grundwissen und Aufbau:{/u}{/b}"
-    "Der AcI, Akkusativus cum Infinitivo (Akkusativ mit Infinitiv) auf Latein, kommt sehr oft in lateinischen Sätzen vor. Es wird im deutschen meistens mit einem dass-Satz übersetzt."
-    "{size=-3}Ein AcI in lateinischen Sätzen enthält ein Kopfverb, ein Subjektakkusativ und einen Prädikatsinfinitiv:{/size}\n{color=#438A64}{u}Scio{/u}{/color} {color=#00a7ff}{u}sororem{/u}{/color} cattum suum {color=#FF4B4B}{u}amare{/u}{/color}. - Ich weiß, dass die Schwester ihre Katze liebt.\n {size=-10}*Cattus = Katze{/size}"
-    "\"{color=#438A64}Scio{/color}\" ist das Kopfverb, \"{color=#00a7ff}sororem{/color}\" der Subjektakkusativ und \"{color=#FF4B4B}amare{/color}\" ist das Prädikatsinfinitiv. Wenn ein Infinitiv im Satz auftaucht, enthält dieser einen AcI mit hoher Wahrscheinlichkeit."
-    "Wörter wie videre, negare, putare oder scire werden oft als Kopfverb verwendet.\n{color=#FF4B4B}ACHTUNG:{/color} Es gibt Verben, die mit einem Infinitiv stehen, aber keine Kopverben sind, zum Beispiel: posse, velle und iubere."
-    "{b}{u}Vor- und Gleichzeitigkeit{/u}{/b}\n{size=-3}Mit dem AcI zeigt man auch das Zeitverhältnis zum Hauptsatz, indem man das Tempus vom Prädikatsinfinitiv ändert. Wenn man das Prädikatsinfinitiv in Präsens schreibt, ist es gleichzeitig zum Hauptsatz und wenn man es in Perfekt ausdrückt, ist es Vorzeitig.{/size}"
-    "Im deutschen ändert das Tempus vom Prädikatsinfinitv je nach dem Tempus des Kopfverbs."
+    "Der AcI, Akkusativus cum Infinitivo(Akkusativ mit Infinitiv) auf Latein, kommt sehr oft in lateinischen Sätze vor. Es wird im deutschen meistens mit einem dass-Satz übersetzt."
+    "{size=-3}Ein AcI in lateinischen Sätzen enthält einen Kopfverb, Subjektsakkusativ, und einen Prädikatsinfinitiv:{/size}\n{color=#438A64}{u}Scio{/u}{/color} {color=#00a7ff}{u}sororem{/u}{/color} cattum suum {color=#FF4B4B}{u}amare{/u}{/color}. - Ich weiß, dass die Schwester ihre Katze liebt.\n {size=-10}*Cattus = Katze{/size}"
+    "\"{color=#438A64}Scio{/color}\" ist das Kopfverb, \"{color=#00a7ff}sororem{/color}\" der Subjektakkusativ und \"{color=#FF4B4B}amare{/color}\" ist das Prädikatsinfinitiv. Den Teil, der nicht zwischen dem Kopfverb und dem Prädikatsinfinitiv steht, nennt man \"Rahmensatz\"."
+    "Wenn ein Infinitiv im Satz auftaucht, enthält dieser einen AcI mit hoher Wahrscheinlichkeit. Wörter wie videre, negare, putare oder scire werden oft als Kopfverb verwendet."
+    "Wörter wie videre, negare, putare oder scire werden oft als Kopfverb verwendet.\n{color=#FF4B4B}ACHTUNG:{/color} Es gibt Verben, die mit einem Infinitiv stehen, aber keine Kopfverben sind, zum Beispiel wie posse oder velle."
+    "{b}{u}Vor- und Gleichzeitigkeit{/u}{/b}\n{size=-3}Mit dem AcI zeigt man auch das Zeitverhältnis zum Rahmensatz, indem man das Tempus vom Prädikatsinfinitiv ändert. Wenn man den Prädikatsinfinitiv in Präsens schreibt, ist es gleichzeitig zum Hauptsatz, und wenn man es in Perfekt ausdrückt, ist es Vorzeitig.{/size}"
+    "Im deutschen ändert sich das Tempus von dem Prädikatsinfinitiv abhängig vom Tempus des Kopfverbs."
     "{color=#438A64}{u}Scio{/u}{/color} {color=#00a7ff}{u}sororem{/u}{/color} cattum suum {color=#FF4B4B}{u}amare{/u}{/color}. - Ich weiß, dass die Schwester ihre Katze liebt.\n{color=#438A64}{u}Scivi{/u}{/color} {color=#00a7ff}{u}sororem{/u}{/color} cattum {color=#FF4B4B}{u}amare{/u}{/color}. - Ich wusste, dass die Schwester ihre Katze liebte.\n{size=-10}- Gleichzeitigkeit{/size}"
     "{color=#438A64}{u}Scio{/u}{/color} {color=#00a7ff}{u}sororem{/u}{/color} cattum {color=#FF4B4B}{u}amavisse{/u}{/color}. - Ich weiß, dass die Schwester ihre Katze liebte.\n{color=#438A64}{u}Scivi{/u}{/color} {color=#00a7ff}{u}sororem{/u}{/color} cattum {color=#FF4B4B}{u}amavisse{/u}{/color}. - Ich wusste, dass die Schwester ihre Katze geliebt hatte.\n{size=-10}- Vorzeitigkeit{/size}"
-    "Wenn das Kopverb im Präsens steht, wird das Prädikatsinfinitiv ins Präteritum übersetzt, und wenn es im Perfekt steht, wird das Prädikatsinfinitiv in Plusquamperfekt, welches Vorzeitigkeit gegen Perfekt ausdrückt, übersetzt."
+    "Wenn das Kopfverb im Präsens steht,  wird das Prädikatsinfinitiv in Präteritum übersetzt, und wenn es im Perfekt steht, wird das Prädikatsinfinitiv in Plusquamperfekt, welches Vorzeitigkeit gegen Perfekt ausdrückt, übersetzt."
+    "{b}{u}Reflexivität:{/u}{/b}\n{size=-3}Die Wörter “se”, “suus” und “sibi” beziehen sich in normalen Sätzen auf das Subjekt, und wenn diese in einem AcI auftauchen, beziehen sie sich auf das Subjekt des Rahmensatzes. Man benutzt Personalpronomen, wenn man eine Beziehung auf dem Subjektsakkusativ zeigen will.{/size}"
+    "Scio {color=#ffa500}{u}sororem{/u}{/color} cattum {color=#ffa500}{u}suum amare{/u}{/color}. - Ich weiß, dass die {color=#ffa500}{u}Schwester ihre{/u}{/color} Katze liebt.\nVideo {color=#ffa500}{u}cattum{/u}{/color} stare et {color=#ffa500}{u}eum{/u}{/color} amo.  - Ich sehe, dass die {color=#ffa500}{u}Katze{/u}{/color} steht und ich liebe {color=#ffa500}{u}sie{/u}{/color}."
     menu:
         "Das war ein Haufen. Habe ich das alles schon verstanden?"
 

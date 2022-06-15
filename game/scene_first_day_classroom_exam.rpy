@@ -77,7 +77,7 @@ label pcExam:
         "b) fertum":
             $ test_score -= 1
     "Klasse. Letzte Formenaufgabe fertig. Lass hoffen, dass ich alles richtig habe."
-    "{u}Aufgabe 2:{/u} Wähle die richtige Übersetzung der folgenden lateinischen Sätzen."
+    "{u}Aufgabe 2:{/u} Wähle die richtige Übersetzung der folgende lateinische Sätze."
     "Das kann kritisch werden."
     menu:
         with Dissolve(0.3)
@@ -137,7 +137,7 @@ label pcExam:
 label aciExam:
     "12 Fragen, wie immer."
     "Das wird einfach. Hoffe ich zumindest."
-    "{size=+10}{u}Grammatiktest - Akkusativus cum Infinitivo{/u}{/size}\n{u}Aufgabe:{/u} Wähle die richtige Übersetzungen der folgenden lateinischen Sätzen."
+    "{size=+10}{u}Grammatiktest - Akkusativus cum Infinitivo{/u}{/size}\n{u}Aufgabe:{/u} Wähle die richtige Übersetzungen der folgende lateinische Sätze."
     menu:
         with Dissolve(0.3)
         "a) Ich komme, dass der Freund sieht.":
@@ -249,7 +249,7 @@ label aciExam:
 
 label aftermath:
     "Klasse! Letzte Aufgabe fertig."
-    "Ich schaute mich in der Klasse um. Anscheinend bin ich der erste, der fertig bin."
+    "Ich schaute mich in der Klasse um. Anscheinend bin ich der erste, der fertig ist."
     "Jetzt muss ich die letzten paar Minuten auswarten. Das wird langweilig."
     scene Bg Load with fade
     pause 3.0
@@ -257,10 +257,10 @@ label aftermath:
     teacher "\"Stifte niederlegen! Ich werde jetzt den Test einsammeln!\""
     "Alle legen ihre Stifte nieder."
     "Der Leher ging dann bei jeden herum und nahm sich ein Zettel nach den anderen."
-    teacher "\"Die Testergebnisse bekommt jeder morgen zurück.\""
+    teacher "\"Die Testergebnisse bekommt jeder Morgen zurück.\""
     play sound "audio/sfx/school_bell.ogg" volume 0.6
     pause 3.0
-    teacher "\"Damit ist der Schultag beendet. Erholt euch zuhause gut!\""
+    teacher "\"Damit ist der Schultag beendet. Erholt euch Zuhause gut!\""
     play noise "audio/sfx/crowd_indoors.ogg" loop fadein 1.0 volume 0.3
     if aki_route == True:
         "Ich sah rüber zu Aki und bemerkte, dass sie völlig erledigt in ihren Sitz saß."
@@ -287,7 +287,7 @@ label aftermath:
             marcus "\"Ja.\""
             show Aki eyes_closed mouth_laugh_teeth with dissolve
             aki "\"Dann, lass loslegen!\""
-            "Wir haben uns auf den Weg gemacht, nachdem wir unsere Sachen gepackt haben."
+            "Wir haben uns auf den Weg gemacht, nachdem wir unsere Sachen eingepackt haben."
         "\"Ne, vieleicht nächstes mal.\"":
             $ partizia_affec += 4
             marcus "\"Ne, vieleicht nächstes mal.\""
