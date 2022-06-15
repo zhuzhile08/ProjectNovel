@@ -110,6 +110,8 @@ image Crowd:
 
 # define backgrounds here
 image Bg Cafeteria = im.Scale("bg/cafeteria.png", 1280, 720)
+image Bg Cafeteria Entrance = im.Scale("bg/cafeteria_entrance.png", 1280, 720)
+image Bg Menu = im.Scale("bg/menu.png", 1280, 720)
 image Bg Classroom = im.Scale("bg/classroom.png", 1280, 720)
 image Bg Hallway = im.Scale("bg/hallway.png", 1280, 720)
 image Bg Hallway Staircase = im.Scale("bg/hallway_staircase.png", 1280, 720)

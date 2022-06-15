@@ -1,10 +1,10 @@
 label firstDayCafeteriaLunch:
-    scene Bg Cafeteria with fade # I need the cafeteria entrance here
+    scene Bg Cafeteria Entrance with fade
     play noise "audio/sfx/crowd_indoors.ogg" loop fadein 4.0 volume 0.1
     queue music "audio/music/park.ogg" loop fadein 2.0 # yeah, it doesn't make sense but trust me, it works
     "Wir betreten die Cafeteria. Normalerweise wäre die ziemlich voll, aber da wir etwas später gekommen sind, ist sie etwas leerer als gewohnt."
     "Während Aki losging und uns ein Platz reservierte, schaute ich auf das Menu."
-    scene Bg Cafeteria with fade # I need a table with foods here
+    scene Bg Menu with fade
     marcus "\"Yes! Pizza!\""
     food_list "\"Pizza Tuna, Pizza Magherita, Pizza Prosciutto e Fungi, Pizza Pugliese...\""
     "Alles scheint gut und normal zu sein, bis ich nach unten gucke."
