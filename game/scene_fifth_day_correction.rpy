@@ -34,34 +34,44 @@ label fifthDayCorrection:
                 "Ich habe einmal meine Ruhe gefunden, schon kommt sie und ruiniert alles."
                 "Genau so wie wenn ich Pizza Hawaii auf einer langen Liste von normalen und leckeren Pizzen sehe."
                 marcus "\"Jaaaaaaaaa? Was ist denn jetzt los?\""
+                show Aki outfit_casual left_casual right_casual eyes_closed mouth_laugh_teeth with dissolve
                 aki "\"Heeeeeeey! Wie gehts!\""
                 "Ernsthaft?"
                 marcus "\"Kacke.\""
+                show Aki eyes_open mouth_small with dissolve
                 aki "\"Wieso denn?\""
                 marcus "\"Weil du hier bist und mich nerfst!\""
+                show Aki eyebrows_sad with dissolve
                 aki "\"Aber ich habe ein paar Fragen!\""
                 marcus "\"Jaja, komm rein.\""
                 scene Bg Room with fade
+                show Aki outfit_casual left_casual right_casual eyes_open mouth_small with dissolve
                 "Ich ließ Aki in mein Haus rein."
                 marcus "\"Willst du was zu trinken?\""
+                show Aki eyes_closed mouth_laugh with dissolve
                 aki "\"Mountain Dew!\""
                 "Ich rollte meine Augen."
                 marcus "\"Ernsthaft jetzt.\""
+                show Aki eyes_open mouth_small with dissolve
                 aki "\"Kaffee.\""
                 marcus "\"OK.\""
                 "Nachdem ich die Getränke vorbereitet habe, ging ich zu meinen Zimmer zurück."
                 "Ich habe für mich auch ein Kaffee gemacht."
+                show Aki eyes_closed mouth_laugh_teeth with dissolve
                 aki "\"Mmmh! Danke Marcus~!\""
                 "Sie nahm ein Schluck Kaffee und holte ein Stück Papier raus."
                 marcus "\"Sind das die nuklearen Abschusscodes der USA?\""
+                show Aki eyes_open mouth_laugh_teeth with dissolve
                 aki "\"Ja! Joe Biden hat es mir geschenkt!\""
                 marcus "\"Wie bitte was?!\""
+                show Aki eyes_closed mouth_laugh_teeth with dissolve
                 "Aki fing an zu lachen."
                 aki "\"Hahahahahahahaha!\""
                 aki "\"Dachtest du es wirklich?!\""
                 "Verdammt."
                 "Ich hasse mich."
                 marcus "\"OK OK, was hast du denn da?\""
+                show Aki eyes_open mouth_small with dissolve
                 aki "\"Aufgaben.\""
                 marcus "\"Was?\""
                 aki "\"Naja, ich habe Zuhause selber noch ein bisschen am AcI geübt und ein Art Selbsttest geschrieben.\""
@@ -69,73 +79,74 @@ label fifthDayCorrection:
                 "Ich stöhnte."
                 "Ich meine, ich habe eh nichts zu tun, also wieso nicht?"
                 marcus "\"Na gut.\""
+                show Aki eyes_closed mouth_laugh with dissolve
                 aki "\"Yaaaaaay!\""
                 marcus "\"Dabei machte sie einen kleinen Hüpfer.\""
+                "Aki überreichte mir ein Blatt Papier."
 
                 stop music fadeout 2.0
                 queue music "audio/music/park.ogg" loop fadein 3.0
-                # the tasks go here
-                # ok
 
                 menu:
                     with Dissolve(0.3)
-                    "Sciunt hostes in patriam esse.\n- Die Feinde wusste, dass sie in der Heimat waren."
+                    "Sciunt hostes in patriam esse. - Die Feinde wussten, dass sie in deren Heimat waren."
+                    "Richtig":
+                        "Der Satz scheint richtig zu sein."
                     "Bezugsfehler - \"hostes\" ist der Subjektsakkusativ":
-                        # correct
-                        "ja"
-                    "Richtig":
-                        # wrong
-                        "nein"
+                        $ aki_affec += 1
+                        "Aki scheint das Subjektsakkusativ falsch übersetzt zu haben."
                 menu:
                     with Dissolve(0.3)
-                    "Vidit alios in timore fuisse.\n- Er sah, dass andere in Furcht waren."
+                    "Vidit alios in timore fuisse. - Er sah, dass anderen in Furcht waren."
                     "Richtig":
-                        # wrong
-                        "nein"
+                        "Sollte nach meinen Wissen korrekt sein."
                     "Tempusfehler - \"fuisse\" muss in Plusquamperfekt übersetzt werden":
-                        # correct
-                        "ja"
+                        $ aki_affec += 1
+                        "Ein recht kleiner Tempusfehler."
+                        "Passiert dem Besten."
                 menu:
                     with Dissolve(0.3)
-                    "Audivimus multos patriam defendere.\n- Wir hörten, dass viele die Heimat beschützen."
+                    "Audivimus multos patriam defendere. - Wir hörten, dass viele die Heimat beschützen."
                     "Richtig":
-                        # correct
-                        "ja"
+                        $ aki_affec += 1
+                        "Yep, alles richtig."
                     "Bezugsfehler - \"patriam\" bezieht sich nicht auf \"defendere\"":
-                        # wrong
-                        "nein"
+                        "Auf Bezugsfehler muss man halt aufpassen."
+                        "Ein Bezugsfehler kann den Sinn eines Satzes sehr stark verändern."
                 menu:
                     with Dissolve(0.3)
-                    "Sciunt milites magnum periculum sustinere.\n- Sie wissen, dass die großen Soldaten die Gefahr aushalten."
+                    "Sciunt milites magnum periculum sustinere. - Sie wissen, dass die großen Soldaten die Gefahr aushalten."
+                    "Richtig":
+                        "Ist richtig. Glaube ich zumindest."
                     "Bezugsfehler - \"magnum\" bezieht sich auf \"periculum\"":
-                        # correct
-                        "ja"
-                    "Richtig":
-                        # wrong
-                        "nein"
+                        $ aki_affec += 1
+                        "Huh. Schon wieder."
                 menu:
                     with Dissolve(0.3)
-                    "Audivimus copias in patriam vincere.\n- Wir hörten, dass die Truppen in der Heimat gewonnen haben."
+                    "Audivimus copias in patriam vincere. - Wir hörten, dass die Truppen in der Heimat gewonnen haben."
+                    "Richtig":
+                        $ aki_affec += 1
+                        "Gut genug."
                     "Tempusfehler - \"vincere\" ist vorzeitig":
-                        # wrong
-                        "nein"
-                    "Richtig":
-                        # correct
-                        "ja"
+                        "Ein kleiner Tempusfehler."
+                        "Ich habe das falsche Wort durchgestrichen und ein neues aufgeschrieben."
                 menu:
                     with Dissolve(0.3)
-                    "Dicit sibi semper in tabernam stare.\n- Er sagt, dass er immer in das Gasthaus steht."
+                    "Dicit sibi semper in tabernam stare. - Er sagt, dass er immer in das Gasthaus steht."
                     "Richtig":
-                        # correct
-                        "ja"
+                        $ aki_affec += 1
+                        "Letzte Aufgabe richtig."
                     "Bezugsfehler - \"sibi\" bezieht sich auf \"tabernam\"":
-                        # wrong
-                        "nein"
-
+                        "Auch ein Bezugsfehler."
+                        "Aki sollte auf diese besonders aufpassen."
+                
+                "Ich habe alle Aufgaben noch mal durchgeguckt und gab Aki das Blatt wieder zurück."
                 marcus "\"Du hast dich definitv sehr viel Verbessert, Aki.\""
+                show Aki mouth_laugh with dissolve
                 "Aki lachte."
                 marcus "\"Aber noch ein bisschen Übung kann dir nichts schlechts tun.\""
                 marcus "\"Wenn du Hilfe brauchst, kannst du immer mich fragen.\""
+                show Aki eyes_closed
                 aki "\"Danke Marcus!\""
                 scene Bg Load with fade
                 stop music fadeout 4.0
@@ -162,7 +173,7 @@ label fifthDayCorrection:
         show Partizia eyes_open mouth_small with dissolve
         partizia "\"Hättest du für einen ganz kurzen Moment Zeit?\""
         marcus "\"Klar.\""
-        partizia "\"Dies ist bezüglich der Aufgabne, die du mir das Letzte mal gegeben hast.\""
+        partizia "\"Dies ist bezüglich der Aufgabe, die du mir das Letzte mal gegeben hast.\""
         "Sie holte aus ihrer Tasche ein Heft heraus."
         partizia "\"Könntest du diese bitte für mich korrigieren?\""
         marcus "\"Ich sehe keinen Grund, wieso ich es nicht machen sollte.\""
@@ -172,62 +183,60 @@ label fifthDayCorrection:
         "Ich höffnete ihr Heft."
         stop music fadeout 2.0
         queue music "audio/music/club.ogg" loop fadein 3.0
-
-        # the tasks go here.
-        # vielleicht
+        show Partizia eyes_open mouth_small with dissolve
         menu:
             with Dissolve(0.3)
-            "relinquere - relinctum"
+            "relinquere - relinctus"
             "Richtig":
-                # keine ahnung was überhaupt die aufgabe ist 
-                "vielleicht"
+                "Die Lösung ist anscheinend Korrekt."
             "Falsch, richtig ist relictus":
-                "vielleicht"
+                $ partizia_affec += 1
+                "Ich strich die falsche Lösung durch und schrieb die Richtie auf."
         menu:
             with Dissolve(0.3)
             "ducere - ductum"
             "Richtig":
-                # keine ahnung was überhaupt die aufgabe ist 
-                "vielleicht"
+                $ partizia_affec += 1
+                "Formen korrekt."
             "Falsch, richtig ist duxtum":
-                "vielleicht"
+                "Ein basic Formenfehler. Passiert den Besten."
         menu:
             with Dissolve(0.3)
-            "Graeci a Polyphemo capti in magno timore sunt.\n- Die Griechen, die vom Polyphemo gefangen worden waren, sind in großer Furcht."
+            "Graeci a Polyphemo capti in magno timore sunt. - Die Griechen, die vom Polyphemo gefangen worden waren, sind in großer Furcht."
+            "Richtig":
+                "Sollte richtig sein."
             "Tempusfehler - \"a Polyphemo capti\" muss im Präteritum übersetzt werden":
-                # correct
-                "ja"
-            "Richtig":
-                # wrong
-                "nein"
+                $ partizia_affec += 1
+                "Ein kleiner Tempusfehler hier, sonst scheint alles gut zu sein."
         menu:
             with Dissolve(0.3)
-            "Ulixes solus socios relictos servare potuit.\n- Odysseus konnte alleine die zurückgelassenen Soldaten retten."
-            " ":
-                # wrong
-                "nein"
+            "Ulixes solus socios relictos servare potuit. - Odysseus konnte alleine die zurückgelassenen Soldaten retten."
             "Richtig":
-                # correct
-                "ja"
+                $ partizia_affec += 1
+                "Gut genug."
+            "Falsch, Odysseus konnte die alleine zurückgelassenen Soldaten retten.":
+                "Hmmm, kleiner Fehler."
         menu:
             with Dissolve(0.3)
-            "Ulixes et socii Troiam interfecta reliquit.\n- Odysseus und die Soldaten vernichteten Troja, die verlassen worden war."
+            "Ulixes et socii Troiam interfecta reliquit. - Odysseus und die Soldaten vernichteten Troja, die verlassen worden war."
             "Richtig":
-                # wrong
-                "nein"
+                "Das ist auch richtig."
             "Formfehler - \"reliquit\" ist ein Verb und auf \"Troiam\" bezieht sich \"interfecta\"":
-                # correct
-                "ja"
+                $ partizia_affec += 1
+                "Ein Bezugsfehler. Ich streiche den Satz durch und habe es neu aufgeschrieben."
         menu:
             with Dissolve(0.3)
-            "Viri uxores et liberos relictos desiderabant.\n- Die Männer sehnten auf die Ehefrauen undd Kinder, obwohl sie zurückgelassen worden waren."
+            "Viri uxores et liberos relictos desiderabant. - Die Männer sehnten auf die Ehefrauen und Kinder, obwohl sie zurückgelassen worden waren."
             "Tempusfehler -":
-                # keine ahnung ob richtig, frag basti
-                "vielleicht"
+                "Scheint auch richtig zu sein."
             "Richtig, aber der Satz macht vom Inhalt keinen Sinn":
-                "vielleicht"
+                $ partizia_affec += 1
+                "Hmmm..."
+                "Der Satz ist von der Übersetzung her richtig, aber Partizia hat den Satz konzessiv übersetzt, was bei diesen Satz nicht möglich ist."
+                "Ich notiere den letzten Fehler in ihr Heft."
 
-        "Ich gab ihr das Heft zurück."
+        marcus "\"OK... Alles sollte jetzt richtig sein.\""
+        "Ich gab ihr ihr Heft zurück."
         show Partizia mouth_small with dissolve
         partizia "\"Hmmm, ich sehe.\""
         show Partizia mouth_happy with dissolve
