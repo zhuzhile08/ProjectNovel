@@ -89,7 +89,7 @@ label credits:
 
     show text "Qualitätskontrolle:" with Dissolve(2.0)
     scene black with Dissolve(2.0)
-    show text "Thorin" with Dissolve(1.0)
+    show text "Thorin, Alex" with Dissolve(1.0)
     with Pause(1.0)
     scene black with Dissolve(2.0)
 
