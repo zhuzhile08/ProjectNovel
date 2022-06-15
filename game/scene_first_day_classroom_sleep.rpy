@@ -23,7 +23,7 @@ label firstDayClassroomSleep:
     "Hashmaps, Hash Algorythmus, das geht mir völlig über den Kopf."
     "Das letzte mal, wo wir selber eine machen sollten, war meine in Geschwindigkeit der Vorletzte."
     "Zumindest habe ich es geschafft, eine zu machen, im Gegensatz zu Aki."
-    "Naja, ich kann eh nicht hoffen, das alles zu verstehen, also kann ich auch einmal schlafen gehen."
+    "Na ja, ich kann eh nicht hoffen, das alles zu verstehen, also kann ich auch einmal schlafen gehen."
     scene Bg Load
     with irisin
     pause 4.0

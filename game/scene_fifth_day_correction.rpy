@@ -7,32 +7,32 @@ label fifthDayCorrection:
         "So verbringe ich mein Wochenende."
         "Ich könnte jetzt Sport machen, ich könnte jetzt ein ganzes Videospiel für ein Schulprojekt programmieren."
         "Aber nein."
-        "Ich bin fast eingeschlafen, als ich plötzlich irgentwas gehört habe."
-        "Ich glaube es ist... Klopfen?"
+        "Ich bin fast eingeschlafen, als ich plötzlich etwas gehört habe."
+        "Ich glaube, es ist... Klopfen?"
         "Ich hatte schon oft solche Halluzinationen, wo ich gedacht habe, dass irgendeiner meinen Namen ruft oder dass irgendjemand an der Tür klopft."
-        "Keine Ahnung warum das passiert, aber es passiert und es ist nerfig."
+        "Keine Ahnung, warum das passiert, aber es passiert und es ist nervig."
         menu:
             with Dissolve(0.3)
             "Soll ich das Klopfen ignorieren?"
             "Ja":
                 stop music fadeout 5.0
-                "Meh, keine Lust jetzt aufzustehen."
+                "Meh, keine Lust, jetzt aufzustehen."
                 "Mein Lieblingssong spielt jetzt gerade immerhin."
                 "Und ich werde auch *gähn* langsam müde."
                 scene Bg Load with irisin
-                "Ich fühlte wie die Welt vor meinen Augen verschwindet und sich in unendliche Dunkelheit verwandelt."
+                "Ich fühlte, wie die Welt vor meinen Augen verschwindet und sich in unendliche Dunkelheit verwandelt."
                 "Gute Nacht."
             "Nein":
-                "Ich legte meine Kopfhörer ab und ging zu Tür."
+                "Ich legte meine Kopfhörer ab und ging nach unten."
                 "Ich öffne vorsichtig die Tür."
                 scene Bg Home Outwards with fade
                 stop music fadeout 1.0
                 queue music "audio/music/aki.ogg" loop fadein 2.0
                 unknown "\"Hi Marcus~!\""
                 "FUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUC-"
-                "Ich kanns nicht glauben."
+                "Ich kann es nicht glauben."
                 "Ich habe einmal meine Ruhe gefunden, schon kommt sie und ruiniert alles."
-                "Genau so wie wenn ich Pizza Hawaii auf einer langen Liste von normalen und leckeren Pizzen sehe."
+                "Genauso wie wenn ich Pizza Hawaii auf einer langen Liste von normalen und leckeren Pizzen sehe."
                 marcus "\"Jaaaaaaaaa? Was ist denn jetzt los?\""
                 show Aki outfit_casual left_casual right_casual eyes_closed mouth_laugh_teeth with dissolve
                 aki "\"Heeeeeeey! Wie gehts!\""
@@ -40,7 +40,7 @@ label fifthDayCorrection:
                 marcus "\"Kacke.\""
                 show Aki eyes_open mouth_small with dissolve
                 aki "\"Wieso denn?\""
-                marcus "\"Weil du hier bist und mich nerfst!\""
+                marcus "\"Weil du hier bist und mich nervst!\""
                 show Aki eyebrows_sad with dissolve
                 aki "\"Aber ich habe ein paar Fragen!\""
                 marcus "\"Jaja, komm rein.\""
@@ -55,7 +55,7 @@ label fifthDayCorrection:
                 show Aki eyes_open mouth_small with dissolve
                 aki "\"Kaffee.\""
                 marcus "\"OK.\""
-                "Nachdem ich die Getränke vorbereitet habe, ging ich zu meinen Zimmer zurück."
+                "Nachdem ich die Getränke vorbereitet habe, ging ich zu meinem Zimmer zurück."
                 "Ich habe für mich auch ein Kaffee gemacht."
                 show Aki eyes_closed mouth_laugh_teeth with dissolve
                 aki "\"Mmmh! Danke Marcus~!\""
@@ -74,7 +74,7 @@ label fifthDayCorrection:
                 show Aki eyes_open mouth_small with dissolve
                 aki "\"Aufgaben.\""
                 marcus "\"Was?\""
-                aki "\"Naja, ich habe Zuhause selber noch ein bisschen am AcI geübt und ein Art Selbsttest geschrieben.\""
+                aki "\"Na ja, ich habe Zuhause selbst noch ein bisschen am AcI geübt und ein Selbsttest geschrieben oder sowas in der Art.\""
                 aki "\"Kannst du meine Sätze bitte für mich korrigieren?\""
                 "Ich stöhnte."
                 "Ich meine, ich habe eh nichts zu tun, also wieso nicht?"
@@ -99,7 +99,7 @@ label fifthDayCorrection:
                     with Dissolve(0.3)
                     "Vidit alios in timore fuisse. - Er sah, dass anderen in Furcht waren."
                     "Richtig":
-                        "Sollte nach meinen Wissen korrekt sein."
+                        "Sollte nach meinem Wissen korrekt sein."
                     "Tempusfehler - \"fuisse\" muss in Plusquamperfekt übersetzt werden":
                         $ aki_affec += 1
                         "Ein recht kleiner Tempusfehler."
@@ -141,10 +141,10 @@ label fifthDayCorrection:
                         "Aki sollte auf diese besonders aufpassen."
                 
                 "Ich habe alle Aufgaben noch mal durchgeguckt und gab Aki das Blatt wieder zurück."
-                marcus "\"Du hast dich definitv sehr viel Verbessert, Aki.\""
+                marcus "\"Du hast dich definitiv sehr viel verbessert, Aki.\""
                 show Aki mouth_laugh with dissolve
                 "Aki lachte."
-                marcus "\"Aber noch ein bisschen Übung kann dir nichts schlechts tun.\""
+                marcus "\"Aber noch ein bisschen Übung kann dir nichts Schlechtes tun.\""
                 marcus "\"Wenn du Hilfe brauchst, kannst du immer mich fragen.\""
                 show Aki eyes_closed
                 aki "\"Danke Marcus!\""
@@ -157,13 +157,14 @@ label fifthDayCorrection:
                 "*Gähn* 10/10 würde ich nochmal machen."
                 "Gute Nacht."
                 scene Bg Load with fade
+
     if partizia_route == True:
         queue music "audio/music/club.ogg" loop fadein 3.0
         scene Bg Clubroom with fade
         "Fast eine ganze Woche ist vergangen."
-        "Es ist Freitags, und ich war gerade dabei, den Clubraum aufzuräumen, als ich ein leichtes Klopfen an der Tür hörte."
+        "Es ist freitags, und ich war gerade dabei, den Clubraum aufzuräumen, als ich ein leichtes Klopfen an der Tür hörte."
         unknown "\"Hallo?\""
-        marcus "\"Sie können reinkommen.\""
+        marcus "\"Sie können hereinkommen.\""
         stop music fadeout 2.0
         "Die Tür öffnete sich langsam."
         queue music "audio/music/partizia.ogg" loop fadein 2.0
@@ -173,14 +174,14 @@ label fifthDayCorrection:
         show Partizia eyes_open mouth_small with dissolve
         partizia "\"Hättest du für einen ganz kurzen Moment Zeit?\""
         marcus "\"Klar.\""
-        partizia "\"Dies ist bezüglich der Aufgabe, die du mir das Letzte mal gegeben hast.\""
+        partizia "\"Dies ist bezüglich der Aufgabe, die du mir das letzte Mal gegeben hast.\""
         "Sie holte aus ihrer Tasche ein Heft heraus."
         partizia "\"Könntest du diese bitte für mich korrigieren?\""
         marcus "\"Ich sehe keinen Grund, wieso ich es nicht machen sollte.\""
         "Partizia überreichte mir ihr Heft."
         show Partizia mouth_happy with dissolve
         partizia "\"Danke sehr.\""
-        "Ich höffnete ihr Heft."
+        "Ich öffnete ihr Heft."
         stop music fadeout 2.0
         queue music "audio/music/club.ogg" loop fadein 3.0
         show Partizia eyes_open mouth_small with dissolve
@@ -188,7 +189,7 @@ label fifthDayCorrection:
             with Dissolve(0.3)
             "relinquere - relinctus"
             "Richtig":
-                "Die Lösung ist anscheinend Korrekt."
+                "Die Lösung ist anscheinend korrekt."
             "Falsch, richtig ist relictus":
                 $ partizia_affec += 1
                 "Ich strich die falsche Lösung durch und schrieb die Richtie auf."
@@ -229,10 +230,10 @@ label fifthDayCorrection:
             "Viri uxores et liberos relictos desiderabant. - Die Männer sehnten auf die Ehefrauen und Kinder, obwohl sie zurückgelassen worden waren."
             "Tempusfehler -":
                 "Scheint auch richtig zu sein."
-            "Richtig, aber der Satz macht vom Inhalt keinen Sinn":
+            "Richtig, aber der Satz macht vom Inhalt her keinen Sinn":
                 $ partizia_affec += 1
                 "Hmmm..."
-                "Der Satz ist von der Übersetzung her richtig, aber Partizia hat den Satz konzessiv übersetzt, was bei diesen Satz nicht möglich ist."
+                "Der Satz ist von der Übersetzung her richtig, aber Partizia hat den Satz konzessiv übersetzt, was bei diesem Satz nicht möglich ist."
                 "Ich notiere den letzten Fehler in ihr Heft."
 
         marcus "\"OK... Alles sollte jetzt richtig sein.\""
@@ -241,7 +242,7 @@ label fifthDayCorrection:
         partizia "\"Hmmm, ich sehe.\""
         show Partizia mouth_happy with dissolve
         partizia "\"Ein nochmals sehr großes Danke schön.\""
-        marcus "\"Kein Problem, wir sind ja Klassenkameraden, ich denke wir sollten uns helfen.\""
+        marcus "\"Kein Problem, wir sind ja Klassenkameraden, ich denke, wir sollten uns helfen.\""
         "Parzitia zeigte mir ein Lächeln."
         show Partizia mouth_small with dissolve
         partizia "\"Hättest du noch einige Tipps für mich?\""
@@ -250,12 +251,11 @@ label fifthDayCorrection:
         partizia "\"Ach, sieh dir die Zeit an. Ich muss ganz schnell los. Ich habe noch was zu machen.\""
         "Wahrscheinlich Gedenken lesen üben."
         show Partizia eyes_closed mouth_happy with dissolve
-        partizia "\"Und nein, ich übe zuhause kein Gedanken lesen.\""
+        partizia "\"Und nein, ich übe zu Hause kein Gedanken lesen.\""
         "Warte was?"
         show Partizia eyes_closed mouth_laugh with dissolve
         partizia "\"Jedenfalls, schönes Wochenende noch.\""
-        "Sie ging zügig aus der Tür raus, während sie mir hinterhergewinkt hat."
+        "Sie ging zügig aus der Tür raus, während sie mir hinterher gewinkt hat."
         "Was zum Teufel war das?"
         stop music fadeout 3.0
         scene Bg Load with fade
-

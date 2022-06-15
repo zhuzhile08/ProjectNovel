@@ -20,7 +20,7 @@ label secondDayRoad:
         show Aki eyes_open mouth_small with dissolve
         aki "\"Keine Ahnung. Ich konnte gestern einfach nicht so gut schlafen.\""
         marcus "\"Wieso denn?\""
-        aki "\"Naja, der Test.\""
+        aki "\"Na ja, der Test.\""
         "Achso, der Test! Den habe ich komplett vergessen."
         show Aki eyebrows_sad with dissolve
         aki "\"Ich hoffe wirklich, dass ich bestehen werde.\""

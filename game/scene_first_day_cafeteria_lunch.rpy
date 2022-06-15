@@ -63,7 +63,7 @@ label firstDayCafeteriaLunch:
     "Sie handelt manchmal wie ein Kindergartenkind."
     "Und das war auch das 420ste mal, dass ich so sowas in der Art versprochen habe."
     "Wie man sehr gut sieht, halte ich mich nicht wirklich daran."
-    marcus "\"Naja, Guten Appetit!\""
+    marcus "\"Na ja, Guten Appetit!\""
     show Aki eyebrows_sad mouth_sad with dissolve
     aki "\"Ich weiß nicht, ob ich noch Appetit habe, nachdem du Pizza Hawaii erwähnt hast.\""
     marcus "\"Was?!\""
@@ -83,7 +83,7 @@ label firstDayCafeteriaLunch:
     show Aki eyebrows_neutral eyes_open mouth_small
     aki "\"Hast du nicht irgendetwas mit deinen Club oder so gesagt?\""
     marcus "\"Was?\""
-    aki "\"Naja, dass du irgendwie dorthin musstest.\""
+    aki "\"Na ja, dass du irgendwie dorthin musstest.\""
     "Das habe ich komplett vergessen."
     marcus "\"Ach ja! Danke, dass du mich daran erinnert hast!\""
     marcus "\"Ich glaube ich muss jetzt langsam los.\""

@@ -6,8 +6,8 @@ label thirdDayParkTutorRequest:
     queue music "audio/music/park.ogg" loop fadein 3.0
     "Aaah..."
     "Die wunderschöne Natur."
-    "Gibt es eine bessere Art sein Wochenende zu genießen?"
-    "Spatzieren gehen einen tut gut."
+    "Gibt es eine bessere Art, sein Wochenende zu genießen?"
+    "Spazieren gehen einem tut gut."
     stop music fadeout 3.0
     play music "audio/music/aki.ogg" loop fadein 2.0
     unknown "\"MAAAAAAAAAAAARRRRRCUUUUUUUS!\""
@@ -16,8 +16,8 @@ label thirdDayParkTutorRequest:
     marcus "*stöhn* \"Ja, was ist?\""
     show Aki outfit_casual left_casual right_casual eyes_closed mouth_laugh_teeth with dissolve
     aki "\"Wie geht es dir?\""
-    "Das wars?"
-    "Normalerweise würde sie mich jetzt mit ihren Lieblingsspiele oder Animes volllabern."
+    "Das war's?"
+    "Normalerweise würde sie mich jetzt über ihren Lieblingsspielen oder Animes voll labern."
     "Dark Souls war das?"
     "Aber diesmal tat sie es nicht."
     marcus "\"Wieso fragst du.\""
@@ -26,31 +26,31 @@ label thirdDayParkTutorRequest:
     marcus "\"Wieso fragst du?\""
     show Aki mouth_happy with dissolve
     aki "\"Einfach so!\""
-    "Sie will mich irgentwie austricksen, das weiß ich jetzt schon."
+    "Sie will mich irgendwie austricksen, das weiß ich jetzt schon."
     marcus "\"Ja und?\""
     show Aki mouth_small with dissolve
     aki "\"Dann kannst du mir doch auch ein bisschen Nachhilfe geben, oder?\""
     marcus "\"Wieso?\""
     show Aki mouth_big with dissolve
-    aki "\"Naja, du bist ein Weltmeister in Latein, deiner Kindheitsfreunden einbisschen Nachhilfe zu geben ist doch nichts!\""
+    aki "\"Na ja, du bist ein Weltmeister in Latein, deiner Kindheitsfreundin ein bisschen Nachhilfe zu geben ist doch nichts!\""
     "Kacke."
-    "Wie soll ich mich hier rausreden?"
+    "Wie soll ich mich hier herausreden?"
     show Aki eyebrows_sad mouth_sad with dissolve
     aki "\"Komm schon!\""
-    "Sie guckte mich ganz traurig an."
+    "Sie gucktemich ganz traurig an."
     "Wie soll ich jetzt noch nein sagen können?!"
     marcus "\"Eeeeh, also ich muss...\""
     "Aki kam jetzt ganz nah an mich ran."
     show Aki eyebrows_neutral eyes_closed mouth_laugh_teeth with dissolve:
         ypos 1.65 xanchor 0.5 yanchor 1.0 zoom 2.0
-    aki "\"Wenn du nicht ja sagst, dann erzähl ich der ganzen Schule dass du unter deinen Bett diese komischen Zeitschriften mit n...\""
+    aki "\"Wenn du nicht ja sagst, dann erzähle ich der ganzen Schule dass du unter deinem Bett diese komischen Zeitschriften mit n...\""
     marcus "\"JAJAJAJAJA OK OK ICH GEBE DIR NACHHILFE!\""
     "Wie zur Hölle wusste sie das?"
     marcus "\"Wer hat das dir denn erzählt?\""
     show Aki eyes_open mouth_small with dissolve:
         ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 1.0
     aki "\"Also das stimmt?\""
-    "Doppelt reingelegt und verkackt."
+    "Doppelt hereingelegt und verkackt."
     marcus "\"Nein nein nein, das stimmt gar nicht, wirklich nicht.\""
     "Aki interessierte sich nicht mehr dafür und fing an zu kichern."
     show Aki eyes_closed mouth_laugh_teeth with dissolve
@@ -69,7 +69,7 @@ label thirdDayParkTutorRequest:
     show Aki eyes_closed mouth_laugh with dissolve
     aki "\"Gut genug! Hihi.\""
     "Das wars also mit mein chilligen Wochenende."
-    "Ich habe noch ein Paar Runden um den See gedreht, während Aki mich über Sheen Megoomy Tensai oder sowas vollgeredet hat."
+    "Ich habe noch ein paar Runden um den See gedreht, während Aki mich über Sheen Megoomy Tensai oder sowas belabert hat."
     scene Bg Load with fade
     stop music fadeout 2.0
     stop noise fadeout 3.0
