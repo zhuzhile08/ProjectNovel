@@ -29,7 +29,7 @@ label firstDayClubroomLearning:
     menu:
         with Dissolve(0.3)
         "Was soll ich denn überhaupt lernen?"
-        "PC lernen":
+        "Pc lernen":
             "Aus den Schrank vor mir habe ich ein uraltes, mit Staub bedecktes Buch genommen."
             "Ich puste den Staub weg und eine riesige Wolke taucht auf"
             "Unter der Staubschicht erscheint der Text:"
@@ -37,7 +37,7 @@ label firstDayClubroomLearning:
 
             $ partizia_route = True
 
-            jump readPC
+            jump readPc
         "AcI lernen":
             "Aus den Schrank vor mir habe ich ein uraltes, mit Staub bedecktes Buch genommen."
             "Ich puste den Staub weg und eine riesige Wolke taucht auf"
@@ -49,9 +49,9 @@ label firstDayClubroomLearning:
             jump readAcI
 
 
-label readPC:
-    "{size=+10}{b}{u}Das PC{/u}{/b}{/size}\n{b}{u}Grundwissen und Aufbau:{/u}{/b}"
-    "Das PC, Partizipium Coniunctum, kommt in lateinischen Sätzen oft als Attribut vor. Man bildet diese mit dem Bezugswort und dem PPP (Partizip Perfekt Passiv). Außerdem stehen Pcs immer vorzeitig zum Hauptsatz."
+label readPc:
+    "{size=+10}{b}{u}Das Pc{/u}{/b}{/size}\n{b}{u}Grundwissen und Aufbau:{/u}{/b}"
+    "Das Pc, Partizipium Coniunctum, kommt in lateinischen Sätzen oft als Attribut vor. Man bildet diese mit dem Bezugswort und dem PPP (Partizip Perfekt Passiv). Außerdem stehen Pcs immer vorzeitig zum Hauptsatz."
     "{color=#00a7ff}{u}Cattus{/u}{/color} {color=#FF4B4B}{u}servatus{/u}{/color} latus est. - Die {color=#FF4B4B}gerettete{/color} {color=#00a7ff}Katze{/color} ist fröhlich.\n {size=-10}*Cattus = Katze{/size}\n\n{size=-3}In diesem Fall ist \"Cattus\" das Bezugswort und \"servatus\" das Partizip.{/size}"
     "{b}{u}Ablativ des Urhebers:{/u}{/b}\nDa das Pc im Passiv steht, kann es im Satz auch einen Urheber geben, der dem Subjekt eine Tat ausübt. Solche stehen im Ablativ und werden Ablativ ddes Urhebers genannt."
     "{color=#00a7ff}{u}Cattus{/u}{/color} a {color=#438A64}{u}domino{/u}{/color} {color=#FF4B4B}{u}servatus{/u}{/color} latus est. - Die {color=#438A64}vom Herrn{/color} {color=#FF4B4B}gerettete{/color} {color=#00a7ff}Katze{/color} ist fröhlich."
@@ -64,7 +64,7 @@ label readPC:
 
         "Nein":
             "Nicht wirklich, aber alles nochmal zu lesen kann ja einen nichts schlechtes antun."
-            jump readPC
+            jump readPc
         "Ja":
             jump after
 

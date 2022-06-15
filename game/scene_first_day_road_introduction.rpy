@@ -35,7 +35,7 @@ label firstDayRoadIntroduction:
     "Der Lateinclub wurde von der vorletzten Schüler-generation gegründet, und ich bin seit dem letzten Jahr Präsident vom Club."
     "Wir sind eine recht aktive Gruppe mit recht vielen Mitgliedern, nämlich 14."
     show Aki eyebrows_sad with dissolve
-    aki "\"Ich hoffe wir scheiben den Test nicht über AcIs, die kann ich gar nicht!\""
+    aki "\"Ich hoffe wir schreiben den Test nicht über AcIs, die kann ich gar nicht!\""
     scene Bg Load
     with fade
     stop music fadeout 3.0

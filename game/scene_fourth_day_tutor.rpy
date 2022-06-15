@@ -5,7 +5,7 @@ label fourthDayTutor:
         "Ich habe schon seit heute morgen auf Aki gewartet."
         "Jetzt ist es gerade 10 Uhr."
         "Naja, mir wird es langsam langweilig. Was soll ich überhaupt machen um die Zeit zu vertreiben?"
-        "Ich schaue mich im Zimmer um und sehe ein Haufen Bücher und mein PC"
+        "Ich schaue mich im Zimmer um und sehe ein Haufen Bücher und mein Pc"
         menu:
             with Dissolve(0.3)
             "Was soll ich machen?"
@@ -27,7 +27,7 @@ label fourthDayTutor:
                 "Ich ging nach unten und führte sie zu meinen Zimmer."
             "Fortnite":
                 scene Bg Load with fade
-                "Ich mache mein PC an und öffne Fortnite."
+                "Ich mache mein Pc an und öffne Fortnite."
                 "Ich habe es schon in einer ganzen Weile nicht mehr gespielt, und ich glaube, dass ich damit die Zeit recht gut verschwenden kann, bis Aki endlich kommt."
                 pause 3.0
                 marcus "\"BOOOOOOM GET RECT LOOOOOOOOSERS!\""
@@ -50,7 +50,7 @@ label fourthDayTutor:
         aki "\"Das letzte mal war vor... 7 Jahren?\""
         aki "\"Nicht vieles hat sich geändert.\""
         "Mein Zimmer ist ziemlich kahl."
-        "Ich brauche eigentlich nur ein PC, ein Tisch und ein Bett um zu leben."
+        "Ich brauche eigentlich nur ein Pc, ein Tisch und ein Bett um zu leben."
         "Vieleicht auch einen Schrank um meine Bücher zu lagern."
         aki "\"Vieleicht gucke ich jetzt mal unter deinen Be-\""
         marcus "\"NEIN NEIN NEIN DAS MACHST DU JETZT NICHT.\""
@@ -196,7 +196,7 @@ label fourthDayTutor:
         partizia "\"Nun, wollen wir Anfangen?\""
         marcus "\"Ja, aber-\""
         show Partizia eyes_closed mouth_happy with dissolve
-        partizia "\"Klasse. Nun, kannst du mir bitte noch einmal von Grund auf PCs erklären?\""
+        partizia "\"Klasse. Nun, kannst du mir bitte noch einmal von Grund auf Pcs erklären?\""
         partizia "\"Ich denke, dass es keinen besseren als du gibt, der es mir erklären könnte.\""
         "Klasse. Jetzt lässt sie mich nicht ausreden."
         "Da ist definitiv etwas Zwielichtiges im Gange, aber das ist jetzt nicht das wichtige."
@@ -206,12 +206,12 @@ label fourthDayTutor:
         show Partizia eyes_open mouth_small with dissolve
         menu:
             with Dissolve(0.3)
-            partizia "\"PC steht für Partizipium Coniunctum, soweit ich weiß.\""
+            partizia "\"Pc steht für Partizipium Coniunctum, soweit ich weiß.\""
             "Ja":
                 $ partizia_affec += 2
                 marcus "\"Ja\""
             "Nein":
-                marcus "\"Nein, PC steht für Partizipium cum Coniuncto\""
+                marcus "\"Nein, Pc steht für Partizipium cum Coniuncto\""
         partizia "\"OK.\""
         menu:
             with Dissolve(0.3)
@@ -239,7 +239,7 @@ label fourthDayTutor:
         show Partizia eyes_open mouth_small with dissolve
         menu:
             with Dissolve(0.3)
-            partizia "\"Soweit ich weiß, kann man das PC als sehr viele verschiedene Sorten von Nebensätzen übersetzen, oder?\""
+            partizia "\"Soweit ich weiß, kann man das Pc als sehr viele verschiedene Sorten von Nebensätzen übersetzen, oder?\""
             "Ja":
                 $ partizia_affec += 2
                 marcus "\"Ja, du kannst es zum Beispiel als Relativ- und Adverbialsatz übersetzen, aber auch als Beiordnung und Präpositionalausdruck.\""
@@ -248,7 +248,7 @@ label fourthDayTutor:
         partizia "\"Alles Klar.\""
         menu:
             with Dissolve(0.3)
-            partizia "\"Man kann PCs nur vorzeitig zum Hauptsatz übersetzen, oder?\""
+            partizia "\"Man kann Pcs nur vorzeitig zum Hauptsatz übersetzen, oder?\""
             "Ja":
                 $ partizia_affec += 2
                 marcus "\"Jep.\""
@@ -264,7 +264,7 @@ label fourthDayTutor:
         marcus "\"Kein Problem.\""
         scene Bg Load with fade
         stop music fadeout 6.0
-        "Aki und ich haben den Rest des Tages damit verbracht, einige Übungsaufgaben zum Thema PCs zu machen."
+        "Aki und ich haben den Rest des Tages damit verbracht, einige Übungsaufgaben zum Thema Pcs zu machen."
         "Desto mehr Zeit ich mit mir Verbringe, desto mehr denke ich, dass sie schwarte Magie beherrscht, regelmäßig Gedanken liest und Dämo- oh warte falsches Spiel."
         "Jedenfalls, Partizia hat definitiv sehr große Fortschritte gemacht, und am Ende des Tages habe ich ihr mit ein Paar schwierigeren Übungsaufgaben auf den Weg geschickt."
         "Sie hat mir gesagt, dass sie mir ihre Antworten zeigt, wenn wir das nächste Mal uns im Clubraum sehen."

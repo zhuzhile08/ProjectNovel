@@ -14,13 +14,13 @@ label secondDayAfternoon:
         marcus "\"Wenn du etwas hast, kannst du immer mir bescheid sagen.\""
         aki "\"Naja, du weißt schon, meine Beziehung mit AcIs, wie kann ich da nicht nervös sein?!\""
         "Darauf habe ich auch keine Antwort mehr."
-        "Aki scheint das Konzept von AcIs nicht zu verstehen, obwohl das viel einfacher ist als PCs."
+        "Aki scheint das Konzept von AcIs nicht zu verstehen, obwohl das viel einfacher ist als Pcs."
         "Naja, was kann ich denn als jemand der beides verstehet sagen?"
     if partizia_route == True:
         "Aki hat sich anscheinend krank gemeldet."
         "Ich kann irgendwie verstehen wieso, aber gleichzeitig auch nicht."
         "Aki hat wahrscheinlich Angst vor den Testergebnissen und hat nicht gut geschlafen."
-        "Aber das Thema war PCs, ich kann nicht verstehen wieso sie Angst haben soll, sie ist ein Weltmeister darin."
+        "Aber das Thema war Pcs, ich kann nicht verstehen wieso sie Angst haben soll, sie ist ein Weltmeister darin."
         "Einmal alleine Mittag zu essen ist ja auch nicht schlecht."
     scene Bg Load with fade
     pause 2.0
@@ -152,7 +152,7 @@ label secondDayAfternoon:
         "Da finde ich die 200 Euro sogar warscheinlicher."
         marcus "\"Klar. Welches Thema denn?\""
         show Partizia eyes_open mouth_small with dissolve
-        partizia "\"PCs.\""
+        partizia "\"Pcs.\""
         marcus "\"Alles klar.\""
         show Partizia eyes_closed mouth_happy with dissolve
         partizia "\"Danke sehr. Ich hätte nichts anderes von dir erwartet.\""

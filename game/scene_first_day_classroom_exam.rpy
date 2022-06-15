@@ -13,7 +13,7 @@ label firstDayClassroomExam:
         jump aciExam
     else:
         teacher "Ihr könnt loslegen. Dreht das Blatt um."
-        "Der Test ist über PCs."
+        "Der Test ist über Pcs."
         "Genau das was ich gelernt habe!"
         "Das nenne ich reiner Zufall."
         jump pcExam
@@ -275,7 +275,7 @@ label aftermath:
         "Ich sah rüber zu Aki und sie saß stolz in ihren Stuhl."
         marcus "\"Diesmal hattest du ja Glück.\""
         show Aki mouth_happy with dissolve
-        aki "\"Hehe! Du weißt ja, dass PCs meine Spezialität sind.\""
+        aki "\"Hehe! Du weißt ja, dass Pcs meine Spezialität sind.\""
         show Aki eyes_open mouth_small with dissolve
     
     aki "\"Jedenfalls, willst du mit mir nach Hause gehen?\""
