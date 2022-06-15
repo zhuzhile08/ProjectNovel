@@ -73,7 +73,7 @@ label firstDayCafeteriaLunch:
     "Ehrlich gesagt, weiß ich nicht, ob ich mich freuen sollte oder nicht."
     "Einerseits hat sie endlich Sarkasmus gecheckt, andererseits wurde ich gerade so mies reingelegt."
     show Aki eyes_closed mouth_laugh with dissolve
-    aki "\"Komm, sei nicht so mies drauf, deine Pizza wartet noch auf dich! Fufufufufu\""
+    aki "\"Komm, sei nicht so mies drauf, deine Pizza wartet noch auf dich! Fufufufufu~\""
     scene Bg Load with fade
     pause 3.0
     scene Bg Cafeteria with fade # I need the cafeteria entrance here
