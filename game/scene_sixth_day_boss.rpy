@@ -1,4 +1,12 @@
 init python:
+    import uuid
+    import random
+
+    class TextObject:
+        def __init__(self, txt, x, y):
+            self.txt = txt
+            self.x = x
+            self.y = y
 
     class DragObject:
         def __init__(self, txt, x=0.25, y=0.5):
@@ -14,9 +22,81 @@ init python:
             self.obj = obj
             self.txt = txt
             self.currentObj = None
+            self.uniqueId = None
+            # Generate a unique ID for this drag spot
+            self.uniqueId = str(uuid.uuid4())
         
         def hasCorrectObject(self):
             return self.currentObj == self.obj
+        def isCorrectSpot(self, spot):
+            return self.x == spot.x and self.y == spot.y
+
+    class Sentence:
+        def __init__(self, txt):
+            self.txt = txt
+            self.dragObjects = []
+            self.dragSpots = []
+            self.txtObj = TextObject(self.txt, 0.25, 0.5)
+        
+        def addDragObject(self, obj):
+            self.dragObjects.append(obj)
+        def addDragSpot(self, spot):
+            self.dragSpots.append(spot)
+        def getDragObjects(self):
+            return self.dragObjects
+        def getDragSpots(self):
+            return self.dragSpots
+        def calculateAllPositions(self, indexInSentences):
+
+            # window size: 1280x720
+
+            txtYPos = 0.05 + indexInSentences * 0.25
+            dragSpotYPos = txtYPos + 0.1
+            self.txtObj.y = txtYPos
+            # x position in pixels. xalign and yalign are 0
+            self.txtObj.x = int(1280 - len(self.txt) * 10 - 640*0.8)
+            
+            for obj in self.dragObjects:
+                # randomize x position between 0.1 and 0.75
+                obj.x = random.uniform(0.1, 0.75)
+                # randomize y position between 0.8 and 0.85
+                obj.y = random.uniform(0.8, 0.85)
+
+            allObjectWidth = 0
+            for obj in self.dragSpots:
+                thisLength = len(obj.txt) * 10
+                if type(obj) == DragSpot:
+                    thisLength = len(obj.obj.txt) * 10
+                allObjectWidth += thisLength
+            objIndex = 0
+            for i in range(len(self.dragSpots)):
+                obj = self.dragSpots[i]
+                thisLength = len(obj.txt) * 10
+                if type(obj) == DragSpot:
+                    thisLength = len(obj.obj.txt) * 10
+
+                
+                lastObj = self.dragSpots[i-1] if i > 0 else None
+                if lastObj is not None:
+                    # with some space between the objects
+                    lastLength = len(lastObj.txt)
+                    if type(lastObj) == DragSpot:
+                        lastLength = len(lastObj.obj.txt) 
+                    lastLengthA = lastLength * 11 + 50
+
+                    lastLength = int(lastLengthA)
+                    obj.x = lastObj.x + lastLength 
+                else:
+                    obj.x = self.txtObj.x - allObjectWidth / 2 + thisLength
+
+                obj.y = dragSpotYPos
+                if type(obj) == DragSpot:
+                    obj.txt = len(self.dragObjects[objIndex].txt) * " "
+                    
+                    objIndex += 1
+
+    def drag_position(drags, drop):
+        print(str(drags[0].x) + " " + str(drags[0].y))
 
     def drag_placed(drags, drop):
         if not drop:
@@ -38,9 +118,10 @@ init python:
         # Get dragSpot with txt == drop drag_name
         dragSpt =None
         for dragSpot in dragSpots:
-            if dragSpot.txt == drop.drag_name:
+            if dragSpot.uniqueId == drop.drag_name:
                 dragSpt = dragSpot 
                 break
+        
         if not dragSpt:
             return
         if dragSpt.currentObj:
@@ -81,21 +162,152 @@ init python:
 
 default dragItems = []
 default dragSpots = []
+default texts = []
+default sentences = []
 
 label sixthDayBoss:
-    jump firstDrag
+    jump aciDrag
 
-label firstDrag:
+label aciDrag:
     
     $ dragItems = []
     $ dragSpots = []
+    $ texts = []
 
-    $ dragItems.append(DragObject("1", 0.25, 0.5))
-    $ dragItems.append(DragObject("Test 2", 0.5, 0.5))
+    $ sentences = []
+    $ sentences.append(Sentence("a) Gladiatorem fortem vincere scis."))
+
+    $ sentences[0].dragObjects.append(DragObject("Du", 0.25, 0.8))
+    $ sentences[0].dragObjects.append(DragObject("weißt", 0.25, 0.8))
+    $ sentences[0].dragObjects.append(DragObject("der starke Gladiator", 0.25, 0.8))
+    $ sentences[0].dragObjects.append(DragObject("besiegt.", 0.25, 0.8))
+    $ sentences[0].dragSpots.append(DragSpot(0, 0, sentences[0].dragObjects[0], ""))
+    $ sentences[0].dragSpots.append(DragSpot(0, 0, sentences[0].dragObjects[1], ""))
+    $ sentences[0].dragSpots.append(TextObject(", dass", 0, 0))
+    $ sentences[0].dragSpots.append(DragSpot(0, 0, sentences[0].dragObjects[2], ""))
+    $ sentences[0].dragSpots.append(DragSpot(0, 0, sentences[0].dragObjects[3], ""))
+
+
+    $ sentences.append(Sentence("b) Video gladiatorem gladio petere."))
+    $ sentences[1].dragObjects.append(DragObject("Ich", 0.25, 0.8))
+    $ sentences[1].dragObjects.append(DragObject("sehe", 0.25, 0.8))
+    $ sentences[1].dragObjects.append(DragObject("der Gladiator", 0.25, 0.8))
+    $ sentences[1].dragObjects.append(DragObject("mit seinem Schwert", 0.25, 0.8))
+    $ sentences[1].dragObjects.append(DragObject("angreift.", 0.25, 0.8))
+    $ sentences[1].dragSpots.append(DragSpot(0, 0, sentences[1].dragObjects[0], ""))
+    $ sentences[1].dragSpots.append(DragSpot(0, 0, sentences[1].dragObjects[1], ""))
+    $ sentences[1].dragSpots.append(TextObject(", dass", 0, 0))
+    $ sentences[1].dragSpots.append(DragSpot(0, 0, sentences[1].dragObjects[2], ""))
+    $ sentences[1].dragSpots.append(DragSpot(0, 0, sentences[1].dragObjects[3], ""))
+    $ sentences[1].dragSpots.append(DragSpot(0, 0, sentences[1].dragObjects[4], ""))
+
+    $ sentences.append(Sentence("c) Gladiator confirmabat se fortem esse."))
+    $ sentences[2].dragObjects.append(DragObject("Der Gladiator", 0.25, 0.8))
+    $ sentences[2].dragObjects.append(DragObject("bestätigt", 0.25, 0.8))
+    $ sentences[2].dragObjects.append(DragObject("er", 0.25, 0.8))
+    $ sentences[2].dragObjects.append(DragObject("stark", 0.25, 0.8))
+    $ sentences[2].dragObjects.append(DragObject("ist.", 0.25, 0.8))
+    $ sentences[2].dragSpots.append(DragSpot(0, 0, sentences[2].dragObjects[0], ""))
+    $ sentences[2].dragSpots.append(DragSpot(0, 0, sentences[2].dragObjects[1], ""))
+    $ sentences[2].dragSpots.append(TextObject(", dass", 0, 0))
+    $ sentences[2].dragSpots.append(DragSpot(0, 0, sentences[2].dragObjects[2], ""))
+    $ sentences[2].dragSpots.append(DragSpot(0, 0, sentences[2].dragObjects[3], ""))
+    $ sentences[2].dragSpots.append(DragSpot(0, 0, sentences[2].dragObjects[4], ""))
+
+
+    python:
+        ind = 0
+        for sen in sentences:
+            sen.calculateAllPositions(ind)
+            for d in sen.dragObjects:
+                dragItems.append(d)
+            texts.append(sen.txtObj)
+            for ds in sen.dragSpots:
+                if type(ds) == DragSpot:
+                    dragSpots.append(ds)
+                else:
+                    texts.append(ds)
+            
+            ind += 1
+
+    call screen drag_test2
+    menu:
+        "Bist du dir sicher?"
+        "Ja":
+            hide screen drag_test2
+            jump aciDrag2
+        "Nein":
+            # warum repeatet sich das wieder hilfe
+            jump aciDrag
+
+label aciDrag2:
+    "Nächste aufgabe"
+    $ dragItems = []
+    $ dragSpots = []
+    $ texts = []
 
     
-    $ dragSpots.append(DragSpot(0.1, 0, dragItems[0], "Spot 1"))
-    $ dragSpots.append(DragSpot(0.6, 0, dragItems[1], "Very long text ss"))
+    $ sentences = []
+    # First sentence: Equum celere properavisse audivit.
+    # translation: Er hörte, dass das Pferd schnell geeilt hatte.
+    $ sentences.append(Sentence("a) Equum celere properavisse audivit."))
+    $ sentences[0].dragObjects.append(DragObject("Er", 0.25, 0.8))
+    $ sentences[0].dragObjects.append(DragObject("hörte", 0.25, 0.8))
+    $ sentences[0].dragObjects.append(DragObject("das Pferd", 0.25, 0.8))
+    $ sentences[0].dragObjects.append(DragObject("schnell", 0.25, 0.8))
+    $ sentences[0].dragObjects.append(DragObject("geeilt", 0.25, 0.8))
+    $ sentences[0].dragObjects.append(DragObject("hatte.", 0.25, 0.8))
+    $ sentences[0].dragSpots.append(DragSpot(0, 0, sentences[0].dragObjects[0], ""))
+    $ sentences[0].dragSpots.append(DragSpot(0, 0, sentences[0].dragObjects[1], ""))
+    $ sentences[0].dragSpots.append(TextObject(", dass", 0, 0))
+    $ sentences[0].dragSpots.append(DragSpot(0, 0, sentences[0].dragObjects[2], ""))
+    $ sentences[0].dragSpots.append(DragSpot(0, 0, sentences[0].dragObjects[3], ""))
+    $ sentences[0].dragSpots.append(DragSpot(0, 0, sentences[0].dragObjects[4], ""))
+    $ sentences[0].dragSpots.append(DragSpot(0, 0, sentences[0].dragObjects[5], ""))
+
+    # Second sentence: Putavistis equum eum celerem esse.
+    # translation: Ihr glaubtet, dass dieses Pferd schnell war.
+    $ sentences.append(Sentence("b) Putavistis equum eum celerem esse."))
+    $ sentences[1].dragObjects.append(DragObject("Ihr", 0.25, 0.8))
+    $ sentences[1].dragObjects.append(DragObject("glaubtet", 0.25, 0.8))
+    $ sentences[1].dragObjects.append(DragObject("dieses Pferd", 0.25, 0.8))
+    $ sentences[1].dragObjects.append(DragObject("schnell war.", 0.25, 0.8))
+    $ sentences[1].dragSpots.append(DragSpot(0, 0, sentences[1].dragObjects[0], ""))
+    $ sentences[1].dragSpots.append(DragSpot(0, 0, sentences[1].dragObjects[1], ""))
+    $ sentences[1].dragSpots.append(TextObject(", dass", 0, 0))
+    $ sentences[1].dragSpots.append(DragSpot(0, 0, sentences[1].dragObjects[2], ""))
+    $ sentences[1].dragSpots.append(DragSpot(0, 0, sentences[1].dragObjects[3], ""))
+
+    # Third sentence: Dixerunt me equum violare.
+    # translation: Sie sagten, dass ich das Pferd verletzt habe.
+    $ sentences.append(Sentence("c) Dixerunt me equum violare."))
+    $ sentences[2].dragObjects.append(DragObject("Sie", 0.25, 0.8))
+    $ sentences[2].dragObjects.append(DragObject("sagten", 0.25, 0.8))
+    $ sentences[2].dragObjects.append(DragObject("ich", 0.25, 0.8))
+    $ sentences[2].dragObjects.append(DragObject("das Pferd verletzt", 0.25, 0.8))
+    $ sentences[2].dragObjects.append(DragObject("habe.", 0.25, 0.8))
+    $ sentences[2].dragSpots.append(DragSpot(0, 0, sentences[2].dragObjects[0], ""))
+    $ sentences[2].dragSpots.append(DragSpot(0, 0, sentences[2].dragObjects[1], ""))
+    $ sentences[2].dragSpots.append(TextObject(", dass", 0, 0))
+    $ sentences[2].dragSpots.append(DragSpot(0, 0, sentences[2].dragObjects[2], ""))
+    $ sentences[2].dragSpots.append(DragSpot(0, 0, sentences[2].dragObjects[3], ""))
+    $ sentences[2].dragSpots.append(DragSpot(0, 0, sentences[2].dragObjects[4], ""))
+
+    python:
+        ind = 0
+        for sen in sentences:
+            sen.calculateAllPositions(ind)
+            for d in sen.dragObjects:
+                dragItems.append(d)
+            texts.append(sen.txtObj)
+            for ds in sen.dragSpots:
+                if type(ds) == DragSpot:
+                    dragSpots.append(ds)
+                else:
+                    texts.append(ds)
+            
+            ind += 1
+
     call screen drag_test2
     menu:
         "Bist du dir sicher?"
@@ -103,14 +315,15 @@ label firstDrag:
             hide screen drag_test2
         "Nein":
             # warum repeatet sich das wieder hilfe
-            jump firstDrag
+            jump aciDrag2
+
 
 screen drag_test2:
     draggroup:
         # Drag spot
         for dragSpot in dragSpots:
             drag:
-                drag_name dragSpot.txt
+                drag_name dragSpot.uniqueId
                 xpos dragSpot.x
                 ypos dragSpot.y
                 draggable False
@@ -134,3 +347,10 @@ screen drag_test2:
                     xpadding 20
                     ypadding 20
                     text dragg.txt
+    for textObj in texts:
+        frame:
+            xpadding 20
+            ypadding 20
+            xpos textObj.x
+            ypos textObj.y
+            text textObj.txt
