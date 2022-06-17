@@ -187,9 +187,11 @@ label sixthDayBoss:
     "Ich habe ein Buch über die Geschichte Roms gelesen, als jemand an der Tür klopfte."
     marcus "\"Kommen sie rein.\""
     if aki_route:
+        show Aki mouth_laugh
         aki "\"Hi, Marcus~\""
         "Die Tür flog auf und vor mir stand Aki."
         marcus "\"Und was machst du noch hier?\""
+        show Aki mouth_small
         aki "\"Na ja, zu Hause habe ich nichts zu tun, daher dachte ich, dass ich hier noch ein bisschen bleibe.\""
         "Toll."
         "Zwei Hobbylose auf einen Haufen."
@@ -201,18 +203,23 @@ label sixthDayBoss:
         "Ich schaute mir die Aufgaben an."
         "Zwei Aufgaben nur?"
         "Das wird einfach."
+        hide Aki with dissolve
         jump aciDrag
     if partizia_route:
         "Die Tür öffnete sich vorsichtig."
+        show Partizia eyes_closed mouth_laugh
         partizia "\"Guten Nachmittag, Marcus.\""
         marcus "\"Hey, Partizia!\""
         partizia "\"Wie geht es dir?\""
         marcus "\"Meh.\""
+        show Partizia eyes_open mouth_small
         partizia "\"Ich glaube, dass du zu Hause auch nichts zu tun hast?\""
         "Woher."
+        show Partizia eyes_closed mouth_happy
         partizia "\"Hehe. Ich auch nicht.\""
         partizia "\"Man kann nur so viel lernen, bis es einem langweilig wird.\""
         marcus "\"Kann man verstehen.\""
+        show Partizia eyes_open mouth_small
         partizia "\"Ach ja!\""
         "Was jetzt?"
         partizia "\"Die Lateinhausaufgabe.\""
@@ -220,10 +227,12 @@ label sixthDayBoss:
         partizia "\"Könntest du mir dabei vielleicht helfen?\""
         partizia "\"Ich habe immer noch leichte Probleme mit PCs.\""
         marcus "\"Ich meine, ich könnte.\""
+        show Partizia mouth_happy
         partizia "\"Prima. Danke sehr, Marcus.\""
         "Partizia holte ein Heft und ein Zettel aus ihrer Tasche heraus und drückte sie mir in die Hand."
         "Zwei Aufgaben nur?"
         "Das wird einfach."
+        hide Partizia with dissolve
         jump pcDrag
 
 label finishedAciDrag:
@@ -252,13 +261,16 @@ label finishedAciDrag:
 label finishedPcDrag:
     "Nachdem ich mit den Hausaufgaben fertig geworden bin, überreichte ich Partizia das Blatt."
     "Sie schaute sich meine Lösungen für eine kleine Weile an."
+    show Partizia eyes_closed mouth_happy
     partizia "\"Ich bedanke mich für deine Hilfe, Marcus!\""
     marcus "\"Kein Problem, Partizia.\""
     marcus "\"Freunde sollten sich ja untereinander helfen.\""
     "Partizia lache mich an."
+    show Partizia eyes_open mouth_small
     partizia "\"Oh, sieh dir die Zeit an.\""
     partizia "\"Ich muss langsam los.\""
     marcus "\"Dann, auf Wiedersehen, Partizia!\""
+    hide Partizia with moveoutright
     "Partizia eilte aus dem Clubraum, während sie mir hinterher gewinkt hat."
     scene Bg Load with fade
     pause 2.0

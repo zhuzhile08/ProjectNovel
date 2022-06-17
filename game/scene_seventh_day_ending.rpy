@@ -54,7 +54,7 @@ label seventhDayEnding:
             show Aki eyes_open mouth_small with dissolve
             aki "\"Achso, und ich habe auch noch etwas.\""
             marcus "\"Was?\""
-            show Aki eyebrows_sad mouth_smile with dissolve
+            show Aki eyebrows_sad mouth_happy with dissolve
             aki "\"Marcus ...\""
             stop music fadeout 3.0
             jump credits
