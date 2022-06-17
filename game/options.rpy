@@ -81,7 +81,6 @@ Gebrauch gedacht.
 
 define build.name = "ProjectNovel"
 
-
 ## Sounds and music ############################################################
 
 ## These three variables control, among other things, which mixers are shown
@@ -92,6 +91,9 @@ define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
 
+
+## Main menu music
+define config.main_menu_music = "audio/title.ogg"
 
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
