@@ -187,11 +187,11 @@ label sixthDayBoss:
     "Ich habe ein Buch über die Geschichte Roms gelesen, als jemand an der Tür klopfte."
     marcus "\"Kommen sie rein.\""
     if aki_route:
-        show Aki mouth_laugh
+        show Aki mouth_laugh with dissolve
         aki "\"Hi, Marcus~\""
         "Die Tür flog auf und vor mir stand Aki."
         marcus "\"Und was machst du noch hier?\""
-        show Aki mouth_small
+        show Aki mouth_small with dissolve
         aki "\"Na ja, zu Hause habe ich nichts zu tun, daher dachte ich, dass ich hier noch ein bisschen bleibe.\""
         "Toll."
         "Zwei Hobbylose auf einen Haufen."
@@ -207,19 +207,19 @@ label sixthDayBoss:
         jump aciDrag
     if partizia_route:
         "Die Tür öffnete sich vorsichtig."
-        show Partizia eyes_closed mouth_laugh
+        show Partizia eyes_closed mouth_laugh with dissolve
         partizia "\"Guten Nachmittag, Marcus.\""
         marcus "\"Hey, Partizia!\""
         partizia "\"Wie geht es dir?\""
         marcus "\"Meh.\""
-        show Partizia eyes_open mouth_small
+        show Partizia eyes_open mouth_small with dissolve
         partizia "\"Ich glaube, dass du zu Hause auch nichts zu tun hast?\""
         "Woher."
-        show Partizia eyes_closed mouth_happy
+        show Partizia eyes_closed mouth_happy with dissolve
         partizia "\"Hehe. Ich auch nicht.\""
         partizia "\"Man kann nur so viel lernen, bis es einem langweilig wird.\""
         marcus "\"Kann man verstehen.\""
-        show Partizia eyes_open mouth_small
+        show Partizia eyes_open mouth_small with dissolve
         partizia "\"Ach ja!\""
         "Was jetzt?"
         partizia "\"Die Lateinhausaufgabe.\""
@@ -227,7 +227,7 @@ label sixthDayBoss:
         partizia "\"Könntest du mir dabei vielleicht helfen?\""
         partizia "\"Ich habe immer noch leichte Probleme mit PCs.\""
         marcus "\"Ich meine, ich könnte.\""
-        show Partizia mouth_happy
+        show Partizia mouth_happy with dissolve
         partizia "\"Prima. Danke sehr, Marcus.\""
         "Partizia holte ein Heft und ein Zettel aus ihrer Tasche heraus und drückte sie mir in die Hand."
         "Zwei Aufgaben nur?"
@@ -238,11 +238,14 @@ label sixthDayBoss:
 label finishedAciDrag:
     "Nachdem ich mit den Hausaufgaben fertig geworden bin, überreichte ich Aki das Blatt."
     "Sie guckte sich meine Lösungen für eine kleine Weile an."
+    show Aki eyes_closed mouth_laugh_teeth
     aki "\"Danke Marcus~!\""
     marcus "\"Kein Problem.\""
     marcus "\"Hast du noch etwas?\""
+    show Aki eyes_open mouth_small
     aki "\"Können wir zusammen UNO spielen?\""
     marcus "\"Wieso?\""
+    show Aki mouth_laugh
     aki "\"Einfach so!\""
     "Na toll."
     "Dagegen habe ich eigentlich auch nichts."
@@ -633,6 +636,7 @@ screen drag_test2:
                     xpadding 20
                     ypadding 20
                     text dragSpot.txt
+                    background Frame ("gui/button/drag_drop.png", gui.frame_borders)
         # Draggable object
         for dragg in dragItems:
             drag:
@@ -645,6 +649,7 @@ screen drag_test2:
                 frame:
                     xpadding 20
                     ypadding 20
+                    background Frame ("gui/button/drag_drop.png", gui.frame_borders)
                     text dragg.txt
     for textObj in texts:
         frame:
@@ -652,4 +657,5 @@ screen drag_test2:
             ypadding 20
             xpos textObj.x
             ypos textObj.y
+            background Frame ("gui/button/drag_drop.png", gui.frame_borders)
             text textObj.txt
