@@ -178,7 +178,7 @@ default sentences = []
 
 label sixthDayBoss:
     if aki_route:
-        jump pcDrag
+        jump aciDrag
     else:
         jump pcDrag
 

@@ -4,7 +4,7 @@ label thirdDayParkTutorRequest:
     scene Bg Park Path with fade
     play noise "audio/sfx/nature.mp3" loop fadein 4.0 volume 0.2
     queue music "audio/music/park.ogg" loop fadein 3.0
-    "Aaah..."
+    "Aaah ..."
     "Die wunderschöne Natur."
     "Gibt es eine bessere Art, sein Wochenende zu genießen?"
     "Spazieren gehen einem tut gut."
@@ -39,11 +39,11 @@ label thirdDayParkTutorRequest:
     aki "\"Komm schon!\""
     "Sie gucktemich ganz traurig an."
     "Wie soll ich jetzt noch nein sagen können?!"
-    marcus "\"Eeeeh, also ich muss...\""
+    marcus "\"Eeeeh, also ich muss ...\""
     "Aki kam jetzt ganz nah an mich ran."
     show Aki eyebrows_neutral eyes_closed mouth_laugh_teeth with dissolve:
         ypos 1.65 xanchor 0.5 yanchor 1.0 zoom 2.0
-    aki "\"Wenn du nicht ja sagst, dann erzähle ich der ganzen Schule dass du unter deinem Bett diese komischen Zeitschriften mit n...\""
+    aki "\"Wenn du nicht ja sagst, dann erzähle ich der ganzen Schule dass du unter deinem Bett diese komischen Zeitschriften mit n ...\""
     marcus "\"JAJAJAJAJA OK OK ICH GEBE DIR NACHHILFE!\""
     "Wie zur Hölle wusste sie das?"
     marcus "\"Wer hat das dir denn erzählt?\""

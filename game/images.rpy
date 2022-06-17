@@ -9,19 +9,19 @@ layeredimage Aki:
             "aki_uniform_base"
         attribute outfit_casual:
             "aki_casual_base"
-        
-    group left_arm:
-        attribute left_uniform default:
-            "aki_uniform_left"
-        attribute left_casual:
-            "aki_casual_left"
     
     group right_arm:
         attribute right_uniform default:
             "aki_uniform_right"
         attribute right_casual:
             "aki_casual_right"
-    
+
+    group left_arm:
+        attribute left_uniform default:
+            "aki_uniform_left"
+        attribute left_casual:
+            "aki_casual_left"
+
     group eyes:
         attribute eyes_open default:
             "aki_eyes_open"
@@ -116,18 +116,14 @@ image Bg Classroom = im.Scale("bg/classroom.png", 1280, 720)
 image Bg Hallway = im.Scale("bg/hallway.png", 1280, 720)
 image Bg Hallway Staircase = im.Scale("bg/hallway_staircase.png", 1280, 720)
 image Bg Main Staircase Lower Floor = im.Scale("bg/main_staircase_lower_floor.png", 1280, 720)
-image Bg Main Staircase Upper Floor = im.Scale("bg/main_staircase_upper_floor.png", 1280, 720)
 image Bg Clubroom = im.Scale("bg/clubroom.png", 1280, 720)
 image Bg Park Path = im.Scale("bg/park_path.png", 1280, 720)
 image Bg School Entrance = im.Scale("bg/school_entrance.png", 1280, 720)
 image Bg School Way = im.Scale("bg/school_way.png", 1280, 720)
-image Bg Side Path = im.Scale("bg/side_path.png", 1280, 720)
-image Bg Side Staircase Lower Floor = im.Scale("bg/side_staircase_lower_floor.png", 1280, 720)
-image Bg Side Staircase Upper Floor = im.Scale("bg/side_staircase_upper_floor.png", 1280, 720)
 image Bg Stone Circle = im.Scale("bg/stone_circle.png", 1280, 720)
-image Bg Home Door = im.Scale("bg/home_door.png", 1280, 720)
 image Bg Home Outwards = im.Scale("bg/home_outwards.png", 1280, 720)
 image Bg Home Road = im.Scale("bg/home_road.png", 1280, 720)
+image Bg Aki House = im.Scale("bg/aki_house.png", 1280, 720)
 image Bg Load = "bg/loading.png"
 image Bg Room = im.Scale("bg/room.png", 1280, 720)
 image Bg Splashscreen = "bg/splashscreen.png"

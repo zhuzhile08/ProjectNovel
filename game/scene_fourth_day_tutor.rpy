@@ -47,7 +47,7 @@ label fourthDayTutor:
         show Aki outfit_casual left_casual right_casual mouth_laugh with dissolve
         aki "\"Wow! Ich war schon lange nicht mehr in deinem Zimmer!\""
         show Aki mouth_small with dissolve
-        aki "\"Das letzte Mal war vor... 7 Jahren?\""
+        aki "\"Das letzte Mal war vor ... 7 Jahren?\""
         aki "\"Nicht vieles hat sich geändert.\""
         "Mein Zimmer ist ziemlich kahl."
         "Ich brauche eigentlich nur ein PC, ein Tisch und ein Bett, um zu leben."
@@ -106,7 +106,7 @@ label fourthDayTutor:
                 marcus "\"Ein Beispiel wäre:\""
                 marcus "\"Video eum ire. - Ich sehe, dass er geht.\""
                 marcus "\"In diesen Fall wäre Video das Kopfverb, eum der Subjektsakkusativ und ire der Prädikatsinfinitiv.\""
-        aki "\"Mhm...\""
+        aki "\"Mhm ...\""
         menu:
             with Dissolve(0.3)
             aki "\"So wie ich es verstehe, ist der Subjektsakkusativ im AcI mit dem Subjekt im deutschen dass-Satz vergleichbar und das Prädikatsinfinitv mit dem Verb im dass-Satz.\""
@@ -115,7 +115,7 @@ label fourthDayTutor:
             "Ja":
                 $ aki_affec += 2
                 marcus "\"Ja, so ungefähr.\""
-        aki "\"Interessant...\""
+        aki "\"Interessant ...\""
         aki "\"\Ich habe auch etwas von Vorzeitigkeit oder so mitbekommen\""
         marcus "\"Also hast du den ganzen Unterricht doch nicht durchgeschlafen!\""
         show Aki eyebrows_angry mouth_big with dissolve
@@ -218,7 +218,7 @@ label fourthDayTutor:
             partizia "\"Wie wird das PPP gebildet?\""
             "Es gibt keine feste Regel bei der Bildung":
                 marcus "\"Keine feste Regel existiert, deshalb musst du dir das PPP bei jedem Wort auswendig lernen.\""
-            "Präsensstamm + -tus, -a, -um":
+            "Präsensstamm + -tus, -a, -um, viele sind jedoch unregelmäßig":
                 $ partizia_affec += 2
                 marcus "\"Du nimmst dir den Präsensstamm vom Verb und packst ein -tus, a, um dahinter.\""
                 marcus "\"Das PPP muss aber KNG-Kongurent zum Bezugswort sein, also musst du darauf achten.\""
@@ -253,7 +253,7 @@ label fourthDayTutor:
                 $ partizia_affec += 2
                 marcus "\"Jep.\""
             "Nein, es muss nicht":
-                marcus "\"Nein, du muss auf den Kontext im Satz achten.\""
+                marcus "\"Nein, du muss deshalb auf den Kontext im Satz achten.\""
         show Partizia eyes_closed mouth_happy with dissolve
         partizia "\"Danke sehr für deine Zeit, Marcus.\""
         marcus "\"War das alles?\""

@@ -17,7 +17,7 @@ label firstDayClassroomSleep:
     unknown "\"Ich, ich, Herr Bratfisch!\""
     teacher "\"Ja?\""
     unknown "\"Hashmaps sind eine spezielle Indexstruktur, wo man effizient in großen Datenmengen Daten durch deren Indexes suchen und finden kann.\""
-    unknown "\"Hashmaps funktionieren mit einen Hash-Algorythmus, der...\""
+    unknown "\"Hashmaps funktionieren mit einen Hash-Algorythmus, der ...\""
     stop music fadeout 13.0
     "Ich fühlte schon, wie ich wegdöste."
     "Hashmaps, Hash Algorythmus, das geht mir völlig über den Kopf."

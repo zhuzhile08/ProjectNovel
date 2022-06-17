@@ -58,7 +58,7 @@ label pcExam:
         "b) statutum":
             $ test_score -= 0
             $ partizia_affec += 1
-    "Hmmm..."
+    "Hmmm ..."
     menu:
         with Dissolve(0.3)
         "5) petere"
@@ -182,7 +182,7 @@ label aciExam:
         "b) Wir sahen, dass er zu der Tür gegangen war.":
             $ test_score -= 1
         "5) Vidivimus eum ad portam ire."
-    "Hmmm..."
+    "Hmmm ..."
     menu:
         with Dissolve(0.3)
         "a) Ich hatte geglaubt, dass das Gasthaus dich aufgesucht hat.":

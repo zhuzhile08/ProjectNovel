@@ -6,7 +6,7 @@ label firstDayCafeteriaLunch:
     "Während Aki losging und uns ein Platz reservierte, schaute ich auf das Menü."
     scene Bg Menu with fade
     marcus "\"Yes! Pizza!\""
-    food_list "\"Pizza Tuna, Pizza Margherita, Pizza Prosciutto e Fungi, Pizza Pugliese...\""
+    food_list "\"Pizza Tuna, Pizza Margherita, Pizza Prosciutto e Fungi, Pizza Pugliese ...\""
     "Alles scheint gut und normal zu sein, bis ich nach unten gucke."
     food_list "\"Pizza Hawaii\""
     "Und so verdirbt man die Stimmung."

@@ -8,7 +8,7 @@ label fifthDayCorrection:
         "Ich könnte jetzt Sport machen, ich könnte jetzt ein ganzes Videospiel für ein Schulprojekt programmieren."
         "Aber nein."
         "Ich bin fast eingeschlafen, als ich plötzlich etwas gehört habe."
-        "Ich glaube, es ist... Klopfen?"
+        "Ich glaube, es ist ... Klopfen?"
         "Ich hatte schon oft solche Halluzinationen, wo ich gedacht habe, dass irgendeiner meinen Namen ruft oder dass irgendjemand an der Tür klopft."
         "Keine Ahnung, warum das passiert, aber es passiert und es ist nervig."
         menu:
@@ -232,11 +232,11 @@ label fifthDayCorrection:
                 "Scheint auch richtig zu sein."
             "Richtig, aber der Satz macht vom Inhalt her keinen Sinn":
                 $ partizia_affec += 1
-                "Hmmm..."
+                "Hmmm ..."
                 "Der Satz ist von der Übersetzung her richtig, aber Partizia hat den Satz konzessiv übersetzt, was bei diesem Satz nicht möglich ist."
                 "Ich notiere den letzten Fehler in ihr Heft."
 
-        marcus "\"OK... Alles sollte jetzt richtig sein.\""
+        marcus "\"OK ... Alles sollte jetzt richtig sein.\""
         "Ich gab ihr ihr Heft zurück."
         show Partizia mouth_small with dissolve
         partizia "\"Hmmm, ich sehe.\""

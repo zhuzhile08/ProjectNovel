@@ -47,7 +47,7 @@ label secondDayAfternoon:
         "Ist immer noch eine Zwei."
     if 7 >= test_score >= 6:
         "Mmmmmmh, unkomfortabel."
-        "Meine Note war... unnormal \"schlecht\"."
+        "Meine Note war ... unnormal \"schlecht\"."
         "Ich meine, über eine Drei können sich viele freuen, aber ich nicht wirklich."
         "Na ja, Hauptsache ich habe den Test bestanden."
         "Trotzdem ändert es nichts, dass es mir jetzt ziemlich blöd geht."
@@ -55,16 +55,16 @@ label secondDayAfternoon:
         stop music fadeout 1.0
         "Was?"
         "Nein oder?"
-        "Ich kann es nicht fassen..."
+        "Ich kann es nicht fassen ..."
         "Das muss ein Fehler sein, oder?"
-        "Eine..."
-        "..."
+        "Eine ..."
+        " ..."
         scene black with dissolve
         "Jeder wird mal Fehler machen."
         "Es ist unvermeidbar."
         "Es ist natürlich."
         "Man bekommt immer eine zweite Chance."
-        "Also komm..."
+        "Also komm ..."
         "Versuch es nochmal."
         jump credits
 
@@ -117,7 +117,7 @@ label secondDayAfternoon:
                 show Aki eyebrows_sad mouth_sad with dissolve
                 aki "\"Wieso denn?\""
                 "Aki guckte mich ganz traurig an."
-                marcus "\"Ehhm, ich habe also eeh... zu Hause noch etwas zu tun! Genau!\""
+                marcus "\"Ehhm, ich habe also eeh ... zu Hause noch etwas zu tun! Genau!\""
                 "Ich bin ein verdammt schlechter Lügner."
                 aki "\"Wenn du es so meinst.\""
                 "Ich habe meine Sachen gepackt und bin dann alleine nach Hause gegangen."

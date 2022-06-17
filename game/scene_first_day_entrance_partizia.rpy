@@ -26,7 +26,6 @@ label firstDayEntrancePartizia:
     show Aki eyebrows_neutral mouth_small:
         xalign 0.5
         linear 1.0 xalign 0.1
-    with dissolve
     unknown "\"Morgen, Marcus!\""
     stop noise fadeout 0.3
     stop music fadeout 3.0
@@ -44,7 +43,7 @@ label firstDayEntrancePartizia:
     "Auch wenn sie sehr oft nicht anwesend ist."
     partizia "\"Ich brauche noch ein bisschen Hilfe bei Pcs.\""
     marcus "\"Nein, tut mir leid, leider nicht.\""
-    partizia "\"Hmm, du willst also Zeit mit A...\""
+    partizia "\"Hmm, du willst also Zeit mit A ...\""
     "Bevor sie ihren Satz vollendet hat, wurde sie von der Menge schon weggeschoben."
     show Partizia eyes_closed eyebrows_sad mouth_laugh with dissolve
     partizia "\"Eeh, vergiss es. Bis später, Marcus!\""
@@ -56,7 +55,6 @@ label firstDayEntrancePartizia:
     "Beliebt zu sein hat seine Nachteile."
     show Aki eyebrows_angry mouth_big:
         linear 0.5 xalign 0.5
-    with dissolve
     aki "\"Eeeeeeendlich!\""
     aki "\"Wie kann man überhaupt so leben, den ganzen Tag von einer Menge unzingelt zu sein?\""
     scene Bg Load with fade

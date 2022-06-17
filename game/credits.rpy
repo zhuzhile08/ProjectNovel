@@ -1,4 +1,5 @@
 label credits:
+    pause 3.0
     scene black with Dissolve(3.0)
     play music "audio/music/credits.ogg" fadein 5.0
     with Pause(2.0)
