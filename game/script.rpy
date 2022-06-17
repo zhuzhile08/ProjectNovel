@@ -15,6 +15,6 @@ label start:
     call sixthDayPreBoss from _call_sixthDayPreBoss
     call sixthDayBoss from _call_sixthDayBoss
 
-    call eighthDayEnding from _call_eighthDayEnding
+    call seventhDayEnding
 
     return
