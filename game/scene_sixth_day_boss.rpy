@@ -177,13 +177,95 @@ default texts = []
 default sentences = []
 
 label sixthDayBoss:
+    pause 5.0
+    show Bg Clubroom
+    queue music "audio/music/club.ogg" loop fadein 3.0
+    "Ich sitze gerade im Lateinclubraum."
+    "Heute hatten wir letzte Stunde Entfall, weshalb wir heute Nachmittag freihaben."
+    "Es ist kurz vor den Abiturprüfungen, und die meisten sind beschäftigt damit, für die Prüfung zu lernen."
+    "Daher waren sie nach Hause gegangen, aber weil ich eh nichts zu tun habe, habe ich mich dazu entschieden, hier zu bleiben."
+    "Ich habe ein Buch über die Geschichte Roms gelesen, als jemand an der Tür klopfte."
+    marcus "\"Kommen sie rein.\""
     if aki_route:
+        aki "\"Hi, Marcus~\""
+        "Die Tür flog auf und vor mir stand Aki."
+        marcus "\"Und was machst du noch hier?\""
+        aki "\"Na ja, zu Hause habe ich nichts zu tun, daher dachte ich, dass ich hier noch ein bisschen bleibe.\""
+        "Toll."
+        "Zwei Hobbylose auf einen Haufen."
+        marcus "\"Und wieso bist du hier?\""
+        aki "\"Ich habe noch ein paar Fragen zur Lateinhausaufgabe.\""
+        marcus "*Seufz* \"Na gut.\""
+        "Aki holte aus ihren Ranzen ein Heft und ein Zettel heraus."
+        "Tatsächlich habe ich die Hausaufgaben auch nicht gemacht."
+        "Ich schaute mir die Aufgaben an."
+        "Zwei Aufgaben nur?"
+        "Das wird einfach."
         jump aciDrag
-    else:
+    if partizia_route:
+        "Die Tür öffnete sich vorsichtig."
+        partizia "\"Guten Nachmittag, Marcus.\""
+        marcus "\"Hey, Partizia!\""
+        partizia "\"Wie geht es dir?\""
+        marcus "\"Meh.\""
+        partizia "\"Ich glaube, dass du zu Hause auch nichts zu tun hast?\""
+        "Woher."
+        partizia "\"Hehe. Ich auch nicht.\""
+        partizia "\"Man kann nur so viel lernen, bis es einem langweilig wird.\""
+        marcus "\"Kann man verstehen.\""
+        partizia "\"Ach ja!\""
+        "Was jetzt?"
+        partizia "\"Die Lateinhausaufgabe.\""
+        "Wir hatten eine Lateinhausaufgabe auf?"
+        partizia "\"Könntest du mir dabei vielleicht helfen?\""
+        partizia "\"Ich habe immer noch leichte Probleme mit PCs.\""
+        marcus "\"Ich meine, ich könnte.\""
+        partizia "\"Prima. Danke sehr, Marcus.\""
+        "Partizia holte ein Heft und ein Zettel aus ihrer Tasche heraus und drückte sie mir in die Hand."
+        "Zwei Aufgaben nur?"
+        "Das wird einfach."
         jump pcDrag
 
-label finishedExam:
-    "fertig a"
+label finishedAciDrag:
+    "Nachdem ich mit den Hausaufgaben fertig geworden bin, überreichte ich Aki das Blatt."
+    "Sie guckte sich meine Lösungen für eine kleine Weile an."
+    aki "\"Danke Marcus~!\""
+    marcus "\"Kein Problem.\""
+    marcus "\"Hast du noch etwas?\""
+    aki "\"Können wir zusammen UNO spielen?\""
+    marcus "\"Wieso?\""
+    aki "\"Einfach so!\""
+    "Na toll."
+    "Dagegen habe ich eigentlich auch nichts."
+    scene Bg Load with fade
+    pause 2.0
+    stop music fadeout 7.0
+    "Wir sind bis zum späten Nachmittag in der Schule geblieben."
+    "Ich habe anscheinend vergessen, dass Aki ein absoluter Weltmeister in UNO ist."
+    "Sie hat mich jede Runde dominiert."
+    "Meh, hauptsache es macht Spaß."
+    "Ich bin dann mit ihr nach Hause gegangen."
+    "10/10 würde ich auch wieder machen."
+    scene Bg Load with fade
+    call seventhDayEnding
+
+label finishedPcDrag:
+    "Nachdem ich mit den Hausaufgaben fertig geworden bin, überreichte ich Partizia das Blatt."
+    "Sie schaute sich meine Lösungen für eine kleine Weile an."
+    partizia "\"Ich bedanke mich für deine Hilfe, Marcus!\""
+    marcus "\"Kein Problem, Partizia.\""
+    marcus "\"Freunde sollten sich ja untereinander helfen.\""
+    "Partizia lache mich an."
+    partizia "\"Oh, sieh dir die Zeit an.\""
+    partizia "\"Ich muss langsam los.\""
+    marcus "\"Dann, auf Wiedersehen, Partizia!\""
+    "Partizia eilte aus dem Clubraum, während sie mir hinterher gewinkt hat."
+    scene Bg Load with fade
+    pause 2.0
+    stop music fadeout 7.0
+    "Nachdem Partizia losgegangen ist, habe ich mich auch langsam auf den Weg nach Hause gemacht."
+    scene Bg Load with fade
+    call seventhDayEnding
 
 label aciDrag:
     
@@ -345,7 +427,7 @@ label aciDrag2:
                     aki_affec += 2
                 if sentences[2].areAnswersCorrect():
                     aki_affec += 2
-            jump finishedExam
+            jump finishedAciDrag
         "Nein":
             # warum repeatet sich das wieder hilfe
             jump aciDrag2
@@ -354,7 +436,6 @@ label pcDrag:
     $ dragItems = []
     $ dragSpots = []
     $ texts = []
-
     
     $ sentences = []
     # First sentence: Gladiator a populo laudatus gaudet.
@@ -518,7 +599,7 @@ label pcDrag2:
                     partizia_affec += 2
                 if sentences[2].areAnswersCorrect():
                     partizia_affec += 2
-            jump finished
+            jump finishedPcDrag
             
         "Nein":
             # warum repeatet sich das wieder hilfe
