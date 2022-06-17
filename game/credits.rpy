@@ -48,9 +48,6 @@ label credits:
 
     show Bg Clubroom with Dissolve(2.0)
     scene black with Dissolve(2.0)
-
-    show Bg Home Door with Dissolve(2.0)
-    scene black with Dissolve(2.0)
     
     show text "Charaktere:" with Dissolve(2.0)
     scene black with Dissolve(2.0)

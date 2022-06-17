@@ -159,15 +159,10 @@ label fifthDayCorrection:
                 scene Bg Load with fade
 
     if partizia_route == True:
-        queue music "audio/music/club.ogg" loop fadein 3.0
+        queue music "audio/music/park.ogg" loop fadein 3.0
         scene Bg Clubroom with fade
         "Fast eine ganze Woche ist vergangen."
-        "Es ist freitags, und ich war gerade dabei, den Clubraum aufzuräumen, als ich ein leichtes Klopfen an der Tür hörte."
-        unknown "\"Hallo?\""
-        marcus "\"Sie können hereinkommen.\""
-        stop music fadeout 2.0
-        "Die Tür öffnete sich langsam."
-        queue music "audio/music/partizia.ogg" loop fadein 2.0
+        "Es ist freitags, und ich saß gerade am Steinkreis an unserer Schule, weil ich nichts besseres zu tun hatte, als ich Partizia sah."
         marcus "\"Ach, Hallo, Partizia!\""
         show Partizia eyes_closed mouth_happy with dissolve
         partizia "\"Schön dich hier zu sehen, Marcus.\""
@@ -182,8 +177,6 @@ label fifthDayCorrection:
         show Partizia mouth_happy with dissolve
         partizia "\"Danke sehr.\""
         "Ich öffnete ihr Heft."
-        stop music fadeout 2.0
-        queue music "audio/music/club.ogg" loop fadein 3.0
         show Partizia eyes_open mouth_small with dissolve
         menu:
             with Dissolve(0.3)
@@ -255,7 +248,8 @@ label fifthDayCorrection:
         "Warte was?"
         show Partizia eyes_closed mouth_laugh with dissolve
         partizia "\"Jedenfalls, schönes Wochenende noch.\""
-        "Sie ging zügig aus der Tür heraus, während sie mir hinterher gewinkt hat."
+        hide Partizia with moveoutright
+        "Sie ging zügig aus dem Haupteingang heraus, während sie mir hinterher gewinkt hat."
         "Was zum Teufel war das?"
         stop music fadeout 3.0
         scene Bg Load with fade

@@ -1,4 +1,5 @@
 label fourthDayTutor:
+    pause 5.0
     if aki_route == True:
         scene Bg Room with fade
         queue music "audio/music/park.ogg" loop fadein 3.0
@@ -267,5 +268,5 @@ label fourthDayTutor:
         "Aki und ich haben den Rest des Tages damit verbracht, einige Übungsaufgaben zum Thema Pcs zu machen."
         "Desto mehr Zeit ich mit mir verbringe, desto mehr denke ich, dass sie schwarze Magie beherrscht, regelmäßig Gedanken liest und Dämo- oh warte falsches Spiel."
         "Jedenfalls, Partizia hat definitiv sehr große Fortschritte gemacht, und am Ende des Tages habe ich ihr mit ein paar schwierigeren Übungsaufgaben auf den Weg geschickt."
-        "Sie hat mir gesagt, dass sie mir ihre Antworten zeigt, wenn wir das nächste Mal uns im Clubraum sehen."
+        "Sie hat mir gesagt, dass sie mir ihre Antworten zeigt, wenn wir das nächste Mal uns sehen."
         scene Bg Load with fade
