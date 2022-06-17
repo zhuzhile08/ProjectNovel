@@ -18,7 +18,7 @@ label seventhDayEnding:
             "Ich habe auf diesen Moment mein ganzes Leben gewartet."
             marcus "\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKIIIIIIIIIIIIIIIIIIIIIIII!\""
             aki "\"Marcus?\""
-            "Aki guckte oben aus dem Fenster raus."
+            "Aki guckte oben aus dem Fenster heraus."
             marcus "\"Ja.\""
             aki "\"Hi!\""
             aki "\"Ich mache dir mal die Tür auf.\""
@@ -56,6 +56,7 @@ label seventhDayEnding:
             marcus "\"Was?\""
             show Aki eyebrows_sad mouth_smile with dissolve
             aki "\"Marcus ...\""
+            stop music fadeout 3.0
             jump credits
         if 45 > aki_affec:
             show Bg Aki House with fade
@@ -69,6 +70,7 @@ label seventhDayEnding:
             "Vielleicht versuche ich es gleich noch einmal."
             "Ich wollte sie nur noch einmal sehen, bevor ich wegziehe."
             "Weil ich ..."
+            stop music fadeout 3.0
             jump credits
     if partizia_route == True:
         "Ich war schon eine Weile in Großbritannien und warte gerade auf die Ergebnisse meiner Annahmeprüfung."
@@ -94,12 +96,14 @@ label seventhDayEnding:
             partizia "p.s."
             partizia "Ach ja, ich muss dir noch unbedingt was sagen:"
             partizia "Ich ..."
+            stop music fadeout 3.0
             jump credits
         if 36 > partizia_affec:
             "Ich schloss meine Augen und dachte über alles nach, was wir zusammen gemacht haben."
             "Danke, Partizia."
             "Danke für die schönen Erinnerungen, die du mir geschenkt hast."
             "Ich werde dich immer in meinen Herzen behalten."
+            stop music fadeout 3.0
             jump credits
 
     scene Bg Load with fade
