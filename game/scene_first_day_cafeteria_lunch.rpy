@@ -42,7 +42,7 @@ label firstDayCafeteriaLunch:
             "Sie sah auf die Pizza Hawaii in meinen Händen"
             "Aki wurde auf einmal blass."
             aki "\"Ich hasse dich!\""
-            "Damit stürmte Aki aus der Cafeteria raus."
+            "Damit stürmte Aki aus der Cafeteria heraus."
             hide Aki with moveoutright
             scene Bg Load with fade
             jump credits

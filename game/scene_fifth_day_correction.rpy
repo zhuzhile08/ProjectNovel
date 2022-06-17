@@ -59,7 +59,7 @@ label fifthDayCorrection:
                 "Ich habe für mich auch ein Kaffee gemacht."
                 show Aki eyes_closed mouth_laugh_teeth with dissolve
                 aki "\"Mmmh! Danke Marcus~!\""
-                "Sie nahm ein Schluck Kaffee und holte ein Stück Papier raus."
+                "Sie nahm ein Schluck Kaffee und holte ein Stück Papier heraus."
                 marcus "\"Sind das die nuklearen Abschusscodes der USA?\""
                 show Aki eyes_open mouth_laugh_teeth with dissolve
                 aki "\"Ja! Joe Biden hat es mir geschenkt!\""
@@ -255,7 +255,7 @@ label fifthDayCorrection:
         "Warte was?"
         show Partizia eyes_closed mouth_laugh with dissolve
         partizia "\"Jedenfalls, schönes Wochenende noch.\""
-        "Sie ging zügig aus der Tür raus, während sie mir hinterher gewinkt hat."
+        "Sie ging zügig aus der Tür heraus, während sie mir hinterher gewinkt hat."
         "Was zum Teufel war das?"
         stop music fadeout 3.0
         scene Bg Load with fade

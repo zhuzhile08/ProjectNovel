@@ -5,7 +5,7 @@ label fourthDayTutor:
         "Ich habe schon seit heute Morgen auf Aki gewartet."
         "Jetzt ist es gerade 10 Uhr."
         "Mir wird es langsam langweilig. Was soll ich überhaupt machen, um die Zeit zu vertreiben?"
-        "Ich schaue mich im Zimmer um und sehe ein Haufen Bücher und mein PC"
+        "Ich schaue mich im Zimmer um und sehe ein Haufen Bücher und mein Pc"
         menu:
             with Dissolve(0.3)
             "Was soll ich machen?"
@@ -27,7 +27,7 @@ label fourthDayTutor:
                 "Ich ging nach unten und führte sie zu meinem Zimmer."
             "Fortnite":
                 scene Bg Load with fade
-                "Ich mache mein PC an und öffne Fortnite."
+                "Ich mache mein Pc an und öffne Fortnite."
                 "Ich habe es schon in einer ganzen Weile nicht mehr gespielt, und ich glaube, dass ich damit die Zeit recht gut verschwenden kann, bis Aki endlich kommt."
                 pause 3.0
                 marcus "\"BOOOOOOM GET RECT LOOOOOOOOSERS!\""
@@ -50,7 +50,7 @@ label fourthDayTutor:
         aki "\"Das letzte Mal war vor ... 7 Jahren?\""
         aki "\"Nicht vieles hat sich geändert.\""
         "Mein Zimmer ist ziemlich kahl."
-        "Ich brauche eigentlich nur ein PC, ein Tisch und ein Bett, um zu leben."
+        "Ich brauche eigentlich nur ein Pc, ein Tisch und ein Bett, um zu leben."
         "Vielleicht auch einen Schrank, um meine Bücher zu lagern."
         aki "\"Ich glaube, ich gucke jetzt mal unter deinen Be-\""
         marcus "\"NEIN NEIN NEIN DAS MACHST DU JETZT NICHT.\""
