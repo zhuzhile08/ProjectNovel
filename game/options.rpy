@@ -30,7 +30,7 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-Project Novel ist ein Visual Novel, also ein interaktives Buch, welches von Team Nocturne, einer kleinen Schülergruppe am Wolfgang Borchert Gymnasium in der Klasse 8e, für 
+Digital Love Story: Roma ist ein Visual Novel, also ein interaktives Buch, welches von Team Nocturne, einer kleinen Schülergruppe am Wolfgang Borchert Gymnasium in der Klasse 8e, für 
 ein Schulprojekt in 2 Wochen entwickelt wurde.
 
 Das Team wünscht euch viel Spaß beim spielen und lernen!
@@ -199,7 +199,7 @@ define config.window_icon = "gui/aki_icon.png"
 
 ## itch.io project path
 
-define build.itch_project = "team-nocturne/project-novel"
+define build.itch_project = "team-nocturne/dlsroma"
 
 
 ## Build configuration #########################################################
