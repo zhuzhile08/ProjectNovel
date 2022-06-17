@@ -370,7 +370,7 @@ screen main_menu():
         vbox:
             style "main_menu_vbox"
 
-            text "[config.name!t]":
+            text "{i}DIGITAL LOVE STORY:{/i} ROMA":
                 style "main_menu_title"
 
 style main_menu_frame is empty
