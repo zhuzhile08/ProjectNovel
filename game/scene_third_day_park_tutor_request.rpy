@@ -7,7 +7,7 @@ label thirdDayParkTutorRequest:
     "Aaah ..."
     "Die wunderschöne Natur."
     "Gibt es eine bessere Art, sein Wochenende zu genießen?"
-    "Spazieren gehen einem tut gut."
+    "Spazieren gehen tut einem gut."
     stop music fadeout 3.0
     play music "audio/music/aki.ogg" loop fadein 2.0
     unknown "\"MAAAAAAAAAAAARRRRRCUUUUUUUS!\""
@@ -37,7 +37,7 @@ label thirdDayParkTutorRequest:
     "Wie soll ich mich hier herausreden?"
     show Aki eyebrows_sad mouth_sad with dissolve
     aki "\"Komm schon!\""
-    "Sie gucktemich ganz traurig an."
+    "Sie guckte mich ganz traurig an."
     "Wie soll ich jetzt noch nein sagen können?!"
     marcus "\"Eeeeh, also ich muss ...\""
     "Aki kam jetzt ganz nah an mich ran."
@@ -68,7 +68,7 @@ label thirdDayParkTutorRequest:
     "Aki konnte sich gerade noch fangen."
     show Aki eyes_closed mouth_laugh with dissolve
     aki "\"Gut genug! Hihi.\""
-    "Das wars also mit mein chilligen Wochenende."
+    "Das wars also mit meinen chilligen Wochenende."
     "Ich habe noch ein paar Runden um den See gedreht, während Aki mich über Sheen Megoomy Tensai oder sowas belabert hat."
     scene Bg Load with fade
     stop music fadeout 2.0

@@ -144,7 +144,7 @@ label fourthDayTutor:
             aki "\"Kann man dann ein Bezug auf das Subjekt im Rahmensatz machen?\""
             "Mit Reflexivpronomen":
                 $ aki_affec += 2
-                marcus "\"Ja, nämlich mit Personalpronomen.\""
+                marcus "\"Ja, nämlich mit Reflexivpronomen.\""
                 marcus "\"Zum Beispiel Videt se ire. - Er sieht, dass er geht.\""
             "Mit Personalpronomen":
                 marcus "\"Ja, nämlich mit Personalpronomen.\""
