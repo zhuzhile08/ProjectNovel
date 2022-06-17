@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("MEMENTO MORI")
+define config.name = _("デジタル・恋愛物語 - roma")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -32,11 +32,6 @@ define config.version = "1.0"
 define gui.about = _p("""
 Project Novel ist ein Visual Novel, also ein interaktives Buch, welches von Team Nocturne, einer kleinen Schülergruppe am Wolfgang Borchert Gymnasium in der Klasse 8e, für 
 ein Schulprojekt in 2 Wochen entwickelt wurde.
-
-Das Spiel folgt der Geschichte vom Protagonisten Marcus Kashima, der als eine der Einzigen, die die Konzeption überlebt hat, ein apokalyptisches Event, in welcher die Menschheit
-ausgerottet wurde. Nun bewohnen Demone die Erde und du, als ein Halbdemon kannst Auswählen, wie du die Welt wiederkreierst.
-
-Welche wählst du aus?
 
 Das Team wünscht euch viel Spaß beim spielen und lernen!
 

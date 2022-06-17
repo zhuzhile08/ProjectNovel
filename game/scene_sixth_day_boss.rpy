@@ -259,7 +259,7 @@ label finishedAciDrag:
     "Ich bin dann mit ihr nach Hause gegangen."
     "10/10 würde ich auch wieder machen."
     scene Bg Load with fade
-    call seventhDayEnding
+    call seventhDayEnding from _call_seventhDayEnding
 
 label finishedPcDrag:
     "Nachdem ich mit den Hausaufgaben fertig geworden bin, überreichte ich Partizia das Blatt."
@@ -280,7 +280,7 @@ label finishedPcDrag:
     stop music fadeout 7.0
     "Nachdem Partizia losgegangen ist, habe ich mich auch langsam auf den Weg nach Hause gemacht."
     scene Bg Load with fade
-    call seventhDayEnding
+    call seventhDayEnding from _call_seventhDayEnding_1
 
 label aciDrag:
     

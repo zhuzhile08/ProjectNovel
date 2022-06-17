@@ -11,7 +11,7 @@ label firstDayClubroomLearning:
     "Eigentlich ist es nicht mal unser Clubraum, es ist eigentlich ein Raum für den Literaturclub."
     "Aber sie haben uns freundlicherweise diese Ecke des Raumes völlig freiwillig gegeben."
     "Völlig freiwillig."
-    "Sie wurden überhaupt nicht von den Lehern dazu gezwungen, uns diese Ecke zu geben."
+    "Sie wurden überhaupt nicht von den Lehrern dazu gezwungen, uns diese Ecke zu geben."
     "Achja, der Drache in der Ecke da."
     show Bg Clubroom with dissolve:
         xpos 0.05 ypos 1.28 xanchor 0.5 yanchor 1.0 zoom 2.0
@@ -22,7 +22,7 @@ label firstDayClubroomLearning:
     "Achja, und ich trete Raidou auch manchmal eine in die Fresse, wenn es mir schlecht geht."
     scene Bg Clubroom with dissolve
     "Wie sehr interessant ich die Backstory vom Literaturclub auch finde, muss ich mich jetzt auch auf Latein konzentrieren."
-    "Der Leher hat gesagt, dass wir einen Test schreiben werden, aber nicht über was."
+    "Der Lehrer hat gesagt, dass wir einen Test schreiben werden, aber nicht über was."
     "Wenn ich mal ehrlich bin, ist es ein ziemlich blöder Move, aber was solls?"
     "Ich glaube der Sinn von solch einem Test liegt daran, dass man beides gleich lernen und beherrschen sollte."
     "Aber ich lerne nur eines von denen, weil ich es kann."

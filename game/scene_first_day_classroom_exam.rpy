@@ -258,7 +258,7 @@ label aftermath:
     scene Bg Classroom with fade
     teacher "\"Stifte niederlegen! Ich werde jetzt den Test einsammeln!\""
     "Alle legen ihre Stifte nieder."
-    "Der Leher ging dann bei jeden herum und nahm sich ein Zettel nach den anderen."
+    "Der Lehrer ging dann bei jeden herum und nahm sich ein Zettel nach den anderen."
     teacher "\"Die Testergebnisse bekommt jeder Morgen zurück.\""
     play sound "audio/sfx/school_bell.ogg" volume 0.6
     pause 3.0
