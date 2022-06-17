@@ -1,5 +1,6 @@
 label firstDayRoadIntroduction:
     with fade
+    stop music fadeout 3.0
     play sound "audio/sfx/chirp2.flac" loop
     "Es ist ein sonniger Tag draußen, Vögel zwitschern, Blumen blühen ..."
     "Und wieso schreiben wir an Tagen wie diesen einen Lateintest?"

@@ -93,7 +93,7 @@ define config.has_voice = True
 
 
 ## Main menu music
-define config.main_menu_music = "audio/title.ogg"
+define config.main_menu_music = "audio/music/title.ogg"
 
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
