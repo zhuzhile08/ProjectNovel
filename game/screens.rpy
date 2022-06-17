@@ -396,10 +396,6 @@ style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
 
 style main_menu_title:
-    font "gui/msmincho.ttc"
-    properties gui.text_properties("title")
-
-style main_menu_subtitle:
     font "gui/baskville.ttf"
     properties gui.text_properties("title")
 
