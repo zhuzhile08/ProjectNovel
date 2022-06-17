@@ -5,6 +5,7 @@ label firstDayClassroomExam:
     "Moment der Wahrheit."
     "Das Prüfungsblatt liegt vor mir."
     "Ich schaute mich um, und sah, wie Aki auf ihren Platz saß und betete."
+    scene Bg Test with fade
     if aki_route == True:
         teacher "\"Ihr könnt loslegen. Dreht das Blatt um.\""
         "Der Test ist über AcIs."
@@ -249,6 +250,7 @@ label aciExam:
 
 label aftermath:
     "Klasse! Letzte Aufgabe fertig."
+    scene Bg Classroom with fade
     "Ich schaute mich in der Klasse um. Anscheinend bin ich der erste, der fertig ist."
     "Jetzt muss ich die letzten paar Minuten auswarten. Das wird langweilig."
     scene Bg Load with fade

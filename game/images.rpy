@@ -126,4 +126,5 @@ image Bg Home Road = im.Scale("bg/home_road.png", 1280, 720)
 image Bg Aki House = im.Scale("bg/aki_house.png", 1280, 720)
 image Bg Load = "bg/loading.png"
 image Bg Room = im.Scale("bg/room.png", 1280, 720)
+image Bg Test = im.Scale("bg/test.png", 1280, 720)
 image Bg Splashscreen = "bg/splashscreen.png"
