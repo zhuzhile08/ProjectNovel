@@ -635,7 +635,7 @@ screen drag_test2:
                 frame:
                     xpadding 20
                     ypadding 20
-                    text dragSpot.txt
+                    text dragSpot.txt color "000"
                     background Frame ("gui/button/drag_drop.png", gui.frame_borders)
         # Draggable object
         for dragg in dragItems:
@@ -650,7 +650,7 @@ screen drag_test2:
                     xpadding 20
                     ypadding 20
                     background Frame ("gui/button/drag_drop.png", gui.frame_borders)
-                    text dragg.txt
+                    text dragg.txt color "000"
     for textObj in texts:
         frame:
             xpadding 20
@@ -658,4 +658,4 @@ screen drag_test2:
             xpos textObj.x
             ypos textObj.y
             background Frame ("gui/button/drag_drop.png", gui.frame_borders)
-            text textObj.txt
+            text textObj.txt color "000"
