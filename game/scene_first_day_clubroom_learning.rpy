@@ -73,7 +73,7 @@ label readAcI:
     "Der AcI, Akkusativus cum Infinitivo(Akkusativ mit Infinitiv) auf Latein, kommt sehr oft in lateinischen Sätze vor. Es wird im deutschen meistens mit einem dass-Satz übersetzt."
     "{size=-3}Ein AcI in lateinischen Sätzen enthält einen Kopfverb, Subjektsakkusativ, und einen Prädikatsinfinitiv:{/size}\n{color=#438A64}{u}Scio{/u}{/color} {color=#00a7ff}{u}sororem{/u}{/color} cattum suum {color=#FF4B4B}{u}amare{/u}{/color}. - Ich weiß, dass die Schwester ihre Katze liebt.\n {size=-10}*Cattus = Katze{/size}"
     "\"{color=#438A64}Scio{/color}\" ist das Kopfverb, \"{color=#00a7ff}sororem{/color}\" der Subjektakkusativ und \"{color=#FF4B4B}amare{/color}\" ist das Prädikatsinfinitiv. Den Teil, der nicht zwischen dem Kopfverb und dem Prädikatsinfinitiv steht, nennt man \"Rahmensatz\"."
-    "Wenn ein Infinitiv im Satz auftaucht, enthält dieser einen AcI mit hoher Wahrscheinlichkeit. Wörter wie videre, negare, putare oder scire werden oft als Kopfverb verwendet."
+    "Wenn ein Infinitiv im Satz auftaucht, enthält dieser einen AcI mit hoher Wahrscheinlichkeit."
     "Wörter wie videre, negare, putare oder scire werden oft als Kopfverb verwendet.\n{color=#FF4B4B}ACHTUNG:{/color} Es gibt Verben, die mit einem Infinitiv stehen, aber keine Kopfverben sind, zum Beispiel wie posse oder velle."
     "{b}{u}Vor- und Gleichzeitigkeit{/u}{/b}\n{size=-3}Mit dem AcI zeigt man auch das Zeitverhältnis zum Rahmensatz, indem man das Tempus vom Prädikatsinfinitiv ändert. Wenn man den Prädikatsinfinitiv in Präsens schreibt, ist es gleichzeitig zum Hauptsatz, und wenn man es in Perfekt ausdrückt, ist es Vorzeitig.{/size}"
     "Im deutschen ändert sich das Tempus von dem Prädikatsinfinitiv abhängig vom Tempus des Kopfverbs."

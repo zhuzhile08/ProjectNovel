@@ -52,7 +52,7 @@ label seventhDayEnding:
             aki "\"Ist es aber nicht!\""
             "Man kann nicht beschreiben, wie unfassbar glücklich ich gerade bin."
             show Aki eyes_open mouth_small with dissolve
-            aki "\"Achso, und ich habe auch noch etwas.\""
+            aki "\"Ach so, und ich habe auch noch etwas.\""
             marcus "\"Was?\""
             show Aki eyebrows_sad mouth_happy with dissolve
             aki "\"Marcus ...\""

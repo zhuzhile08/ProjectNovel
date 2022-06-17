@@ -88,11 +88,11 @@ label secondDayAfternoon:
         show Aki eyes_closed mouth_laugh_teeth with dissolve
         aki "\"Aber bestanden ist bestanden!\""
         "Ihr Gesicht glänzte vor Stolz, aber irgendwo kann ich auch ein Hauch von Enttäuschung sehen."
+        show Aki eyebrows_neutral eyes_open mouth_small with dissolve
     if partizia_route == True:
         "Der Lehrer hat mir auch Akis Test gegeben, weil sie heute nicht anwesend war."
         "Ich sollte es ihr geben, wenn ich sie treffe."
     
-    show Aki eyebrows_neutral eyes_open mouth_small with dissolve
     pause 2
     stop music fadeout 2.0
     queue music "audio/music/park.ogg" loop fadein 2.0
@@ -146,7 +146,7 @@ label secondDayAfternoon:
         marcus "\"Was?\""
         show Partizia eyes_closed mouth_laugh with dissolve
         "Partizia fand das aber eher lustiger als es bei mir rübergekommen ist und fing an zu kichern."
-        partizia "\"Nein, das war ein Scherz. Eigentlich wollte ich fragen, ob du mir Nachhilfe für Latein geben kannst?\""
+        partizia "\"Nein, das war ein Scherz. Eigentlich wollte ich fragen, ob du mir Nachhilfe für Latein geben kannst.\""
         "Anscheinend ist sie recht humorvoll, was ich von ihr nicht erwartet hätte."
         "Und Nachhilfe? Für Partizia? Das habe ich mir nicht wirklich vorgestellt."
         "Da finde ich die 200 Euro sogar wahrscheinlicher."
@@ -163,7 +163,7 @@ label secondDayAfternoon:
         marcus "\"Dann ist es so abgeschlossen. Ich warte dann nächsten montagnachmittags um 16 Uhr im Clubraum auf dich.\""
         partizia "\"Danke. Ach ja, wieso ist Aki heute nicht da? Normalerweise würde sie immer neben dir nach Hause gehen.\""
         marcus "\"Sie hat sich krankgemeldet.\""
-        partizia "\"Achso.\""
+        partizia "\"Ach so.\""
         show Partizia eyes_closed mouth_happy with dissolve
         partizia "\"Auf Wiedersehen! Ich wünsche dir ein schönes Wochenende.\""
         hide Partizia with moveoutleft

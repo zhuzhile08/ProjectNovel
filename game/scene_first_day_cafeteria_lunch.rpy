@@ -80,7 +80,7 @@ label firstDayCafeteriaLunch:
     show Aki eyebrows_neutral eyes_closed mouth_laugh_teeth with dissolve
     aki "\"Ich bin absolut gestopft!\""
     marcus "\"Ebenso\""
-    show Aki eyebrows_neutral eyes_open mouth_small
+    show Aki eyebrows_neutral eyes_open mouth_small with dissolve
     aki "\"Hast du nicht irgendetwas mit deinen Club oder so gesagt?\""
     marcus "\"Was?\""
     aki "\"Na ja, dass du irgendwie dorthin musstest.\""

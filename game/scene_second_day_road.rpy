@@ -21,7 +21,7 @@ label secondDayRoad:
         aki "\"Keine Ahnung. Ich konnte gestern einfach nicht so gut schlafen.\""
         marcus "\"Wieso denn?\""
         aki "\"Na ja, der Test.\""
-        "Achso, der Test! Den habe ich komplett vergessen."
+        "Ach so, der Test! Den habe ich komplett vergessen."
         show Aki eyebrows_sad with dissolve
         aki "\"Ich hoffe wirklich, dass ich bestehen werde.\""
         marcus "\"Ich auch.\""

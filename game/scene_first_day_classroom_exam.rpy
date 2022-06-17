@@ -97,7 +97,7 @@ label pcExam:
             $ partizia_affec += 1
         "b) Der tapfere Mann kam trotz seiner Niederlage nicht um.":
             $ test_score -= 1
-    "Hoffendlich."
+    "Hoffentlich."
     menu:
         with Dissolve(0.3)
         "3) Populus a regem servatus gaudet."
@@ -299,7 +299,7 @@ label aftermath:
             marcus "\"OK. Dann bis morgen!\""
             show Aki mouth_happy with dissolve
             aki "\"Bis morgen, Marcus!\""
-            "Und damit sammelte ich meine Sachen ein und machte mich auf den Weg."
+            "Und damit sammelte ich meine Sachen ein und machte mich auf dem Weg."
 
     scene Bg Load with fade
     stop noise fadeout 1.0
