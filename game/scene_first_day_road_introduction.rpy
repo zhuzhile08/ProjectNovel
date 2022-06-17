@@ -1,7 +1,7 @@
 label firstDayRoadIntroduction:
     with fade
     play sound "audio/sfx/chirp2.flac" loop
-    "Es ist ein sonniger Tag draußen, Vögel zwitschern, Blumen blühen..."
+    "Es ist ein sonniger Tag draußen, Vögel zwitschern, Blumen blühen ..."
     "Und wieso schreiben wir an Tagen wie diesen einen Lateintest?"
     play music "audio/music/aki.ogg" loop fadein 2.0
     scene Bg Home Road
@@ -12,19 +12,10 @@ label firstDayRoadIntroduction:
     "Und die, die gerade hinter mir herläuft ist meine Kindheitsfreundin Aki Kuzunoha."
     aki "\"MAAAAAAAAAAAARRRRRRCUUUUUUUUUUUS warte mal!\""
     marcus "\"Jaja, schon gut.\""
-    show Aki with dissolve# i need one of those > o < faces here
+    show Aki with dissolve 
     "Ich bleibe stehen und drehe mich um."
-    "Von einer weiten Entfernung kann man schon ihre pinken Haare sehen."
-    "Sie ist ein bisschen kleiner als ich, und eigentlich ein ganz nettes Mädchen"
-    "Manchmal kann sie auch etwas... naja... blöd und ungeschickt sein."
     stop sound fadeout 2.0
-    aki "*Stöhn* \"Phew! Ich bin völlig aus der Puste. Bitte woaaaaaaaaaaaaaah!\""
-    "Aki ist über eine Kante gestolpert. Das vierte Mal in dieser Woche."
-    marcus "\"Hey! Geht's dir gut?\""
-    aki "\"Ja, eigentlich schon.\""
-    marcus "\"Sag mal, was geht denn bei dir täglich ab, das war das vierte mal in dieser Woche.\""
-    show Aki eyes_closed mouth_laugh with dissolve
-    aki "\"Hehehe.\""
+    aki "*Stöhn* \"Phew! Ich bin völlig aus der Puste.\""
     "Nachdem sie mich endlich eingeholt hat und sich erholt hat, gehen wir nebeneinander los."
     "Aki wohnt ein paar Blöcke hinter mir, und eigentlich wäre der Plan, dass sie zuerst losgeht, und dass sie dann vor unserer Tür wartet, bis ich fertig bin."
     "Aber anscheinend klappt das nicht so ganz."
