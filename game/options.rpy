@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("デジタル・恋愛物語 - roma")
+define config.name = _("デジタル・恋愛物語・ROMA")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
